@@ -1,0 +1,35 @@
+# PERSONA: submission-policy recheck, 2026-10-02
+
+**Scope supplied by parent:** computational-only reuse of exactly the same 1,490 responses and ratings as the CHI-under-review work; no new human or agent experiment. This memo checks policy, not annotation provenance or substantive overlap. It grants no permission and does not certify substantial difference. Official pages below were opened live on 2026-10-02; no chairs were contacted and nothing was submitted or published.
+
+## Timing
+
+| Venue | Published schedule (AoE) |
+| --- | --- |
+| FAccT 2027 | Abstract October 27, 2026; full paper November 3; initial decisions December 22; revision/rebuttal January 28, 2027; final decisions March 23. [CFP](https://facctconference.org/2027/cfp.html) |
+| CHI 2027 Papers | Original deadline September 10, 2026; reviews November 5; revisions due December 3; final notification December 17. [Papers](https://chi2027.acm.org/authors/papers/) |
+
+CHI expects assisted desk-rejection notifications **around October 25**, not guaranteed for every submission. A paper continuing through full review therefore ordinarily remains under review beyond FAccT's November 3 deadline. An actual early rejection could change that status; silence cannot. [CHI review process](https://chi2027.acm.org/authors/papers/papers-review-process/)
+
+## Policy Boundary
+
+- FAccT prohibits papers that are "identical or substantially similar" to work under review, accepted, or published elsewhere. New computational analyses are not an exemption from that test. Same-data reuse alone is not a published automatic prohibition either: the unresolved question is similarity of the papers' contributions. [FAccT CFP](https://facctconference.org/2027/cfp.html)
+- CHI explicitly treats the same study, artifact, or dataset as closely related. Concurrent related submissions require an anonymized manuscript in the concurrent-submissions field; omission risks desk rejection. Thus this reuse triggers disclosure if submitted concurrently, regardless of the authors' novelty assessment. Disclosure does not waive CHI's originality/concurrent-review restriction. [CHI Papers](https://chi2027.acm.org/authors/papers/)
+- **No numerical concurrent-overlap safe harbor:** the FAccT concurrent-submission rule supplies no percentage or permissible number of reused responses/ratings. [CFP](https://facctconference.org/2027/cfp.html) CHI's reviewer guide does discuss roughly more than 25% new material for significant revision of *previously published* work, but expressly leaves judgment to reviewers/committee members. That is not a 25%-new/75%-overlap license for simultaneous conference review, nor a data-overlap threshold. We cannot self-certify substantial difference using that number. [CHI reviewer guide, Prior Publication](https://chi2027.acm.org/guide-to-reviewing-papers/)
+
+## Decision Paths
+
+1. **Abstract registration is not full-paper clearance.** FAccT requires a representative title/abstract and focus areas by October 27; no full PDF is required then. Its FAQ says "Yes, you may register an abstract" for a CHI/other-conference notification between abstract and full-paper deadlines, but requires withdrawal before the full deadline if accepted or still under review. CHI's ordinary November 5 date falls outside that scenario. Consequently, the FAQ does not unambiguously authorize this exact timing case: ask FAccT about abstract-only registration before October 27, rather than treating it as blanket permission. [Author Guide, General Guidance/Reviewing Process/FAQ](https://facctconference.org/2027/authorguide.html)
+2. **CHI remains under review on November 3:** substantially similar work cannot advance. For claimed distinct work, seek both chairs' guidance using the parent's assessment. If unresolved, conservative choice: withhold the full paper and withdraw registration before deadline. [FAccT rule](https://facctconference.org/2027/cfp.html); [CHI rule](https://chi2027.acm.org/authors/papers/)
+3. **Actual rejection/effective withdrawal before November 3:** inference: concurrency can end, absent acceptance/publication elsewhere. Confirm status; timely registration and other requirements remain. This guarantees no acceptance. A November 5 rejection is too late. [FAccT CFP](https://facctconference.org/2027/cfp.html); [CHI dates](https://chi2027.acm.org/authors/papers/)
+4. **CHI accepted:** substantially similar work remains barred; waiting for proceedings does not help. **Non-archival is no workaround:** the journal-under-review exception does not cover CHI; the FAQ rejects using that track for another archival conference. [Author Guide, Concurrent and Dual Submission/FAQ](https://facctconference.org/2027/authorguide.html)
+
+## Confidential Disclosure After CHI's Original Deadline
+
+**Verified routes:** FAccT Program Chairs: `program-chairs@facctconference.org` ([official contact](https://facctconference.org/2027/cfp.html)); CHI Papers Chairs: `papers@chi2027.acm.org` ([official contact](https://chi2027.acm.org/authors/papers/)). CHI's required route is the anonymized concurrent-submission upload in PCS. Its public instructions do not specify how to add a newly arising concurrent paper after September 10; do not assume the field can be edited or that waiting for rebuttal suffices. Desk-rejection criteria remain applicable throughout review. [CHI review process](https://chi2027.acm.org/authors/papers/papers-review-process/)
+
+**Recommended next action, not a published exception procedure:** a human author should privately ask both chair teams before registration/full submission. Identify the CHI submission and current status; disclose exact reuse of all 1,490 responses/ratings, no new experiments, and the proposed computational-only contribution. Offer both manuscripts and the parent's overlap summary through their preferred restricted channel. Ask separately: (a) whether abstract-only registration is appropriate on these dates, (b) whether the full-paper pair is eligible, and (c) how CHI's post-deadline PCS disclosure and FAccT's related-work disclosure should be lodged. Do not send raw responses/ratings merely to request routing guidance.
+
+FAccT promises confidentiality of submitted material, but its guide does not identify a dedicated related-manuscript upload field. CHI requires anonymized related PDFs, not public disclosure. Chair correspondence is the proposed private routing step, not permission to deanonymize reviewer-facing material or a guarantee of chair-only visibility. [FAccT Author Guide](https://facctconference.org/2027/authorguide.html); [CHI Papers](https://chi2027.acm.org/authors/papers/)
+
+**Verification limit:** the linked [ACM simultaneous-submissions policy](https://www.acm.org/publications/policies/simultaneous-submissions) returned HTTP 403 in this check. No unseen ACM wording is relied upon; conclusions above use the live venue pages. Chair response timing and a post-deadline disclosure workflow remain unverified. Silence is not clearance.

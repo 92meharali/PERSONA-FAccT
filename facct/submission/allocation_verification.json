@@ -1,0 +1,21 @@
+{
+  "checked": "2026-10-02",
+  "tests": "56 passed",
+  "replicates_per_domain_per_run": 2000,
+  "full_run_seconds": [
+    18.4,
+    17.79
+  ],
+  "byte_identical_outputs": {
+    "category_coverage.csv": true,
+    "selection_register.csv": true,
+    "paired_policy_differences.csv": true,
+    "findings.md": true
+  },
+  "protected_files_unchanged": 244,
+  "figure_inspection": "Both new PNG figures visually inspected; final TeX layout unverified",
+  "zip_sha256": "401e73c63c83c46bd2f0e045c1de0db411b1689e930002aaec84a53b0cfbebcc",
+  "compilation": "Native compiler cannot load tables/numbers.tex; included file exists and ZIP static checks pass",
+  "page_count": "unverified",
+  "external_actions": "none"
+}

@@ -1,0 +1,16 @@
+target,quantity,lo,hi,confidence,requested,effective,undefined,estimand
+A,HumT,0.166666666667,0.529411764706,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+A,length_words,0.0769230769231,0.388949275362,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+A,markers_normalized,0.304347826087,0.75,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+A,HumT_minus_markers,-0.47619047619,0.0930414244186,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+A,HumT_minus_random_expected,-0.0333333333333,0.329411764706,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+B,HumT,0.142694805195,0.5,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+B,length_words,0.03046875,0.388888888889,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+B,markers_normalized,0.25,0.785714285714,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+B,HumT_minus_markers,-0.5,0.0909090909091,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+B,HumT_minus_random_expected,-0.0573051948052,0.3,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+resolved_ABC,HumT,0.133333333333,0.5,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+resolved_ABC,length_words,0,0.375,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+resolved_ABC,markers_normalized,0.333333333333,0.9,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+resolved_ABC,HumT_minus_markers,-0.666666666667,0.0434782608696,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory
+resolved_ABC,HumT_minus_random_expected,-0.0666666666667,0.3,0.95,2000,2000,0,paired whole-prompt reranked hypothetical batches; exploratory

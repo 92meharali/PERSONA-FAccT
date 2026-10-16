@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "seed": 20261002,
+  "folds": 5,
+  "replicates": 2000,
+  "budgets": [0.05, 0.10, 0.20, 0.30],
+  "reference_budget": 0.20,
+  "split_sensitivity_seeds": [20261003, 20261004, 20261005, 20261006, 20261007, 20261008, 20261009, 20261010, 20261011, 20261012],
+  "logistic": {"C": 1.0, "solver": "lbfgs", "max_iter": 2000, "tol": 1e-8},
+  "minimum_class_clusters": 10,
+  "uncertainty": "exploratory pointwise percentile; refit models within original-fold-stratified prompt bootstrap"
+}

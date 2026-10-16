@@ -1,0 +1,13 @@
+{
+  "n": 660,
+  "definite_pairs": 660,
+  "unresolved_either": 0,
+  "both_yes": 17,
+  "both_no": 629,
+  "A_yes_B_no": 12,
+  "A_no_B_yes": 2,
+  "raw_agreement": 0.9787878787878788,
+  "kappa": 0.6978219635031717,
+  "positive_agreement": 0.7083333333333334,
+  "negative_agreement": 0.9889937106918238
+}

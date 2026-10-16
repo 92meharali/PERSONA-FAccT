@@ -1,0 +1,11 @@
+domain,tier,comparison,n
+education,full,raw_equal,359
+education,fuzzy,other_difference,7
+education,prefix_120,other_difference,12
+education,prefix_200,other_difference,16
+education,prefix_300,other_difference,10
+education,prefix_80,other_difference,11
+health,full,raw_equal,412
+health,prefix_300,other_difference,2
+health,prefix_80,other_difference,1
+mental_health,embedded,embedded_only_no_separate_scorer_text,660

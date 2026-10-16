@@ -1,0 +1,5 @@
+claim,pdf_reported,released_output,matches_at_reported_precision,evidence
+mental_health full-profile CV R2,0.659,0.658537272733825,True,existing CHI output; not newly fitted
+education full-profile CV R2,0.562,0.5615564806938751,True,existing CHI output; not newly fitted
+health full-profile CV R2,0.256,0.2562024095219765,True,existing CHI output; not newly fitted
+health OA ceiling percent,63.86,63.85542168674698,True,recomputed from current inputs

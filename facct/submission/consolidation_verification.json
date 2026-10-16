@@ -1,0 +1,16 @@
+{
+  "tests_passed": 61,
+  "protected_files": 270,
+  "protected_unchanged": true,
+  "fresh_environment_reproduction": "passed",
+  "reproduced_numerical_files": 59,
+  "runtime_seconds": 466.4496648329987,
+  "full_pdf_compilation": "unverified: native compiler cannot load project auxiliary files",
+  "release_authorization": "pending",
+  "pushed": false,
+  "files": {
+    "facct/paper/overleaf/main.tex": "5f471229d258777ad337f52698a5d81a93b4e0f0d0cef5a927b5d478a237642d",
+    "facct/releases/PERSONA_FAccT_2027_Overleaf.zip": "9d2f519864235857e1085348e3247a51cf6d9d8c4376dbdb5b636540a316f2fd",
+    "facct/releases/PERSONA_FAccT_Code_Aggregates_REVIEW_CANDIDATE.zip": "5f687399849ad8cc5a98bef027500142a389dd298d72a6def3547041a10ef362"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "checked_ranked_operating_points": 144,
+  "independent_ranking_reference": "scikit-learn average_precision_score and roc_auc_score",
+  "source_hashes_unchanged": true,
+  "code_and_output_hashes_verified": true,
+  "byte_identical_rerun_files": [],
+  "manifest_sha256": "d6217732de0e89f87d65414b4ffdce3428076bc9b2f7f3b4e6718805cf49e50a"
+}

@@ -1,0 +1,28 @@
+{
+  "scope": "reporting verification, not new validation",
+  "protected_files": 270,
+  "protected_unchanged": true,
+  "subset_points_reconstructed": 48,
+  "additional_evidence_hashes": {
+    "compute_humt_sociot_colab.py": "7280546f0a40f56e5d4b38184461d26fc8bf867c764e8ba79b4ed23c1e0a7963",
+    "data/clean_domains/education/humt_education.csv": "7e4b91ee03f7f863d0a6198786f702fec7f332ccd5f8060022b46c12ad9fe320",
+    "data/clean_domains/health/humt_health.csv": "9447bd04cb23cde8a3034749d365a4d457e0170233a1313ef99760741545cb02"
+  },
+  "code_and_spec": {
+    "facct/consolidation/__init__.py": "4401c495f0e61aba2cc9666945ca39aaac01fb29cddf2136259604bca9d1837d",
+    "facct/consolidation/audit.py": "3db9c41c9c63d6fc74ab46e018f7345c95ec1220a192578a6c2661b3a3162449",
+    "facct/consolidation/build_artifact.py": "c6ad28f8261959612e322f558707ae8f791a07348dc32ea3401e400ea1910c9b",
+    "facct/consolidation/plan.md": "c007bf03fa4eb4475336f2553bcee4a03815097ba458a34cbc6981d761193a41",
+    "facct/consolidation/review_aggregates.py": "45fbb7f88b36e9a781c2547748ce9332152c2b5329bdc42e48979d94d2123093",
+    "facct/consolidation/test_consolidation.py": "c8416078dd78249135f04c220951ff0ae0ddcdf7cf23bb3208a7df7942ad2dc6",
+    "facct/consolidation/verify.py": "c9e1d0bbaeb5fc82d7844a0c13bd1b8078266048524395c622a789046e702cda"
+  },
+  "outputs": {
+    "findings.md": "9355ae51d614d9cc5d7b870852e1d30f81d7247ca807f194d8379bee0c6ff73c",
+    "provenance_checks.csv": "1f635820639a69e6c964c59bd2ab8d4e82ad50191460225b950eecb8a2f0dedc",
+    "provenance_composition.tex": "2dedc29ec6b5454195872c8b7c91497a78b30742c7d590a86a101763c76fd69b",
+    "provenance_truncation.tex": "9e182f4f7801b86a6b785b2ae33c67d6ca34fd33f8643cf2430f97ef3e0e19c8",
+    "subset_composition.csv": "b48b90636e9c91a2d333d60dd19307156bbf5eef6ec0eda18e93dc4f0dcc9001",
+    "verified_subset_operating_points.csv": "3b75868c5fb30610be08f72e589420e86be4ca08c4104e50bee21c17a1f1043b"
+  }
+}

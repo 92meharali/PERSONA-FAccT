@@ -1,0 +1,11 @@
+domain,prompt_id_source,model_source,humt_join_tier,n
+education,reconstructed_from_prompt_text,humt_source_file,full,359
+education,reconstructed_from_prompt_text,humt_source_file,fuzzy,7
+education,reconstructed_from_prompt_text,humt_source_file,prefix_120,12
+education,reconstructed_from_prompt_text,humt_source_file,prefix_200,16
+education,reconstructed_from_prompt_text,humt_source_file,prefix_300,10
+education,reconstructed_from_prompt_text,humt_source_file,prefix_80,11
+health,reconstructed_from_prompt_text,humt_source_file,full,412
+health,reconstructed_from_prompt_text,humt_source_file,prefix_300,2
+health,reconstructed_from_prompt_text,humt_source_file,prefix_80,1
+mental_health,native_column,native_column,embedded,660

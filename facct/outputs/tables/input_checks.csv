@@ -1,0 +1,7 @@
+check,value,status
+OA_mean_reconstruction,0.0,pass
+E_mean_reconstruction,0.0,pass
+D_mean_reconstruction,0.0,pass
+F_mean_reconstruction,0.0,pass
+submission_snapshot_hash:persona_all.csv,True,pass
+submission_snapshot_hash:persona_ratings_long.csv,True,pass

@@ -1,0 +1,26 @@
+{
+  "checked": "2026-10-02",
+  "independent_full_runs": 2,
+  "bootstrap_draws_per_domain_per_run": 2000,
+  "runtime_seconds": [
+    178.38,
+    179.34
+  ],
+  "byte_identical_outputs": {
+    "performance.csv": true,
+    "oof_predictions.csv": true,
+    "fit_audit.csv": true,
+    "fold_assignments.csv": true,
+    "bootstrap_differences.csv": true,
+    "conditional_lift.csv": true,
+    "findings.md": true,
+    "split_sensitivity.csv": true,
+    "fold_performance.csv": true
+  },
+  "frozen_files_verified": 228,
+  "tests": "48 passed",
+  "zip_sha256": "c628be78c9b8ac8a3f390fc8bd2654ceca703b84f9851e362bdc485dfa00e3ae",
+  "native_compilation": "unverified: single-document compiler cannot load tables/numbers.tex; file exists in verified ZIP",
+  "page_count": "unverified",
+  "push_or_submission": false
+}

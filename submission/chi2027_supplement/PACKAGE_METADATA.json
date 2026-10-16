@@ -1,0 +1,16 @@
+{
+  "package": "PERSONA anonymous CHI review supplement",
+  "responses": 1490,
+  "rating_records": 14900,
+  "domains": [
+    "mental_health",
+    "education",
+    "general_health"
+  ],
+  "random_seed": 42,
+  "cv_folds": 5,
+  "cv_repeats": 20,
+  "bootstrap_resamples": 1000,
+  "raw_named_annotation_files_included": false,
+  "signed_ethics_record_included": false
+}

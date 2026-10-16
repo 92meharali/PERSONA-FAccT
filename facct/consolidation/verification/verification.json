@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "fresh_environment": true,
+  "stages": [
+    {
+      "module": "facct.analysis.run",
+      "runtime_seconds": 126.67981733399938,
+      "byte_identical_outputs": {
+        "figures/recall_budgets.pdf": "3e7503539f3da14e62d9dc8c84a118dd69ad3d8b5fa8b4520a173262b86ca26c",
+        "figures/recall_budgets.png": "d7afeca0afbb34a86a34927153c60084c9b47632b0dec87131f732b6ed64dd49",
+        "figures/selected_and_missed.png": "453238e8095f10fa93e352e564a4817451e24753d90c67d05dff514295a9a9fd",
+        "tables/case_sampling_register.csv": "d75beccb83b1891936166fda7b022ab363393030390a2103e5be8a01a05b34c9",
+        "tables/cases_answer_key.csv": "f6f2eddb53aa8b92a8aeb45ed6d0952d6f45754c5ee6a5ae3fdbaf4df8c4e989",
+        "tables/cases_blinded.csv": "cd23065c15c83e4ba2d2925bbc9e8ec8a4bb2c1636b32378ec6800b777e264c2",
+        "tables/chi_headline_crosscheck.csv": "23a62f94c14e7a2979c9a720e9837010fd7bc9f32bbaf6cb20ca4a8dba5e00c4",
+        "tables/consensus_sensitivity.csv": "2ca9e279b49debed93f203584ecc10e3967500d647e9d911973f12c3ac42726d",
+        "tables/context_counts.csv": "5c6e4e53c83be7704daeab2d72af4ccdbb234d5653a07b3302779d76916b3599",
+        "tables/context_sensitivity.csv": "8b6a2b9afa5965f0bf930e602575b9d8e5f8c0683fb7d88d06735c8d4f116898",
+        "tables/continuous_relationships.csv": "4ba33593b997f4f1fb70f2d254bd61efee5ae3f018f42e4c59785aa819e7688d",
+        "tables/cost_scenarios.csv": "e4943438fa316b7f4a49ed62cc68fd0ae6914ef7b9adbfcccbe9863f9bf9275a",
+        "tables/criterion_intersections.csv": "97865be801a745d563bfa73b2fddada486a0b8cd001b5fd39fa8af1f34496333",
+        "tables/criterion_recall_differences.csv": "49901f0dc265039b39e3ad97339eb47dc4fa7b1cee4a416b68430db171267c9d",
+        "tables/human_coding_template.csv": "8a5927fb12c9412eef4c8ac313deb526566e18d5795b6728268dcb043986be7d",
+        "tables/input_checks.csv": "cc9f722122c4dc692d88e26c3d21a688e864ae5ca9c557f1d90ac1af3309bc74",
+        "tables/input_counts.csv": "af4d567491aecea8ca65ca676d23ca7d98da4aeb46657dde3d0ba86e2032826f",
+        "tables/join_sensitivity.csv": "470f89f2b1937c6a6d9adf34f8e0bf44bd02416d983ee509821baf97c78350be",
+        "tables/metadata_provenance.csv": "f40ce451fb79b5b41cef3c00eaeaf7c5630c695388390c45dcea02348e3dc43b",
+        "tables/missingness.csv": "d9e8b314693b2a5ac398548d91625e49b0191b4d37bea2d5bb961f9553158380",
+        "tables/mixture_scenarios.csv": "f4a2196b74efd09a7f7ed6a9b0e1c384e4809434952212153bce53f960f85bc5",
+        "tables/model_completeness.csv": "8e89f7dc1f895dcf4d70f9db22ca4dad1c34b8adf5f8a117919723ec04f14cf1",
+        "tables/model_paired_differences.csv": "46d311b09bb5957d838837ecef40a81c90455b68c995c8a71a187e04d9897aa1",
+        "tables/model_rates.csv": "937afb939b94288deb8538ac6b169f0643559d75f1028189e0edcc1b621af7d2",
+        "tables/prompt_audit.csv": "cba26933e2f668fa5326ec84a5f2b6f7f3f52942698a7ffdd48942df069fc5e1",
+        "tables/random_draw_intervals.csv": "3685b639836e5c427ed760d9bc907a3a75a3844e087bb25fa2dc06f7f82d2245",
+        "tables/ranges.csv": "46fd68e62262223cbaab3a136c3d1dbaa249203d5a50904d7c8927bc77fe3114",
+        "tables/rater_counts.csv": "1e8e95d337223152f404c527b07051bd57dcd03ba6ba029720d84676535ef2d5",
+        "tables/rater_sensitivity.csv": "95ab69d14ceb015cf66460bf8b897735e8d039332996825b77226533e5f995ae",
+        "tables/screening.csv": "aaf5589b130110fade84702d97f1513d137f4018d7a2c76c1679217346855e16",
+        "tables/threshold_sensitivity.csv": "1d7c2dc018e982ce2e92d3a8030a14ed75c1917a453adb8a9d54a2e858ddbee6",
+        "tables/tie_sensitivity.csv": "d6aafe158d3fc06e35af50ac74b61cddb6b5c083db5c0a5994deb23e698f14f7"
+      }
+    },
+    {
+      "module": "facct.revision.run",
+      "runtime_seconds": 22.65479120800228,
+      "byte_identical_outputs": {
+        "complementarity.csv": "6d74f38a7c47df39e7ac8e40c686416750f96f3603c876045fb5e81508fd5377",
+        "cutoff_diagnostics.csv": "058064c2ee7ba342a36c6f52fc86ddd6313b5ef8941935fc32ec865066e2048b",
+        "d_mean_distributions.pdf": "d38bfa0113cbf47a9e94db90812f7101b9dd460e86da5adadf3017cfe18035b7",
+        "d_mean_distributions.png": "354e823a9a864fcffa6fe7f73103ad8c83fbf6a8ba32b3f06140c4e56a2a64d4",
+        "mean_distributions.csv": "c4e67686ab0663655a03fa5f726c46c2f031a49f3953b2e1ba64a9a37f0db2cf",
+        "mental_health_budgets.pdf": "4010acb0e8b9faab9d8b33de1e32ebb5428d6c10e2dc2cf955600724f31a4520",
+        "mental_health_budgets.png": "7123a751e0112017a3563f364d0c8440e2e299dc41aeef63e84f75f8be978eef",
+        "operating_context.csv": "26695e107c9dd60466b0845d34b7770a89c34a1062fb973b790e55a198532cdf",
+        "paired_comparisons.csv": "f4a27069874c7978b4c8a06713b7115639adeab52a97137257f9d42c6e67f04a",
+        "source_reliability.csv": "71b3d0c742c017f0bac1fd3cb90b139244715e8ddb08e1640ba9956b93e665db",
+        "text_provenance.csv": "3455379bf6ba9f69f64379a1fc5f5106918c2bcd716da4228449eb062069a3db",
+        "text_provenance_summary.csv": "e6c471d599fa39264db002eb65550da27813628eae6c85d45b0a40595e6d3152",
+        "text_representation_sensitivity.csv": "63351f781be0d18b22b0bc9b5cded088f61c1ffa2b6eae605282027f56c230bb",
+        "transfer_budgets.pdf": "2e52514b226efa7c7e27c5df768f84d16dd4d14ce7783cd9334577fe78bb6bfd",
+        "transfer_budgets.png": "5888de14b86c869e1ee6518916e045d7b161e738aed48a8c7f8c6fdb56e49429",
+        "trigger_vote_distribution.csv": "b17dac40ad5482143e3fe3ca915d9eb9743e1796cfee3c4d2465f43f7fc2d3c4"
+      }
+    },
+    {
+      "module": "facct.conditional.run",
+      "runtime_seconds": 197.4144122079997,
+      "byte_identical_outputs": {
+        "bootstrap_differences.csv": "5deca22386de759bc7408b1ccdf74deb9b4eee43e5fedc905e4a7317d80d9f24",
+        "conditional_lift.csv": "fe76ba8e48f7903fcb1f738d4620db84f5eef07d4438eb8cf229961d139ff74b",
+        "fit_audit.csv": "0b621417e0b63c177017ba531a29c007e937f4c33bc4eb8fc228cca6341fe94e",
+        "fold_assignments.csv": "2592ad631b98d8cd6a7d9f09d4872279482d714ea1701a83f886bf94e2270fc1",
+        "fold_performance.csv": "7bbb00d3a41b229bc813c72685b4c4bd8440849c34ae507b612e26b9658937c4",
+        "oof_predictions.csv": "d942ed3faa8502a96ef888879956af9d82ddc16c1496da0db180c50912b50ce7",
+        "performance.csv": "2e5cfe430bb6602ea02ec38d2a1e36f9ba05a8ea1c1cdb66a839478f7da47c3d",
+        "split_sensitivity.csv": "4e9c694727df5ca012c52667c0d455f113144aac66289bf60a9dc991bd57cc60"
+      }
+    },
+    {
+      "module": "facct.allocation.run",
+      "runtime_seconds": 21.006762249999156,
+      "byte_identical_outputs": {
+        "category_coverage.csv": "3fac74fb1af76770c8968df423fdbf18c834a2ad03ad5393b3d1120b69e312e2",
+        "paired_policy_differences.csv": "d0b89ae9f8739b4b8c73ab099ecd4f96fba794a4eec8a40ae002d931d573aa81",
+        "selection_register.csv": "b6a8f52814264f0b5ce0639e8f737632b152347f3a24d3ffea9460cac9905b31"
+      }
+    }
+  ],
+  "scientific_validation": false,
+  "source_revision": "7605174f76fc912f3dadb219d93c037f7da27d44",
+  "environment": [
+    "cloudpickle==3.1.2",
+    "contourpy==1.4.0",
+    "cycler==0.12.1",
+    "fonttools==4.66.1",
+    "iniconfig==2.3.0",
+    "joblib==1.6.0",
+    "kiwisolver==1.5.1",
+    "matplotlib==3.10.8",
+    "numpy==2.4.4",
+    "packaging==26.3",
+    "pandas==3.0.2",
+    "pillow==12.3.0",
+    "pluggy==1.6.0",
+    "Pygments==2.21.0",
+    "pyparsing==3.3.3",
+    "pypdf==6.1.1",
+    "pytest==8.4.2",
+    "python-dateutil==2.9.0.post0",
+    "scikit-learn==1.8.0",
+    "scipy==1.17.1",
+    "six==1.17.0",
+    "threadpoolctl==3.7.0"
+  ],
+  "runtime_seconds": 466.4496648329987,
+  "protected_files": 270,
+  "protected_unchanged": true
+}

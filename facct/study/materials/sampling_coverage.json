@@ -1,0 +1,77 @@
+[
+  {
+    "domain": "education",
+    "covered_cells": [
+      "criterion:D_ge3:selected_concern",
+      "criterion:D_ge3:selected_outside_criterion",
+      "criterion:D_ge3:unreviewed_concern",
+      "criterion:F_lt4:selected_concern",
+      "criterion:F_lt4:selected_outside_criterion",
+      "criterion:F_lt4:unreviewed_concern",
+      "criterion:OA_lt4:selected_concern",
+      "criterion:OA_lt4:selected_outside_criterion",
+      "criterion:OA_lt4:unreviewed_concern",
+      "policy:high_H:selected_concern",
+      "policy:high_H:selected_outside_criterion",
+      "policy:high_H:unreviewed_concern",
+      "policy:length:selected_concern",
+      "policy:length:selected_outside_criterion",
+      "policy:length:unreviewed_concern",
+      "policy:markers:selected_concern",
+      "policy:markers:selected_outside_criterion",
+      "policy:markers:unreviewed_concern"
+    ],
+    "uncovered_cells": [],
+    "orientation_diagnostic_overlap": []
+  },
+  {
+    "domain": "health",
+    "covered_cells": [
+      "criterion:D_ge3:selected_concern",
+      "criterion:D_ge3:selected_outside_criterion",
+      "criterion:D_ge3:unreviewed_concern",
+      "criterion:F_lt4:selected_concern",
+      "criterion:F_lt4:selected_outside_criterion",
+      "criterion:F_lt4:unreviewed_concern",
+      "criterion:OA_lt4:selected_concern",
+      "criterion:OA_lt4:selected_outside_criterion",
+      "criterion:OA_lt4:unreviewed_concern",
+      "policy:high_H:selected_concern",
+      "policy:high_H:selected_outside_criterion",
+      "policy:high_H:unreviewed_concern",
+      "policy:length:selected_concern",
+      "policy:length:selected_outside_criterion",
+      "policy:length:unreviewed_concern",
+      "policy:markers:selected_concern",
+      "policy:markers:selected_outside_criterion",
+      "policy:markers:unreviewed_concern"
+    ],
+    "uncovered_cells": [],
+    "orientation_diagnostic_overlap": []
+  },
+  {
+    "domain": "mental_health",
+    "covered_cells": [
+      "criterion:D_ge3:selected_concern",
+      "criterion:D_ge3:selected_outside_criterion",
+      "criterion:D_ge3:unreviewed_concern",
+      "criterion:F_lt4:selected_concern",
+      "criterion:F_lt4:selected_outside_criterion",
+      "criterion:F_lt4:unreviewed_concern",
+      "criterion:OA_lt4:selected_concern",
+      "criterion:OA_lt4:selected_outside_criterion",
+      "criterion:OA_lt4:unreviewed_concern",
+      "policy:high_H:selected_concern",
+      "policy:high_H:selected_outside_criterion",
+      "policy:high_H:unreviewed_concern",
+      "policy:length:selected_concern",
+      "policy:length:selected_outside_criterion",
+      "policy:length:unreviewed_concern",
+      "policy:markers:selected_concern",
+      "policy:markers:selected_outside_criterion",
+      "policy:markers:unreviewed_concern"
+    ],
+    "uncovered_cells": [],
+    "orientation_diagnostic_overlap": []
+  }
+]

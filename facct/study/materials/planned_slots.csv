@@ -1,0 +1,10 @@
+planned_slot,status,target,policy_order,criterion_order,orientation_case_order,diagnostic_case_order
+education_1,not enrolled,initial target,A B C,D_ge3 F_lt4 OA_lt4,f457c8be2de3 072522d1756e,2f177a1d2a2e 91c7ec753da9 752c526ed9b1 0aa7411f9adb 9e07d4766492 8fb735c9b970
+education_2,not enrolled,initial target,B C A,OA_lt4 D_ge3 F_lt4,072522d1756e f457c8be2de3,752c526ed9b1 0aa7411f9adb 9e07d4766492 8fb735c9b970 2f177a1d2a2e 91c7ec753da9
+education_3,not enrolled,availability-based optional,C A B,F_lt4 OA_lt4 D_ge3,f457c8be2de3 072522d1756e,9e07d4766492 8fb735c9b970 2f177a1d2a2e 91c7ec753da9 752c526ed9b1 0aa7411f9adb
+health_1,not enrolled,initial target,B C A,F_lt4 OA_lt4 D_ge3,43c6ccac01bb 8d6cc2aac5ac,927bd17f72c7 df833c5e1d7e b0a50b1f3fde 7c891b689263 4927fbf5e81c 25a5c0e8510d
+health_2,not enrolled,initial target,C A B,D_ge3 F_lt4 OA_lt4,8d6cc2aac5ac 43c6ccac01bb,b0a50b1f3fde 7c891b689263 4927fbf5e81c 25a5c0e8510d 927bd17f72c7 df833c5e1d7e
+health_3,not enrolled,availability-based optional,A B C,OA_lt4 D_ge3 F_lt4,43c6ccac01bb 8d6cc2aac5ac,4927fbf5e81c 25a5c0e8510d 927bd17f72c7 df833c5e1d7e b0a50b1f3fde 7c891b689263
+mental_health_1,not enrolled,initial target,C A B,OA_lt4 D_ge3 F_lt4,2d2ab7b47e0a 1f2e59f5e8e7,7e372dc3002e eed1bb0110c6 062bf847fa26 195f731f8058 7e682943b313 b113a07c8dce
+mental_health_2,not enrolled,initial target,A B C,F_lt4 OA_lt4 D_ge3,1f2e59f5e8e7 2d2ab7b47e0a,062bf847fa26 195f731f8058 7e682943b313 b113a07c8dce 7e372dc3002e eed1bb0110c6
+mental_health_3,not enrolled,availability-based optional,B C A,D_ge3 F_lt4 OA_lt4,2d2ab7b47e0a 1f2e59f5e8e7,7e682943b313 b113a07c8dce 7e372dc3002e eed1bb0110c6 062bf847fa26 195f731f8058

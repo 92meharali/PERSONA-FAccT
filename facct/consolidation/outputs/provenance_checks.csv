@@ -1,0 +1,3 @@
+domain,n,byte_identical,different,full_tier_equals_byte_identical,export_trunc_equals_export_first300,export_trunc_equals_rated_first300,differing_pairs_with_same_recorded_prefix,scorer_invocation_authenticated
+education,415,359,56,True,415,369,10,False
+health,415,412,3,True,415,414,2,False

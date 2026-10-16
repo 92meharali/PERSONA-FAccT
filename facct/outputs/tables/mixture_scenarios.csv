@@ -1,0 +1,25 @@
+criterion,policy,hypothetical_mixture,prevalence,recall,precision,review_fraction,note
+D_ge3,high_H,observed,0.1342281879194631,0.295,0.19798657718120802,0.2,domain-wise policies then reweight; not a new global ranking
+D_ge3,high_H,equal_domain,0.11144578313253012,0.31285831285831284,0.17433369843008395,0.2,domain-wise policies then reweight; not a new global ranking
+D_ge3,length,observed,0.1342281879194631,0.31,0.2080536912751678,0.2,domain-wise policies then reweight; not a new global ranking
+D_ge3,length,equal_domain,0.11144578313253012,0.30237510237510234,0.16849215041986124,0.2,domain-wise policies then reweight; not a new global ranking
+D_ge3,markers,observed,0.1342281879194631,0.465,0.31208053691275167,0.2,domain-wise policies then reweight; not a new global ranking
+D_ge3,markers,equal_domain,0.11144578313253012,0.5017199017199017,0.27957283680175243,0.2,domain-wise policies then reweight; not a new global ranking
+D_ge3,uniform_random,observed,0.1342281879194631,0.19999999999999998,0.1342281879194631,0.2,domain-wise policies then reweight; not a new global ranking
+D_ge3,uniform_random,equal_domain,0.11144578313253012,0.2,0.11144578313253012,0.2,domain-wise policies then reweight; not a new global ranking
+F_lt4,high_H,observed,0.1610738255033557,0.22083333333333333,0.17785234899328858,0.2,domain-wise policies then reweight; not a new global ranking
+F_lt4,high_H,equal_domain,0.16444566143361325,0.22623496762257164,0.18601679445052935,0.2,domain-wise policies then reweight; not a new global ranking
+F_lt4,length,observed,0.1610738255033557,0.20000000000000004,0.16107382550335572,0.2,domain-wise policies then reweight; not a new global ranking
+F_lt4,length,equal_domain,0.16444566143361325,0.19999999999999998,0.16444566143361322,0.2,domain-wise policies then reweight; not a new global ranking
+F_lt4,markers,observed,0.1610738255033557,0.22916666666666669,0.18456375838926176,0.2,domain-wise policies then reweight; not a new global ranking
+F_lt4,markers,equal_domain,0.16444566143361325,0.22875115633672524,0.18808567603748327,0.2,domain-wise policies then reweight; not a new global ranking
+F_lt4,uniform_random,observed,0.1610738255033557,0.19999999999999998,0.16107382550335567,0.2,domain-wise policies then reweight; not a new global ranking
+F_lt4,uniform_random,equal_domain,0.16444566143361325,0.19999999999999998,0.16444566143361322,0.2,domain-wise policies then reweight; not a new global ranking
+OA_lt4,high_H,observed,0.10738255033557048,0.26875,0.1442953020134228,0.2,domain-wise policies then reweight; not a new global ranking
+OA_lt4,high_H,equal_domain,0.08885846415966897,0.2846675340683421,0.1264755993671656,0.2,domain-wise policies then reweight; not a new global ranking
+OA_lt4,length,observed,0.10738255033557048,0.16874999999999996,0.09060402684563756,0.2,domain-wise policies then reweight; not a new global ranking
+OA_lt4,length,equal_domain,0.08885846415966897,0.15681709237827846,0.06967262991359376,0.2,domain-wise policies then reweight; not a new global ranking
+OA_lt4,markers,observed,0.10738255033557048,0.28125,0.15100671140939598,0.2,domain-wise policies then reweight; not a new global ranking
+OA_lt4,markers,equal_domain,0.08885846415966897,0.2960350612887763,0.13152610441767068,0.2,domain-wise policies then reweight; not a new global ranking
+OA_lt4,uniform_random,observed,0.10738255033557048,0.2,0.10738255033557048,0.2,domain-wise policies then reweight; not a new global ranking
+OA_lt4,uniform_random,equal_domain,0.08885846415966897,0.20000000000000004,0.08885846415966898,0.2,domain-wise policies then reweight; not a new global ranking

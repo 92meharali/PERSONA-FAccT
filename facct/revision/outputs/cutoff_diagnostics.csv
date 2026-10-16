@@ -1,0 +1,10 @@
+domain,criterion,n,near_cutoff,exactly_cutoff,unanimous_trigger,unanimous_nontrigger,split_votes,mean_majority_disagree
+mental_health,D_ge3,660,172,108,150,373,137,35
+mental_health,F_lt4,660,343,149,6,508,146,85
+mental_health,OA_lt4,660,361,160,2,458,200,123
+education,D_ge3,415,5,4,12,382,21,10
+education,F_lt4,415,336,283,16,390,9,9
+education,OA_lt4,415,196,63,16,397,2,2
+health,D_ge3,415,11,3,17,388,10,1
+health,F_lt4,415,166,73,34,261,120,50
+health,OA_lt4,415,10,7,8,403,4,1

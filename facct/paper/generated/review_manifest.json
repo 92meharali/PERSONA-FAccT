@@ -1,0 +1,21 @@
+{
+  "status": "internal computational review draft; not submission-ready",
+  "source_hashes": {
+    "facct/outputs/tables/screening.csv": "aaf5589b130110fade84702d97f1513d137f4018d7a2c76c1679217346855e16",
+    "facct/outputs/tables/input_counts.csv": "af4d567491aecea8ca65ca676d23ca7d98da4aeb46657dde3d0ba86e2032826f",
+    "facct/outputs/tables/threshold_sensitivity.csv": "1d7c2dc018e982ce2e92d3a8030a14ed75c1917a453adb8a9d54a2e858ddbee6",
+    "facct/outputs/tables/join_sensitivity.csv": "470f89f2b1937c6a6d9adf34f8e0bf44bd02416d983ee509821baf97c78350be",
+    "facct/paper/computational_draft.template.md": "a08c885531c39013e3708fbf266ac14be9ea0c358d523e5e8b749a816a22030a",
+    "facct/outputs/manifest.json": "d6217732de0e89f87d65414b4ffdce3428076bc9b2f7f3b4e6718805cf49e50a",
+    "facct/submission/provenance_resolution.md": "e1f3317162a4327f7ef4c9dcc2f7f27a154a0efbe082ff7c3b3271571283bef9",
+    "facct/submission/distinctness_assessment.md": "7f92ecbde2d8e5291cd48d85ef5696885f6bdaaa2768ef0c45c4c09cef8e320d"
+  },
+  "generator_sha256": "68638661ce94366a0f2d7c8aa322c992f8e5716a52f1ebb19eeeec0b9e96f7c2",
+  "output_hashes": {
+    "baselines.md": "5e895d5a28cef83d72edbd04a7c53fcee679814e77a9a945f92bb00daead7d03",
+    "computational_review_draft.md": "47504dfef220e7a0c7cfe42d7bf3b7e09f2e77cb5e1611324b155942c54a3f34",
+    "corpus.md": "36a20a405b53a4ee9956096733914897f188b3784dea0b393223785ae185bfae",
+    "coverage.md": "65c5f08f4ee00f9af63a141b231884cd80a87ad36693e3769336f99d74ff088e",
+    "workload.md": "73607cd14b4b736a1cff8bb0dba1d70aea2f45f66ebb3818c337ca47c8d55918"
+  }
+}

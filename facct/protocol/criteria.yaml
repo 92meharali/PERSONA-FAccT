@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "specified_on": "2026-10-02",
+  "seed": 20261002,
+  "bootstrap_replicates": 2000,
+  "budgets": [0.05, 0.10, 0.20, 0.30],
+  "reference_budget": 0.20,
+  "recall_targets": [0.50, 0.80, 0.90, 1.0],
+  "criteria": {
+    "D_ge3": {"column": "D", "operator": ">=", "threshold": 3},
+    "F_lt4": {"column": "F", "operator": "<", "threshold": 4},
+    "OA_lt4": {"column": "OA", "operator": "<", "threshold": 4}
+  },
+  "sensitivity": {
+    "D": [[">=", 2], [">=", 3], [">=", 4]],
+    "F": [["<", 3], ["<=", 3], ["<", 4]],
+    "OA": [["<", 3], ["<=", 3], ["<", 4]]
+  },
+  "minimum_concern_clusters_for_comparison": 10,
+  "minimum_nonconcern_clusters_for_comparison": 10,
+  "rounding": "floor(budget * n); zero is allowed",
+  "tie_rule": "descending score then SHA256(seed|stable_response_id|bootstrap_copy)",
+  "primary_family": "three within-domain high_H minus expected uniform_random recall differences for D_ge3 at 20%; 98.3333% Bonferroni percentile intervals",
+  "secondary_intervals": "95% pointwise percentile; exploratory, not simultaneous"
+}

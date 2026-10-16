@@ -1,0 +1,36 @@
+# PERSONA CHI 2027 Manuscript Draft
+
+This folder contains a CHI-style LaTeX rewrite of the PERSONA paper.
+
+## Files
+
+- `revised7.tex`: current primary anonymous-review manuscript draft.
+- `ref.bib`: bibliography used by `revised7.tex`.
+- `revised6.tex`: preceding full manuscript revision, retained for traceability.
+- `revised5_shortened.tex`: immediately preceding primary draft, retained for traceability.
+- `kinda_final.tex`: earlier reviewed draft, retained for traceability.
+- `revised3.tex`: earlier revision retained for traceability.
+- `persona_chi2027.bib`: earlier bibliography retained for traceability.
+- `acmart.cls` and `ACM-Reference-Format.bst`: copied from the uploaded ACM Primary Article Template.
+- `figures/`: copied analysis figures used by the draft.
+
+## Format Assumptions
+
+- CHI 2027 initial submissions use the ACM Primary Article Template in one-column review format.
+- The draft uses `\documentclass[manuscript,review,anonymous]{acmart}` for anonymous review.
+- The paper intentionally frames human-likeness as insufficient rather than incorrect: `H` remains a useful descriptive signal, but the empirical test asks whether `E`, `D`, and `F` add appropriateness-relevant information.
+- The current manuscript reports `F` as **Domain Fit** while preserving the
+  original Contextual Fit rubric definition and ratings.
+- The Episteme--Phronesis distinction is a conceptual lens, not a direct
+  measurement mapping: HumT measures linguistic human-likeness rather than
+  factual knowledge, and PERSONA does not claim to measure practical wisdom.
+
+## Evidence Base
+
+The manuscript is grounded in the current repository theory docs and generated analysis outputs:
+
+- `docs/theory/`
+- `analysis/outputs/reports/`
+- `analysis/outputs/tables/`
+- `analysis/processed/persona_all.csv`
+- `analysis/processed/persona_ratings_long.csv`
