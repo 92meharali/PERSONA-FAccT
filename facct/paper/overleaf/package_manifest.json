@@ -4,11 +4,33 @@
   "template_source": "https://github.com/borisveytsman/acmart/blob/v2.19/acmart.dtx",
   "author_guide": "https://facctconference.org/2027/authorguide.html",
   "checks": {
-    "citation_keys": 17,
-    "cited_references": 17,
+    "citation_keys": 18,
+    "cited_references": 18,
     "static_checks": "passed",
-    "compilation": "unverified: no local multi-file TeX compiler",
-    "page_count": "unverified; check in Overleaf"
+    "compilation": "2026-10-24: saved main.tex successfully compiled with the desktop editor compiler",
+    "page_count": {
+      "date": "2026-10-24",
+      "pdf_sha256": "ebe17f39b1f3b12c1591a7154cf7923efd46c1baf4b4b18b8c83a49f0e8f7ef2",
+      "source_sha256": "98416da1632cea6246d43e752e25e3bcd245d8a700bf605b7a9261160f2b8a9e",
+      "bibliography_sha256": "da6f52bc870bb87d65f0f23c5847802a903a75a37d6e507ab533d79a033ed1b6",
+      "class_sha256": "2f949e6e3f2a79f2cdc218b9dcdbaa7dd451adb4ee0be1af6dc7ebe00b318ea7",
+      "engine": "pdfLaTeX via isolated TinyTeX 2026.10",
+      "total_pages": 28,
+      "main_content_pages": 14,
+      "endmatter_pages": 1,
+      "reference_pages": 1,
+      "appendix_pages": 12,
+      "endmatter_starts": 15,
+      "references_start": 16,
+      "appendix_starts": 17,
+      "main_limit": 14,
+      "endmatter_limit": 1,
+      "within_main_limit": true,
+      "within_endmatter_limit": true,
+      "visual_inspection": "Inspected all 28 pages in a contact sheet and enlarged endmatter and final appendix; no clipping or overlap observed. No overfull boxes or undefined references in the build log.",
+      "guideline": "https://facctconference.org/2027/authorguide.html",
+      "note": "Counts apply to this rendered PDF; author/ethics/overlap eligibility is not certified."
+    }
   },
   "analysis_manifest_sha256": "d6217732de0e89f87d65414b4ffdce3428076bc9b2f7f3b4e6718805cf49e50a",
   "screening_table_sha256": "aaf5589b130110fade84702d97f1513d137f4018d7a2c76c1679217346855e16",
@@ -19,8 +41,8 @@
   "annotation_manifest_sha256": "fd2c7cdfaa599f325464db25a70d393763759152f33779229923fec970a6829e",
   "files": {
     "ACM-Reference-Format.bst": "8ec002c927068bfc5b3cfe71b66aa4767b9e485530ac3c67ba5c064df4c2e6ac",
-    "AUTHOR_CHECKLIST.md": "66ab979e9efd362ee64e18382c4bf3ecf79c4b7a0c6d733773dafc85ad29b459",
-    "README.md": "da1a611f96a61d801ecb97ba960ce026c9f7aeeef0476b4dceab2dd0a4653c14",
+    "AUTHOR_CHECKLIST.md": "5c96b5390f2f6d293d0800dc6656c93d152c0704103a4e35555f8a854821e97b",
+    "README.md": "ffc79497d9ec8b7ae965cfcf980e6d4a2fd9ff0b05a89e5082a45bc4b7d01a80",
     "acmart.cls": "2f949e6e3f2a79f2cdc218b9dcdbaa7dd451adb4ee0be1af6dc7ebe00b318ea7",
     "figures/d_mean_distributions.pdf": "d38bfa0113cbf47a9e94db90812f7101b9dd460e86da5adadf3017cfe18035b7",
     "figures/mental_health_budgets.pdf": "4010acb0e8b9faab9d8b33de1e32ebb5428d6c10e2dc2cf955600724f31a4520",
@@ -30,8 +52,8 @@
     "figures/transfer_budgets.pdf": "2e52514b226efa7c7e27c5df768f84d16dd4d14ce7783cd9334577fe78bb6bfd",
     "figures/workload_targets.pdf": "f702274c9455e61e16ed17751479082d56ab2d93de62de28b37f9cddf5966896",
     "figures/workload_targets.png": "e541c9abbc2cb06f347a4477287a78cdd7ff1396a64f9e2e3b04eef5811734a0",
-    "main.tex": "3ad676a8136b752ddb13efd7947a053c4ffea22b5d0ab58619187227d7c124cc",
-    "references.bib": "222f44b462f4159d2a54377ddc9660a371a29f176192310faaf1e3f9f3b6622f",
+    "main.tex": "98416da1632cea6246d43e752e25e3bcd245d8a700bf605b7a9261160f2b8a9e",
+    "references.bib": "da6f52bc870bb87d65f0f23c5847802a903a75a37d6e507ab533d79a033ed1b6",
     "tables/annotation_budgets.tex": "11471a0e5f3beab283defe65ee8afd8913340e6861dbcf45610284d418ebb37a",
     "tables/annotation_coverage.tex": "f1b00dfedd081472eb79fd2a5bf8c2905c3d014b1c25bafd6b42901d213e869f",
     "tables/annotation_numbers.tex": "d0d2c53c40542c4fe1b85574d02f8c8482dda8a616e0fca7ce49e31ff9751b42",
@@ -59,5 +81,11 @@
     "tables/workload.tex": "333a0ade6c8bcbf88c6ffa50f37cb587250256342cdaf0625f52a981b8adc695",
     "tables/workload_transfer.tex": "eafb918198e6429e85fa0b65847307ce2cb7de4547dafb29e6e3e11e2cbf21de",
     "template-source/acmart.dtx": "4e2fd29fc8a45c3d02facb616ed29954d7932891883185460bf374303036f3e1"
-  }
+  },
+  "text_revision": {
+    "date": "2026-10-24",
+    "scope": "Review-driven clarity revision; a non-independent in-chat semantic pass is documented outside the manuscript; manuscript numerical evidence unchanged",
+    "completed_new_experiments": false
+  },
+  "release_archive": "facct/releases/PERSONA_FAccT_Overleaf_2026-10-24_chat_audit.zip"
 }

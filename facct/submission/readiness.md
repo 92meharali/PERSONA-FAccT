@@ -1,6 +1,64 @@
 # Readiness and recommendation
 
-## Current update: 10 October 2026
+## Current update: 24 October 2026
+
+**Prepare the completed audit for author review; do not run new experiments for
+this deadline and do not call the paper submission-ready.** The author superseded
+the October 23 capability direction. The restored paper is *When Tone Scores Allocate Attention:
+Auditing HumT-Based Review Prioritization*, with RQ1 comparative allocation, RQ2
+incremental benefit, and RQ3 shared-queue coverage. Completed results and the
+supplied assessment follow-up remain unchanged. Capability code/protocols and the
+unassessed relevance sample are future work only, not evidence or deadline promises.
+
+The [active source](../paper/overleaf/main.tex) no longer contains the prospective
+capability RQs/appendix. The [October 23 prospective manuscript](../capability/archive/main_capability_prospective_2026-10-23.tex)
+is archived separately. The restored source compiled successfully with the native
+compiler and isolated pdfLaTeX. Release pointers are the
+[October 24 package](../releases/PERSONA_FAccT_Overleaf_2026-10-24_chat_audit.zip); the October 23
+package is historical.
+
+### Still-open author gates
+
+- Complete follow-up assessor qualifications, recruitment and compensation reporting, and the supporting approval/amendment reference. Existing author attestations are not independently inspected documentation; original Group B facts cannot fill follow-up gaps.
+- Confirm accurate consent/ethics and data-use reporting for the submitted evidence, including mixed capability-note versions and assessor independence limitations. No new-study approval is inferred or needed merely because future-work materials are retained.
+- Resolve CHI-related distinctness, disclosure, actual concurrent-review status and venue eligibility; chair contact remains the author's task. No submission clearance follows from restoring the audit scope.
+- Confirm anonymity, accurate AI-use disclosure and ethics reporting, source rights, and final package contents. Successful compilation and the verified page counts do not settle these author checks.
+
+### October 24 formatting check
+
+The [official FAccT author
+guide and FAQ](https://facctconference.org/2027/authorguide.html) allow 14 main-content
+pages plus one endmatter-only page; references and appendices are unlimited and
+excluded from the main-content limit, with appendices in the same PDF; anonymous
+single-column format, AI-use disclosure and ethics reporting are required. This
+supersedes any ambiguity in older notes below about appendix counting.
+
+The [October 24 layout audit](../paper/qa/2026-10-24/layout_report.json) records
+14 main-content pages, one endmatter page, one references page, and 12 appendix
+pages: 28 total. The audited PDF meets the main-content and endmatter page limits.
+Visual inspection found no visible clipping or overlap. These current-source
+facts supersede the historical compilation/layout caveats below, not the open
+provenance, ethics-reporting, or eligibility gates. They do not certify submission readiness.
+
+## Historical update: 23 October 2026 (superseded)
+
+The preparation recommendation below applied on October 23 only. It does not
+authorize current pilot work or override the no-new-experiments decision.
+
+**Proceed with protocol/pilot preparation, not submission of a completed capability
+study.** The author adopted a new evidence-requirements contribution. Its planned
+methods and RQs are now explicit in the manuscript, while completed numerical
+findings remain the original audit and supplied assessment follow-up. New
+capability-conditioned annotations and semantic comparisons are absent, not
+negative or zero results. Study-specific ethics scope, supporting dossiers,
+recruitment and a frozen protocol are launch gates. Consult the
+[new readiness checklist](../capability/study/readiness.md).
+
+The saved LaTeX source compiled successfully on 23 October. Visual inspection,
+page limits, anonymity, source rights and publication-overlap eligibility remain
+unverified. A compiling protocol-plus-audit draft is not submission-ready.
+
+## Historical update: 10 October 2026
 
 **Recommendation: review the strengthened draft internally; do not label it
 submission-ready yet.** The supplied assessment follow-up is now integrated:

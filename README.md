@@ -1,10 +1,22 @@
 # PERSONA FAccT: Review Allocation Study
 
-Private research snapshot saved on **16 October 2026**, before exploring the next professor-proposed direction.
+Private research repository, originally snapshotted on **16 October 2026**.
+The capability-grounded direction adopted on **23 October 2026** was superseded
+on **24 October 2026**: the author chose no new experiments for this deadline and
+restored the completed audit as the paper's evidence basis. Capability materials
+remain future-work preparation, not submission findings.
 
 ## Study
 
 **When Tone Scores Allocate Attention: Auditing HumT-Based Review Prioritization**
+
+The current questions are RQ1 comparative allocation, RQ2 incremental benefit,
+and RQ3 coverage in a shared queue. The submission narrative relies on completed
+audit analyses and the supplied mental-health assessment follow-up, with existing
+results unchanged. There are no new capability experiments, capability-conditioned
+judgments, or semantic-screen results. The [capability materials and scaffold](facct/capability/README.md)
+are retained for future work only; the [October 23 prospective manuscript](facct/capability/archive/main_capability_prospective_2026-10-23.tex)
+is archived separately, not the active paper.
 
 This study asks whether automated human-like tone scores help allocate limited human review. It compares HumT with random selection, conversational markers, response length, and a specified trained lexical screen. It evaluates captured and missed rubric-defined concerns, incremental recall, and coverage across contexts.
 
@@ -12,14 +24,21 @@ The response corpus contains 1,490 responses: mental health 660, education 415, 
 
 ## Current Materials
 
-- [Current manuscript](facct/paper/overleaf/main.tex)
-- [Portable Overleaf package](facct/releases/PERSONA_FAccT_2027_Overleaf.zip)
+- [Active manuscript source](facct/paper/overleaf/main.tex)
+- [October 24 Overleaf package](facct/releases/PERSONA_FAccT_Overleaf_2026-10-24_chat_audit.zip)
 - [Latest presentation: 15 slides, workflow and capacity formula, no presenter name/date](facct/presentations/output/PERSONA_FAccT_Talk_No_Name_Date.pptx)
 - [Full research guide and analysis commands](facct/README.md)
 - [Assessment follow-up](facct/independent_annotation/README.md)
 - [Current scope and pending decisions](facct/submission/current_scope.md)
 - [Readiness record](facct/submission/readiness.md)
 - [Snapshot provenance and exclusions](SNAPSHOT.md)
+
+The restored active source compiled successfully with both the native compiler
+and isolated pdfLaTeX. The [October 24 layout audit](facct/paper/qa/2026-10-24/layout_report.json)
+records 14 main-content pages, one endmatter page, one references page, and 12
+appendix pages: 28 total, within the main-content and endmatter limits. The
+October 23 package is historical. Compilation and layout verification do not
+close assessor-provenance, ethics-reporting, or publication-eligibility gates.
 
 ## Repository Layout
 

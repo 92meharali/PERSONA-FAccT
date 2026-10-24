@@ -8,7 +8,21 @@ from facct.paper.build_overleaf import DEST, ROOT, DOMAINS, sha, validate
 
 
 def test_sources_assets_and_citations():
-    assert validate()["cited_references"] == 17
+    assert validate()["cited_references"] == 18
+
+
+def test_submission_uses_completed_evidence_not_future_protocol():
+    main = (DEST / "main.tex").read_text()
+    assert "When Tone Scores Allocate Attention" in main
+    assert "RQ1: Comparative allocation." in main
+    assert "RQ2: Incremental value." in main
+    assert "RQ3: Distribution of coverage." in main
+    assert "sec:capability_study" not in main
+    assert "Capability-Study Readiness" not in main
+    assert "Neither experiment is part of the present evidence." in main
+    assert "Generative AI usage statement" in main
+    assert "Ethics statement" in main
+    assert "\\clearpage\n\\bibliographystyle" in main
 
 
 def test_generated_reference_counts():
@@ -37,7 +51,7 @@ def test_archive_and_manifest():
     assert manifest["annotation_manifest_sha256"] == sha(ROOT / "facct/independent_annotation/outputs/manifest.json")
     for relative, expected in manifest["files"].items():
         assert sha(DEST / relative) == expected, relative
-    with zipfile.ZipFile(ROOT / "facct/releases/PERSONA_FAccT_2027_Overleaf.zip") as archive:
+    with zipfile.ZipFile(ROOT / manifest.get("release_archive", "facct/releases/PERSONA_FAccT_2027_Overleaf.zip")) as archive:
         assert archive.testzip() is None
         assert "main.tex" in archive.namelist()
         for name in archive.namelist():
@@ -95,7 +109,8 @@ def test_common_queue_presentation_complete():
     assert "figures/paired_summary.pdf" in main and "figures/workload_targets.pdf" in main
     assert "not which responses enter the queue" in main
     assert "algebraically, not coincidentally" in main
-    assert "42/165, 7/12, and 10/23" in main
+    coverage = (DEST / "tables/coverage.tex").read_text()
+    assert all(count in coverage for count in ("42/165", "7/12", "10/23"))
     assert "We do not perform equivalence testing" in main
 
 
@@ -130,9 +145,13 @@ def test_annotation_reporting_boundaries_and_package_privacy():
     assert "same-instruction reliability" in main
     assert "Both intervals include zero" in main
     assert "not uncertainty in the exact corpus counts" in main
-    assert "the original labels, not the new target" in main
-    assert "before submission" in main and "pending forms" in main
-    with zipfile.ZipFile(ROOT / "facct/releases/PERSONA_FAccT_2027_Overleaf.zip") as archive:
+    assert "uses original labels rather than the follow-up target" in main
+    assert "informed consent and institutional ethics coverage preceded annotation" in main
+    assert "pending forms" not in main and "internal-review draft" not in main
+    assert "There is no comparison with an LLM judge or semantic screen." in main
+    assert "Relationship to the Companion Study" in main
+    manifest = json.loads((DEST / "package_manifest.json").read_text())
+    with zipfile.ZipFile(ROOT / manifest.get("release_archive", "facct/releases/PERSONA_FAccT_2027_Overleaf.zip")) as archive:
         assert not any("raw_ratings" in n or "rating_sheet" in n or "private_study_id" in n
                        for n in archive.namelist())
 

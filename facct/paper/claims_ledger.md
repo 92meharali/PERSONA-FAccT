@@ -1,5 +1,54 @@
 # Claim-to-evidence ledger
 
+## Current claim scope: 24 October 2026
+
+The author chose no new experiments for this deadline and restored the completed
+audit: *When Tone Scores Allocate Attention: Auditing HumT-Based Review
+Prioritization*. RQ1 comparative allocation, RQ2 incremental benefit, and RQ3
+shared-queue coverage again refer to completed analyses. The October 23 A1-A3 /
+prospective RQ1-RQ3 mapping is superseded, not a change to estimates or primary
+test families. The [active manuscript](overleaf/main.tex) is restored; the
+[October 23 prospective source](../capability/archive/main_capability_prospective_2026-10-23.tex)
+is archived separately. Release pointers are the [dated October 24 package](../releases/PERSONA_FAccT_Overleaf_2026-10-24.zip)
+and [generic package](../releases/PERSONA_FAccT_2027_Overleaf.zip).
+
+| Current claim or boundary | Evidence basis | Permitted interpretation |
+|---|---|---|
+| Completed audit findings and supplied MH follow-up form the submission evidence | Existing original, revision, conditional, allocation and independent_annotation outputs | Preserve all results and sparse/uncertain comparisons; no new capability experiment |
+| RQ1/RQ2/RQ3 are allocation, incremental benefit and shared-queue coverage | Completed-audit mapping below, reaffirmed by October 24 author decision | Presentation change does not promote exploratory analyses to confirmatory tests |
+| Capability materials and tested scaffold exist | October 23 preparation records and capability/ | Future-work preparation only, not new findings or a promised deadline study |
+| Capability evidence changes judgments or improves semantic screening | No capability-conditioned annotations or semantic-screen runs | Unsupported; do not imply an observed effect or completed validation |
+| The completed audit measures review effectiveness or harm reduction | No downstream intervention observations | Unsupported; allocation against labels is not realized benefit |
+| Follow-up assessor qualifications, pay/recruitment and approval details are complete | Supporting particulars remain deferred | Open author reporting gates; prior attestations do not fill documentation gaps |
+| Restored source compiles and the audited PDF meets the main-content/endmatter limits | Successful native and isolated pdfLaTeX compilation; [October 24 layout audit](qa/2026-10-24/layout_report.json): 14 main-content, 1 endmatter, 1 references, 12 appendix pages, 28 total | Verified for the audited source/PDF; no visible clipping or overlap recorded; historical unchecked-layout statements are superseded |
+| The paper is submission-ready | Assessor provenance, accurate ethics/AI-use reporting, source rights, anonymity, package contents, and eligibility require author checks | Not established by compilation or layout verification |
+| CHI overlap/disclosure and concurrent-submission eligibility are resolved | Requires current author review and applicable guidance | Unresolved; no clearance or submission authorization |
+
+No restored-title or scope decision manufactures novelty, closes reporting gaps,
+or changes the original results. Capability preparation remains available for
+future work, outside the current empirical claims.
+
+## Historical direction: 23 October 2026 (superseded)
+
+The following table and manuscript description record that day's scope only.
+
+The new RQ1-RQ3 are prospective capability sensitivity, allocation value and
+information requirements. Historical RQ mappings below now correspond to audit
+questions A1-A3, without changing any estimates.
+
+| Proposed or implementation claim | Available evidence | Status / boundary |
+|---|---|---|
+| A capability-grounded protocol and screening specification exist | capability/study/ and manuscript protocol | Prepared, not conducted; no new approval inferred |
+| A label-blind relevance sample has been prepared | capability/preparation/relevance_sample_2026-10-23/manifest.json | 60 existing responses/60 prompts; not a new corpus or conditioned labels |
+| Offline evaluation handles matched text, missing labels and paired clusters | capability/evaluate.py and synthetic unit tests | Tested software, not empirical effectiveness |
+| Capability information changes independent review judgments | No new observations | Pending; do not claim an effect from assessor/version-confounded earlier data |
+| Capability-aware screening improves allocation beyond semantic text | No new semantic screen scores | Pending; primary contrast and all failure conditions retained |
+| A particular information package is sufficient or minimal | No adequacy test or cost measurements | Unsupported; must test prespecified margins among explicit packages |
+| Existing results and references are preserved | Frozen asset checks; one added verified AnthroBench record | No annotation/score changes; no invented empirical findings |
+
+The current manuscript is a working audit-plus-protocol draft, not a completed
+new-study submission. See submission/capability_implementation_2026-10-23.md.
+
 ## Current assessment amendment: 10 October 2026
 
 The historical ledgers below freeze earlier computational stages. Statements that

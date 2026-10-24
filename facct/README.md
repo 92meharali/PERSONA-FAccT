@@ -1,16 +1,54 @@
 # PERSONA: proposed tone-score review allocation
 
+## Current scope: completed audit, 24 October 2026
+
+The author has chosen **no new experiments for this deadline**. This supersedes
+the October 23 audit-plus-capability-protocol direction. The restored paper is
+*When Tone Scores Allocate Attention: Auditing HumT-Based Review Prioritization*:
+RQ1 comparative allocation, RQ2 incremental benefit, and RQ3 coverage in a shared
+queue. Its evidence is the completed audit and supplied mental-health assessment
+follow-up; existing estimates, ratings, and analysis scope are preserved.
+
+Capability study documents, code, and the unassessed relevance sample are retained
+as future work only. They are not new empirical findings, active submission RQs,
+or experiments promised before this deadline. The prospective RQ sections/appendix
+have been removed from the active source. The [October 23 prospective source](capability/archive/main_capability_prospective_2026-10-23.tex)
+is archived separately.
+
+No actual capability-conditioned judgments or semantic-judge runs are reported.
+Assessor qualifications, recruitment/pay, supporting ethics documentation, and
+CHI overlap/disclosure/eligibility remain author gates. Completed analyses do not
+mean complete reporting or a submission-ready manuscript. The restored active
+source compiled with the native compiler and isolated pdfLaTeX; the
+[October 24 layout audit](paper/qa/2026-10-24/layout_report.json) records 14 main-content,
+one endmatter, one references, and 12 appendix pages (28 total), within the
+main-content and endmatter limits.
+
+## Historical direction: 23 October 2026 (superseded)
+
+The following paragraph records the October 23 state, not the current scope.
+Its unchecked-layout status is superseded by the October 24 audit above.
+
+The 23 October author-approved direction asks what verified system information is
+needed to review anthropomorphic implications. See the [study implementation](capability/README.md)
+and [change record](submission/capability_implementation_2026-10-23.md). The
+[archived manuscript](capability/archive/main_capability_prospective_2026-10-23.tex) separates completed audit results (A1-A3)
+from new prospective questions (RQ1-RQ3). No new capability-conditioned judgments
+or semantic-evaluator results exist yet. Earlier status notes below are historical
+and do not override this prospective scope. The source manuscript compiled
+successfully in the desktop editor; page-count compliance remains unchecked.
+
 **Manuscript status: computational audit plus a new mental-health assessment follow-up; internal review.** The [integration record](submission/annotation_integration.md) documents the 10 October update. The manuscript now includes the [verified follow-up](independent_annotation/README.md), with 19 resolved positives, original-queue HumT coverage of 6 versus markers' 12, and wide paired intervals crossing zero. The CHI response corpus and results remain unchanged. Practitioner evaluation remains deferred; assessor qualifications, recruitment/compensation and the supporting ethics reference still need completion.
 
 **Current author decision:** integrate the supplied human assessment records and retain all important methodological caveats. The author confirms separation from the original author/rater team and prior consent/ethics coverage; this is an attestation, not independently inspected documentation. The author has deferred supplying the remaining details. Practitioner sessions and additional AI-agent experiments remain deferred. The [scope record](submission/current_scope.md) distinguishes the current amendment from its earlier computational-only scope.
 
-Current manuscript title: *When Tone Scores Allocate Attention: Auditing HumT-Based Review Prioritization*.
+Historical October 23 title: *From Tone Scores to Capability Evidence: Auditing Review Allocation for Anthropomorphic AI*. The October 24 title and RQ mapping above supersede it.
 
 ## Start here
 
 - [Final consolidation and changes](submission/computational_consolidation_response.md), [contribution brief](submission/contribution_brief.md), and [provenance assessment](submission/provenance_consolidation.md)
 - [Fresh-environment full verification](consolidation/verification/verification.json) and [targeted primary-source check](submission/computational_scope_literature_check.md)
-- [Current LaTeX manuscript](paper/overleaf/main.tex) and [Overleaf package](releases/PERSONA_FAccT_2027_Overleaf.zip)
+- [Current LaTeX manuscript](paper/overleaf/main.tex) and [Overleaf package](releases/PERSONA_FAccT_Overleaf_2026-10-24_chat_audit.zip)
 - [Conditional-lift findings](conditional/outputs/findings.md) and [four-comment implementation response](submission/conditional_response.md)
 - [Common-queue findings](allocation/outputs/findings.md) and [latest review response](submission/review_response_v3.md)
 - [Earlier computational Markdown draft](paper/generated/computational_review_draft.md) (historical predecessor)
@@ -69,15 +107,15 @@ The case sample is deliberately criterion/status-stratified, not prevalence-repr
 
 ## Change scope
 
-All new work is under `facct/` on `research/facct-review-allocation`, based on Git revision `7605174`. Original CHI data, manuscripts, bibliography, analyses and original working-tree changes are preserved. The assistant has made no remote push, PR, chair email, recruitment, or submission. The current internal-review manuscript incorporates supplied human records without certifying their provenance; see readiness for remaining author gates.
+All new work is under `facct/` and originated on `research/facct-review-allocation`, based on Git revision `7605174`. Original CHI data, manuscripts, bibliography, analyses and original working-tree changes are preserved. No PR, chair email, recruitment, or submission was made. The current internal-review manuscript incorporates supplied human records without certifying their provenance; see readiness for remaining author gates.
 
 Regenerate the review draft and its tables with `python -m facct.paper.build_review_tables`. Edit `paper/computational_draft.template.md`, not the generated draft. This command reads existing outputs and writes only `facct/paper/generated/`. The review manifest records its inputs separately without changing the frozen computational manifest. Run all package tests with `python -m pytest facct/tests facct/study/test_materials.py facct/paper/test_review_build.py -q`.
 
 ## Overleaf manuscript
 
-The current LaTeX draft, including the assessment follow-up, is in [paper/overleaf/main.tex](paper/overleaf/main.tex); the portable [Overleaf ZIP](releases/PERSONA_FAccT_2027_Overleaf.zip) includes the ACM review template, the same 17 cited references, generated numerical tables, and vector figures. Rebuild it with `python -m facct.paper.build_overleaf`. Package tests are in `facct/paper/test_overleaf.py`. Earlier computational-only documents below describe historical stages; they do not override the current integration record. The generated Markdown draft is a predecessor, not the authoritative manuscript.
+The active source is [paper/overleaf/main.tex](paper/overleaf/main.tex), restored to the October 24 completed-audit scope. Use the [October 24 package](releases/PERSONA_FAccT_Overleaf_2026-10-24_chat_audit.zip). The October 23 ZIP is historical. The generated Markdown draft is a predecessor, not the authoritative manuscript.
 
-The draft uses anonymous single-column FAccT formatting. Compilation and page count remain unverified because the built-in single-document compiler does not load the project's auxiliary files; the latest attempt stopped at the generated numbers include, which is present in the ZIP. See the packaged author checklist for layout, factual approval, disclosure, and publication-eligibility checks. No source data or frozen computational outputs were changed.
+The restored source compiled successfully with the native compiler and isolated pdfLaTeX. The [October 24 layout report](paper/qa/2026-10-24/layout_report.json) records 14 main-content pages, one endmatter page, one references page, and 12 appendix pages (28 total); visual inspection found no visible clipping or overlap. The [official author guide and FAQ](https://facctconference.org/2027/authorguide.html) allow 14 main-content pages plus one endmatter-only page, with unlimited references and appendices excluded from that limit and appendices in the same PDF. Anonymous single-column format, AI-use disclosure, and ethics reporting are required. The measured page counts meet the main-content and endmatter limits; author provenance, accurate disclosures, source rights, anonymity, final package contents, and publication eligibility remain separate checks.
 
 ## Post-review analyses
 

@@ -1,4 +1,65 @@
-# Current scope: 10 October 2026
+# Current scope: 24 October 2026
+
+**Author decision: no new experiments for this deadline; restore the completed
+audit paper.** This supersedes the October 23 capability-grounded direction without
+rewriting its historical preparation record. The current title is *When Tone
+Scores Allocate Attention: Auditing HumT-Based Review Prioritization*. RQ1 is
+comparative allocation, RQ2 incremental benefit, and RQ3 category coverage in a
+shared queue. The A1-A3 relabeling used on October 23 is no longer current.
+
+The submission's evidence basis remains the completed analyses of 1,490 responses
+and the supplied assessment follow-up on 660 existing mental-health responses,
+with 19 resolved positives, sparse intervals, and no observed review effectiveness.
+Existing results and historical ratings are preserved. No new capability
+experiments, semantic-screen evaluations, or capability-conditioned human judgments
+are included or promised for the deadline. The separate CSR proposal remains out
+of scope.
+
+The [active source](../paper/overleaf/main.tex) is restored to the completed audit,
+without the prospective capability RQs/appendix. The [October 23 version](../capability/archive/main_capability_prospective_2026-10-23.tex)
+is archived separately. Capability protocols, templates,
+code, and the unassessed relevance sample remain in `facct/capability/` as future
+work only. Their readiness checklist concerns any later study, not an experiment
+required to finish this audit. No preparation artifact becomes empirical evidence.
+
+Restoration does not close the existing reporting gates: assessor qualifications,
+recruitment/compensation, supporting consent/approval or amendment documentation,
+and accurate capability-note limitations remain required author checks. CHI
+distinctness, related-work disclosure, concurrent-review status and eligibility
+remain unresolved author decisions; no chair clearance is inferred.
+
+The restored source compiled successfully with the native compiler and isolated
+pdfLaTeX. The [October 24 layout audit](../paper/qa/2026-10-24/layout_report.json)
+records 14 main-content pages, one endmatter page, one references page, and 12
+appendix pages (28 total). These meet the main-content and endmatter limits in the
+[official author guide/FAQ](https://facctconference.org/2027/authorguide.html):
+14 main-content pages plus one endmatter-only page, with unlimited references
+and appendices excluded from the limit and appendices in the same PDF. Anonymous
+single-column format, AI-use disclosure, and ethics reporting remain required.
+Use the [October 24 package](../releases/PERSONA_FAccT_Overleaf_2026-10-24_chat_audit.zip). The October 23
+package is historical. Compilation and layout checks do not imply submission
+or publication authorization.
+
+## Historical scope: 23 October 2026 (superseded)
+
+The following records the October 23 state only; it is not the active direction.
+Historical compilation/layout caveats do not override the October 24 checks above.
+
+The author approved implementing the capability-grounded review-allocation
+direction. The manuscript now separates completed audit questions A1-A3 from new
+prospective RQ1-RQ3. Protocol, evidence/assessor templates, label-blind relevance
+sampling and a tested offline evaluation scaffold are implemented. New capability
+verification, recruitment, judgments and semantic-screen API runs are not
+completed. Prior approval attestations do not establish coverage for this new
+study. No manuscript results, original source files, or historical ratings are
+modified. The separate CSR proposal remains out of scope.
+
+See [implementation record](capability_implementation_2026-10-23.md) and
+[study readiness](../capability/study/readiness.md). The source compiled in the
+desktop editor; visual layout and venue compliance are not verified. Nothing has
+been pushed, submitted or sent to chairs in this revision.
+
+## Previous scope: 10 October 2026
 
 The active manuscript now combines computational analysis with supplied A/B/C
 mental-health assessment records, integrated with author authorization. See
@@ -30,7 +91,7 @@ The current computational scope also includes a second exploratory amendment: se
 
 Deferred human-study approval, recruitment and coding are not requirements for completing this computational draft. Existing-data ethics/provenance reporting still must be accurate. No exemption or institutional determination is inferred from the absence of new participants.
 
-## Final scope freeze
+## Earlier completed-audit scope freeze (reaffirmed 24 October)
 
 The three empirical questions are now comparative allocation, incremental benefit,
 and category coverage in a shared queue. Reporting is supporting interpretation,
