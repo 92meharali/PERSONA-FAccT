@@ -12,7 +12,7 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
-def audit(pdf, source, output, inspection=None):
+def audit(pdf, source, output, inspection=None, date="2026-10-24"):
     reader = PdfReader(pdf)
     pages = [p.extract_text() or "" for p in reader.pages]
 
@@ -26,7 +26,7 @@ def audit(pdf, source, output, inspection=None):
     references = first(r"^\s*References\s*$", endmatter)
     appendix = first(r"^\s*A\s+Label Agreement and Cutoff Diagnostics\s*$", references)
     record = {
-        "date": "2026-10-24", "pdf_sha256": sha(pdf), "source_sha256": sha(source),
+        "date": date, "pdf_sha256": sha(pdf), "source_sha256": sha(source),
         "bibliography_sha256": sha(Path(source).with_name("references.bib")),
         "class_sha256": sha(Path(source).with_name("acmart.cls")),
         "engine": "pdfLaTeX via isolated TinyTeX 2026.10", "total_pages": len(pages),
@@ -59,5 +59,6 @@ if __name__ == "__main__":
     parser.add_argument("--source", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--inspection", help="Record completed manual visual checks, not inferred approval")
+    parser.add_argument("--date", default="2026-10-24", help="Date of this rendering audit")
     args = parser.parse_args()
-    audit(args.pdf, args.source, args.output, args.inspection)
+    audit(args.pdf, args.source, args.output, args.inspection, args.date)

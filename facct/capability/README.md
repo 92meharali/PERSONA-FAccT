@@ -1,6 +1,6 @@
 # Capability-grounded review allocation
 
-## Current status: future work only, 24 October 2026
+## Current status: future work only, updated 26 October 2026
 
 The author chose **no new experiments for this deadline**, superseding the
 October 23 capability-study direction. This folder is retained as future-work
@@ -9,18 +9,17 @@ before submission. Do not start recruitment, annotation, capability experiments,
 or semantic-judge API runs under the earlier implementation approval.
 
 The active paper is restored to *When Tone Scores Allocate Attention: Auditing
-HumT-Based Review Prioritization*: RQ1 comparative allocation, RQ2 incremental
-benefit, and RQ3 shared-queue coverage. Its existing 1,490-response audit and
+HumT-Based Review Prioritization*: RQ1 enrichment, RQ2 comparative allocation,
+RQ3 incremental benefit, and RQ4 shared-queue coverage. Its existing 1,490-response audit and
 660-response assessment follow-up remain unchanged. No new capability-conditioned
 human judgments or semantic-screen results have been collected. Passing synthetic
 software tests does not establish an empirical result.
 
-The [October 23 prospective manuscript](archive/main_capability_prospective_2026-10-23.tex)
-is archived separately; it is not the [active source](../paper/overleaf/main.tex).
-The restored audit compiled with the native compiler and isolated pdfLaTeX. Its
-[October 24 layout audit](../paper/qa/2026-10-24/layout_report.json) records 14 main-content,
-one endmatter, one references, and 12 appendix pages (28 total), within the
-main-content and endmatter limits. See the [October 24 package](../releases/PERSONA_FAccT_Overleaf_2026-10-24_chat_audit.zip).
+The October 23 prospective manuscript remains in Git revision `a9d1800`;
+it is not the [active source](../paper/overleaf/main.tex).
+The current [layout audit](../paper/qa/2026-10-26/layout_report.json) records 14
+content pages, one endmatter, two references and 14 appendix pages (31 total).
+See the [latest package](../releases/PERSONA_FAccT_Overleaf_2026-10-26_professor.zip).
 These production facts do not supply evidence for the proposed capability study.
 The protocol and commands below record the retained October 23
 preparation. They are not instructions to execute now. Any later study requires

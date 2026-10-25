@@ -10,13 +10,14 @@ remain future-work preparation, not submission findings.
 
 **When Tone Scores Allocate Attention: Auditing HumT-Based Review Prioritization**
 
-The current questions are RQ1 comparative allocation, RQ2 incremental benefit,
-and RQ3 coverage in a shared queue. The submission narrative relies on completed
-audit analyses and the supplied mental-health assessment follow-up, with existing
-results unchanged. There are no new capability experiments, capability-conditioned
+The October 26 professor revision asks RQ1 enrichment, RQ2 comparative allocation,
+RQ3 incremental benefit, and RQ4 coverage in a shared queue. The narrative relies
+on completed audit analyses, the supplied mental-health assessment follow-up and
+new input-window/strict-cutoff checks. Original results and ratings are preserved.
+There are no new capability experiments, capability-conditioned
 judgments, or semantic-screen results. The [capability materials and scaffold](facct/capability/README.md)
-are retained for future work only; the [October 23 prospective manuscript](facct/capability/archive/main_capability_prospective_2026-10-23.tex)
-is archived separately, not the active paper.
+are retained for future work only. Superseded FAccT manuscripts and packages
+are recoverable from Git history, not competing active drafts.
 
 This study asks whether automated human-like tone scores help allocate limited human review. It compares HumT with random selection, conversational markers, response length, and a specified trained lexical screen. It evaluates captured and missed rubric-defined concerns, incremental recall, and coverage across contexts.
 
@@ -25,7 +26,9 @@ The response corpus contains 1,490 responses: mental health 660, education 415, 
 ## Current Materials
 
 - [Active manuscript source](facct/paper/overleaf/main.tex)
-- [October 24 Overleaf package](facct/releases/PERSONA_FAccT_Overleaf_2026-10-24_chat_audit.zip)
+- [October 26 Overleaf package](facct/releases/PERSONA_FAccT_Overleaf_2026-10-26_professor.zip)
+- [Professor response and verified new findings](facct/submission/professor_response_2026-10-26.md)
+- [Reproduce the new checks](facct/professor_revision/README.md)
 - [Latest presentation: 15 slides, workflow and capacity formula, no presenter name/date](facct/presentations/output/PERSONA_FAccT_Talk_No_Name_Date.pptx)
 - [Full research guide and analysis commands](facct/README.md)
 - [Assessment follow-up](facct/independent_annotation/README.md)
@@ -33,12 +36,12 @@ The response corpus contains 1,490 responses: mental health 660, education 415, 
 - [Readiness record](facct/submission/readiness.md)
 - [Snapshot provenance and exclusions](SNAPSHOT.md)
 
-The restored active source compiled successfully with both the native compiler
-and isolated pdfLaTeX. The [October 24 layout audit](facct/paper/qa/2026-10-24/layout_report.json)
-records 14 main-content pages, one endmatter page, one references page, and 12
-appendix pages: 28 total, within the main-content and endmatter limits. The
-October 23 package is historical. Compilation and layout verification do not
-close assessor-provenance, ethics-reporting, or publication-eligibility gates.
+The revised source compiles with the native compiler and isolated pdfLaTeX.
+The [October 26 layout audit](facct/paper/qa/2026-10-26/layout_report.json) records
+14 main-content pages, one endmatter page, two reference pages and 14 appendix
+pages: 31 total. Only the latest release ZIP is retained. All 61 exclusive cases have
+an assistant-generated coding draft for author review; the paper reports their
+existing-label profiles, not unverified semantic-coding results.
 
 ## Repository Layout
 
@@ -54,14 +57,19 @@ Use Python 3.12 and install the pinned dependencies in an isolated environment:
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r facct/requirements.txt
-python scripts/verify_snapshot.py
 python -m facct.analysis.verify_outputs
-python -m pytest facct/tests facct/study/test_materials.py facct/paper/test_review_build.py facct/paper/test_overleaf.py facct/revision/test_revision.py facct/conditional/test_conditional.py facct/allocation/test_allocation.py facct/consolidation/test_consolidation.py facct/independent_annotation/test_analysis.py -q
+python -m pytest facct -q
 ```
 
 The full computational rerun command is `python -m facct.consolidation.verify --fresh-env`; the earlier recorded runtime was about eight minutes. Read the full research guide before regenerating any outputs. Verification records committed here document the preserved run, not a claim that every analysis has been rerun during this repository migration.
 
 The follow-up raw assessor returns and private consent/eligibility records are **not** included. Its reconstruction command requires the authorized external source directory. The submitted CHI PDF also remains an external input. These limitations must not be represented as complete standalone reproduction of those stages.
+
+The original `SNAPSHOT_MANIFEST.json` and `scripts/verify_snapshot.py` describe
+the initial migration, not the revised working tree. They are retained as historical
+records and have not been rewritten to conceal changes. Current checks are the
+analysis verifier, package manifest and test suite above. See the
+[cleanup record](facct/submission/repository_cleanup_2026-10-26.md) for scope and recovery.
 
 ## Status and Access
 

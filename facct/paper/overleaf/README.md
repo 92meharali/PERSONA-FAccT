@@ -6,24 +6,24 @@
 2. Set **Main document** to `main.tex` and compiler to **pdfLaTeX**.
 3. Use the newest available TeX Live environment and recompile. Overleaf's normal build runs BibTeX automatically. If references show question marks after an interrupted build, use **Recompile from scratch**.
 
-The main document, 18 cited references, generated result tables, vector figures, and ACM template files are included. No external image download, shell escape, custom font installation, or separate data download is needed to typeset the paper.
+The main document, 24 cited references, generated result tables, vector figures, and ACM template files are included. No external image download, shell escape, custom font installation, or separate data download is needed to typeset the paper.
 
 ## Format and status
 
 This draft reports the **completed audit and supplied mental-health assessment follow-up only**. The capability experiment is deferred. A provider-neutral LLM-judge runner is prepared separately, but no external calls or independent judge results are reported. A full in-chat exploratory pass is documented outside the paper; it is not a version-pinned or isolated comparator and does not change the main claims. The author confirms that institutional and recruitment records are available. The document uses `acmart` options `manuscript,screen,review,anonymous`; single-column output is intentional.
 
-The official FAccT 2027 author guide and FAQ, checked on **24 October 2026**, allow **14 main-content pages including figures and tables**, **one additional endmatter-only page**, and unlimited reference and appendix pages. Appendices must be at the end of the same PDF; the main paper must stand alone. Ethics and generative-AI-use statements are retained, with identifying acknowledgments omitted. No template margins or fonts were reduced. See `package_manifest.json` for rendered page-count verification rather than judging compliance by the PDF's total length.
+The official FAccT 2027 author guide and FAQ, checked on **26 October 2026**, allow **14 main-content pages including figures and tables**, **one additional endmatter-only page**, and unlimited reference and appendix pages. Appendices must be at the end of the same PDF; the main paper must stand alone. Ethics and generative-AI-use statements are retained, with identifying acknowledgments omitted. No template margins or fonts were reduced. See `package_manifest.json` for rendered page-count verification rather than judging compliance by the PDF's total length.
 
 Official guide: https://facctconference.org/2027/authorguide.html
 
-The October 24 pdfLaTeX build has **14 main-content pages + 1 endmatter page + 1 reference page + 12 appendix pages = 28 total pages**. The saved source also compiled successfully in the desktop editor. All pages were inspected in a contact sheet, with enlarged checks of the paired figure, main/endmatter boundary and dense appendix tables. No overfull boxes or unresolved citations/references remain. Overleaf or later edits can change pagination; recheck there before submission. This verifies layout, not unresolved author reporting or eligibility.
+The October 26 pdfLaTeX build has **14 main-content pages + 1 endmatter page + 2 reference pages + 14 appendix pages = 31 total pages**. The saved source also compiles in the desktop editor. All pages were inspected in a contact sheet, with enlarged checks of the new sensitivity tables and the opening. No overfull boxes or unresolved citations/references remain. Overleaf or later edits can change pagination; recheck there before submission.
 
 The bundled unmodified ACM class is **v2.19 (27 June 2026)** from the existing project, with its matching repository bibliography style. CTAN now lists v2.20, but this package deliberately retains the available template rather than silently substituting uncompiled class code. The original v2.19 source and license notices are supplied in `template-source/acmart.dtx` from https://github.com/borisveytsman/acmart/tree/v2.19. ACM class copyright and LPPL terms remain intact. No template fonts or margins have been modified.
 
 ## Contents
 
 - `main.tex`: full manuscript, endmatter, and appendices.
-- `references.bib`: 18 references, retaining the existing 17 and adding AnthroBench after checking its official ICLR 2026 proceedings record.
+- `references.bib`: 24 references. The October 26 revision retains all existing entries and adds four verified corpus-source references plus two primary operational accounts of automated review allocation.
 - `tables/`: generated original and post-review numerical tables and macros. Do not manually change result values.
 - `figures/`: separate mental-health and transfer budget panels, D-mean distributions, and the original nine-panel asset retained for history.
 - `figures/paired_summary.*` and `figures/workload_targets.*`: complete paired baseline/incremental comparisons and all four original workload targets with uncertainty for every policy.
@@ -35,7 +35,24 @@ The package does not include raw response text, participant records, institution
 
 ## Revision status
 
-### Completed-evidence submission restored on 24 October 2026
+### Professor revision, 26 October 2026
+
+The abstract and introduction start with the review setting. Four questions now
+organize the paper: enrichment, comparison with cheap rules, incremental trained
+value, and distribution of coverage. Main findings appear on page 2. Corpus
+sources, endpoint identifiers, rating tasks and rubric attribution are described
+here without requiring the companion manuscript. The exact approval date is
+withheld for anonymity while the ethics statement is retained.
+
+New generated tables report 300-character marker/length sensitivity and D > 3,
+with 2,000 paired prompt resamples per domain. In mental health, H/full/prefix
+markers capture 42/63/68 of 165 broad-D cases and 13/26/22 of 57 D > 3 cases.
+The stricter prefix comparison reaches zero in its interval. The exclusive-case
+table profiles all 20 H-only and 41 marker-only cases using existing ratings.
+Assistant-generated semantic coding drafts are outside the paper pending author
+verification. Original scores, judgments, outputs and primary family are preserved.
+
+### Historical: completed-evidence submission restored on 24 October 2026
 
 Current title: *When Tone Scores Allocate Attention: Auditing HumT-Based Review Prioritization*. RQ1 concerns comparative allocation, RQ2 incremental value, and RQ3 shared-queue coverage. The review revision leads with three findings, clarifies who allocates review and bears its costs, and moves detailed join diagnostics to the appendix. Source reuse is disclosed neutrally, and author-confirmed institutional wording replaces outdated pending-record descriptions. All numerical tables, figures, original scores, judgments and citations are unchanged. The independent semantic comparator remains preparation only; exploratory in-chat outcomes must not be substituted for it.
 

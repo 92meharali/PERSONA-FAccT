@@ -8,15 +8,16 @@ from facct.paper.build_overleaf import DEST, ROOT, DOMAINS, sha, validate
 
 
 def test_sources_assets_and_citations():
-    assert validate()["cited_references"] == 18
+    assert validate()["cited_references"] == 24
 
 
 def test_submission_uses_completed_evidence_not_future_protocol():
     main = (DEST / "main.tex").read_text()
     assert "When Tone Scores Allocate Attention" in main
-    assert "RQ1: Comparative allocation." in main
-    assert "RQ2: Incremental value." in main
-    assert "RQ3: Distribution of coverage." in main
+    assert "RQ1: Enrichment." in main
+    assert "RQ2: Comparative allocation." in main
+    assert "RQ3: Incremental value." in main
+    assert "RQ4: Distribution of coverage." in main
     assert "sec:capability_study" not in main
     assert "Capability-Study Readiness" not in main
     assert "Neither experiment is part of the present evidence." in main

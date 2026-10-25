@@ -1,6 +1,22 @@
 # Readiness and recommendation
 
-## Current update: 24 October 2026
+## Current update: 26 October 2026
+
+The professor-requested revision is ready for Dr. Ibrahim and Dr. Wafa's review.
+The [response record](professor_response_2026-10-26.md) documents completed changes
+and computational checks. [Overleaf package](../releases/PERSONA_FAccT_Overleaf_2026-10-26_professor.zip):
+14 content pages plus one endmatter page; references/appendices follow separately
+in the same PDF. The 61-case draft semantic coding requires author verification
+before any such codes are claimed as human findings. Its existing-label profiles
+and all computational sensitivities are complete and reported.
+
+The pending companion manuscript does not automatically prohibit a distinct
+submission. The official prohibition concerns identical/substantially similar
+papers; see [primary-source clarification](professor_primary_sources_2026-10-26.md).
+The supplied baseline lacks the top-20% review-allocation analysis, but shares
+the corpus and original ratings. No chair approval or submission is asserted.
+
+## Historical update: 24 October 2026
 
 **Prepare the completed audit for author review; do not run new experiments for
 this deadline and do not call the paper submission-ready.** The author superseded
@@ -11,11 +27,10 @@ supplied assessment follow-up remain unchanged. Capability code/protocols and th
 unassessed relevance sample are future work only, not evidence or deadline promises.
 
 The [active source](../paper/overleaf/main.tex) no longer contains the prospective
-capability RQs/appendix. The [October 23 prospective manuscript](../capability/archive/main_capability_prospective_2026-10-23.tex)
-is archived separately. The restored source compiled successfully with the native
-compiler and isolated pdfLaTeX. Release pointers are the
-[October 24 package](../releases/PERSONA_FAccT_Overleaf_2026-10-24_chat_audit.zip); the October 23
-package is historical.
+capability RQs/appendix. The October 23 prospective manuscript and October 24
+package are recoverable from Git revision `a9d1800`, not active releases.
+The restored source compiled successfully with the native compiler and isolated
+pdfLaTeX. Use the latest release pointer at the top of this record.
 
 ### Still-open author gates
 

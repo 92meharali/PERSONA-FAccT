@@ -17,3 +17,9 @@ consent_records/
 *.key
 *.pem
 *.tmp
+# Local render/build caches and duplicate extracted release folders.
+facct/paper/qa/*/*
+!facct/paper/qa/*/layout_report.json
+facct/capability/planning/qa/
+facct/capability/preparation/
+facct/releases/*/

@@ -1,0 +1,3 @@
+policy_only,n,clusters,D_eq3,D_gt3,D_ge4,F_lt4,OA_lt4,followup,natural,median_words,median_marker_fraction
+HumT,20,19,14,6,0,3,6,1,11,172.0,0.07889418802037021
+markers_full,41,33,22,19,3,6,8,7,20,165.0,0.10975609756097561

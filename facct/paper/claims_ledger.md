@@ -1,16 +1,21 @@
 # Claim-to-evidence ledger
 
-## Current claim scope: 24 October 2026
+## Current pointers: 26 October 2026
+
+Use the [active manuscript](overleaf/main.tex), [latest package](../releases/PERSONA_FAccT_Overleaf_2026-10-26_professor.zip)
+and [professor response](../submission/professor_response_2026-10-26.md).
+The latest four-question mapping and sensitivity claims are documented in the
+October 26 section below. Earlier claim entries are a chronological audit trail.
+
+## Historical claim scope: 24 October 2026
 
 The author chose no new experiments for this deadline and restored the completed
 audit: *When Tone Scores Allocate Attention: Auditing HumT-Based Review
 Prioritization*. RQ1 comparative allocation, RQ2 incremental benefit, and RQ3
 shared-queue coverage again refer to completed analyses. The October 23 A1-A3 /
 prospective RQ1-RQ3 mapping is superseded, not a change to estimates or primary
-test families. The [active manuscript](overleaf/main.tex) is restored; the
-[October 23 prospective source](../capability/archive/main_capability_prospective_2026-10-23.tex)
-is archived separately. Release pointers are the [dated October 24 package](../releases/PERSONA_FAccT_Overleaf_2026-10-24.zip)
-and [generic package](../releases/PERSONA_FAccT_2027_Overleaf.zip).
+test families. The prospective source and superseded releases remain recoverable
+from Git history; use the current pointers above rather than old release names.
 
 | Current claim or boundary | Evidence basis | Permitted interpretation |
 |---|---|---|
@@ -162,3 +167,23 @@ to primary tests. The original three-domain H-versus-random D family remains int
 
 The main document uses a concrete review purpose, not claimed organizational adoption.
 All-zero-crossing incremental intervals remain non-establishment, not evidence of equivalence.
+
+## Professor-requested amendment, 26 October 2026
+
+- **Input-window check:** MH broad D: HumT 42/165, full markers 63/165,
+  300-character markers 68/165. H minus prefix recall -15.8 pp [-23.4, -7.7].
+  Source: `../professor_revision/outputs/performance.csv` and `paired_contrasts.csv`.
+- **Strict cutoff:** D > 3 leaves 57 cases in 42 MH prompts; H/full/prefix
+  captures 13/26/22. Full contrast -22.8 pp [-38.9, -6.7]; prefix contrast
+  -15.8 pp [-31.4, 0.0]. These are exploratory pointwise intervals.
+- **Exclusive profiles:** 20 H-only versus 41 marker-only broad-D cases contain
+  6 versus 19 means above 3, and 1 versus 7 follow-up concerns. Source:
+  `../professor_revision/outputs/exclusive_case_summary.csv`. No new severity
+  adjudication is inferred. Assistant-drafted semantic codes remain outside the
+  manuscript pending author verification.
+- **Use claim:** online-content moderation supplies primary-documented precedents
+  for automated prioritization; no HumT deployment or evaluated two-stage
+  rules/ranking workflow is asserted.
+- **Overlap check:** no top-20% screening analysis identified in the supplied
+  20-page baseline PDF with hash recorded in the professor-response document.
+  The corpus and original ratings remain explicitly shared.

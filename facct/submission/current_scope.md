@@ -1,4 +1,22 @@
-# Current scope: 24 October 2026
+# Current scope: 26 October 2026
+
+The user authorized implementation of the professor's feedback. The active
+paper now has four audit questions, a self-contained corpus description, a
+review-workflow discussion supported by primary operational sources, and a
+new exploratory 300-character/D > 3 sensitivity amendment. See the complete
+[professor response](professor_response_2026-10-26.md) and
+[analysis](../professor_revision/README.md). Original scores, annotations and
+primary results are preserved. No additional participants or external judge
+calls were used. The 61-case semantic coding draft awaits author verification;
+its frequencies are outside the manuscript.
+
+Current [Overleaf ZIP](../releases/PERSONA_FAccT_Overleaf_2026-10-26_professor.zip):
+14 content pages, one endmatter, two references and 14 appendix pages.
+The new 20%-selection analyses were not identified in the supplied companion
+PDF baseline. Shared data remain disclosed; eligibility depends on substantive
+overlap, not simply whether another distinct manuscript is under review.
+
+## Historical scope: 24 October 2026
 
 **Author decision: no new experiments for this deadline; restore the completed
 audit paper.** This supersedes the October 23 capability-grounded direction without
@@ -16,8 +34,8 @@ are included or promised for the deadline. The separate CSR proposal remains out
 of scope.
 
 The [active source](../paper/overleaf/main.tex) is restored to the completed audit,
-without the prospective capability RQs/appendix. The [October 23 version](../capability/archive/main_capability_prospective_2026-10-23.tex)
-is archived separately. Capability protocols, templates,
+without the prospective capability RQs/appendix. The October 23 version is
+recoverable from Git revision `a9d1800`. Capability protocols, templates,
 code, and the unassessed relevance sample remain in `facct/capability/` as future
 work only. Their readiness checklist concerns any later study, not an experiment
 required to finish this audit. No preparation artifact becomes empirical evidence.
@@ -36,8 +54,8 @@ appendix pages (28 total). These meet the main-content and endmatter limits in t
 14 main-content pages plus one endmatter-only page, with unlimited references
 and appendices excluded from the limit and appendices in the same PDF. Anonymous
 single-column format, AI-use disclosure, and ethics reporting remain required.
-Use the [October 24 package](../releases/PERSONA_FAccT_Overleaf_2026-10-24_chat_audit.zip). The October 23
-package is historical. Compilation and layout checks do not imply submission
+The October 24 and October 23 packages are historical; use the current release
+linked at the top of this record. Compilation and layout checks do not imply submission
 or publication authorization.
 
 ## Historical scope: 23 October 2026 (superseded)

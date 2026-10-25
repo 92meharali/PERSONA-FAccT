@@ -2,7 +2,12 @@
 
 The October 24 draft includes the completed audit and supplied assessment follow-up only. New capability experiments are deferred. A provider-neutral semantic-judge runner is prepared, with no external model calls. A separate in-chat, unpinned exploratory scoring pass is documented outside the paper; it is not an independent comparator or headline result. The author confirms that institutional and recruitment records are available; retain the current versions privately. Exact additional background, compensation and approval-reference details have not been transcribed during this revision and must not be guessed.
 
-Verified local layout: **14 main + 1 endmatter + 1 references + 12 appendix pages (28 total)**. The source compiles in both pdfLaTeX and the desktop editor. Recheck the exact Overleaf output after upload or edits; the package manifest binds these counts to source hashes.
+The October 26 professor revision adds the completed 300-character and D > 3
+checks, four-question framing and a self-contained corpus description. Exact
+existing-label profiles cover all 61 exclusive cases; their assistant-generated
+semantic coding draft needs author verification before being treated as a result.
+
+Verified local layout: **14 main + 1 endmatter + 2 references + 14 appendix pages (31 total)**. The source compiles in both pdfLaTeX and the desktop editor. Recheck the exact Overleaf output after upload or edits; the package manifest binds these counts to source hashes.
 
 - **Eligibility and overlap:** the related CHI manuscript remains under review. The author will handle any chair inquiry and required confidential disclosure. Different tables, a new title, or an Overleaf package do not establish eligibility. Responses, original judgments and foundations are reused; the added assessment follow-up supplies new judgments, not new responses.
 - **Layout:** the official guide/FAQ checked October 24 allows 14 main-content pages, one endmatter-only page, and unlimited references/appendices in the same PDF. Check the rendered counts in `package_manifest.json` and inspect Overleaf's output after any edit. Do not confuse total PDF length with counted content or reduce template margins/fonts to force compliance.
@@ -19,7 +24,7 @@ Verified local layout: **14 main + 1 endmatter + 1 references + 12 appendix page
 - **Institutional scope and AI version:** obtain institutional clarification if needed about reuse within the parent approval; do not infer a separate exemption. If preparation logs identify an underlying AI model/version, report it accurately; none is guessed here.
 - **Current computational package:** all four stages reproduced in a fresh environment, with 59 numerical CSV/figure files identical. A separate local code/aggregate candidate omits raw source texts and supports only hash/arithmetic inspection without those inputs. It is not a certified anonymous full-data release.
 - **Available truncation evidence:** the exports record first-300-character strings. Twelve of the 59 differing full-text pairs preserve that prefix; 47 do not. This is available preprocessing evidence, not authenticated historical scorer calls or permission to quietly replace scores.
-- **Scope and sources:** three empirical questions organize the current manuscript. The transparent trained comparison is not a claim against state-of-the-art semantic judges. The new OpenL2D/FiFAR citation was verified against its publisher record; all original references remain.
+- **Scope and sources:** four audit questions organize the current manuscript. The trained comparison is not a claim against state-of-the-art semantic judges. Four corpus citations and two operational sources were primary-verified; all original references remain.
 
 ## New assessment follow-up: current author checks
 
