@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-27",
+  "pdf_sha256": "32d08df28b6a59b9cf13ad4a92479a2c9094ab1083b0ef3f0e98d25074be0957",
+  "source_sha256": "612a0818447af90cfe27d69049263f8a4d5a440be60d9cfaec946df321ea1de6",
+  "bibliography_sha256": "67a83435b21e831a415dc031d3ab8d640f501849cb7d82f4f02008cfdcac4ae1",
+  "class_sha256": "2f949e6e3f2a79f2cdc218b9dcdbaa7dd451adb4ee0be1af6dc7ebe00b318ea7",
+  "engine": "pdfLaTeX via isolated TinyTeX 2026.10",
+  "total_pages": 36,
+  "main_content_pages": 14,
+  "endmatter_pages": 1,
+  "reference_pages": 2,
+  "appendix_pages": 19,
+  "endmatter_starts": 15,
+  "references_start": 16,
+  "appendix_starts": 18,
+  "main_limit": 14,
+  "endmatter_limit": 1,
+  "within_main_limit": true,
+  "within_endmatter_limit": true,
+  "visual_inspection": "All 36 rendered pages inspected in contact sheets; paired-summary figure and content/endmatter boundary inspected enlarged. No clipping or overlap observed. Appendix floats remain in their sections.",
+  "guideline": "https://facctconference.org/2027/authorguide.html"
+}

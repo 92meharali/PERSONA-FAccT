@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Mental health: all training-target by assessment-target recall percentages and exploratory pointwise 95\% refitted prompt-bootstrap intervals at the 20\% reference fraction. Feature sets share the same learner and folds. Each column is a different learned queue, not a different assessment of one queue. Sparse target support and finite-replicate counts are described in the appendix.}
+\label{tab:transfermentalhealth}
+\begin{tabular}{llrrr}
+\toprule
+Features & Assess against & Train $D$ & Train $F$ & Train OA \\
+\midrule
+Lexical & $D$ & 42.4 [34.2, 48.2] & 32.1 [22.2, 40.6] & 37.6 [28.0, 45.3] \\
+Lexical & $F$ & 20.0 [12.6, 29.5] & 33.7 [22.1, 44.2] & 27.4 [15.6, 37.9] \\
+Lexical & OA & 18.8 [14.0, 27.7] & 25.6 [17.5, 32.5] & 19.5 [14.5, 30.2] \\
+Lexical & Reviewworthiness & 57.9 [31.6, 84.2] & 47.4 [26.9, 80.0] & 57.9 [27.8, 80.0] \\
+Lexical+$H$ & $D$ & 40.0 [32.4, 46.9] & 33.9 [21.0, 41.4] & 40.0 [28.6, 45.0] \\
+Lexical+$H$ & $F$ & 22.1 [13.6, 30.6] & 34.7 [20.2, 43.0] & 30.5 [16.1, 37.4] \\
+Lexical+$H$ & OA & 19.5 [15.0, 28.7] & 25.6 [17.7, 32.3] & 22.6 [15.1, 31.9] \\
+Lexical+$H$ & Reviewworthiness & 57.9 [33.3, 86.7] & 52.6 [25.9, 81.0] & 57.9 [28.6, 83.3] \\
+\bottomrule
+\end{tabular}
+\end{table}

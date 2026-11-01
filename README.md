@@ -8,25 +8,33 @@ remain future-work preparation, not submission findings.
 
 ## Study
 
-**When Tone Scores Allocate Attention: Auditing HumT-Based Review Prioritization**
+**When Scores Allocate Attention: Auditing Criteria and Tone in AI Review**
 
-The October 26 professor revision asks RQ1 enrichment, RQ2 comparative allocation,
-RQ3 incremental benefit, and RQ4 coverage in a shared queue. The narrative relies
-on completed audit analyses, the supplied mental-health assessment follow-up and
-new input-window/strict-cutoff checks. Original results and ratings are preserved.
+The October 28 integration asks RQ1 criterion transfer, RQ2 comparative allocation,
+RQ3 incremental benefit, and RQ4 coverage in a shared queue. It connects the earlier
+OA-prediction diagnostic to a new crossed training-target/evaluation-target audit.
+The original primary family is unchanged. Original results and ratings are preserved.
 There are no new capability experiments, capability-conditioned
 judgments, or semantic-screen results. The [capability materials and scaffold](facct/capability/README.md)
 are retained for future work only. Superseded FAccT manuscripts and packages
 are recoverable from Git history, not competing active drafts.
 
-This study asks whether automated human-like tone scores help allocate limited human review. It compares HumT with random selection, conversational markers, response length, and a specified trained lexical screen. It evaluates captured and missed rubric-defined concerns, incremental recall, and coverage across contexts.
+This study asks how criterion choice and score choice allocate limited human review. It compares HumT with random selection, conversational markers, response length and a specified trained lexical screen, then changes the screen's training target while keeping its learner/features/capacity fixed. It evaluates captured and missed concerns, not downstream review effectiveness.
+
+At 130 held-out mental-health slots, fit-trained and OA-trained lexical screens
+share 107 selections, capturing 9 versus 11 contextual-reviewworthiness cases.
+All ten fit-minus-OA recall contrasts include zero for each feature set. Different
+queues do not establish an optimal target or validate PERSONA's constructs.
 
 The response corpus contains 1,490 responses: mental health 660, education 415, and general health 415. A new assessment follow-up covers the existing mental-health responses, not a new response corpus. Its resolved labels identify 19 concern cases; at 132 review slots, HumT captures six and normalized markers twelve. The paired exploratory intervals cross zero. Adding HumT to the trained lexical screen establishes no clear recall gain across the nine original domain/criterion comparisons.
 
 ## Current Materials
 
 - [Active manuscript source](facct/paper/overleaf/main.tex)
-- [October 26 Overleaf package](facct/releases/PERSONA_FAccT_Overleaf_2026-10-26_professor.zip)
+- [Latest Overleaf package](facct/releases/PERSONA_FAccT_Overleaf_2026-10-28_integrated.zip)
+- [Integration decisions and results](facct/submission/integration_review_2026-10-28.md)
+- [Criterion-transfer analysis](facct/criterion_transfer/outputs/findings.md)
+- [Response to the annotated PDF and checklist](facct/submission/review_response_2026-10-27.md)
 - [Professor response and verified new findings](facct/submission/professor_response_2026-10-26.md)
 - [Reproduce the new checks](facct/professor_revision/README.md)
 - [Latest presentation: 15 slides, workflow and capacity formula, no presenter name/date](facct/presentations/output/PERSONA_FAccT_Talk_No_Name_Date.pptx)
@@ -37,9 +45,10 @@ The response corpus contains 1,490 responses: mental health 660, education 415, 
 - [Snapshot provenance and exclusions](SNAPSHOT.md)
 
 The revised source compiles with the native compiler and isolated pdfLaTeX.
-The [October 26 layout audit](facct/paper/qa/2026-10-26/layout_report.json) records
-14 main-content pages, one endmatter page, two reference pages and 14 appendix
-pages: 31 total. Only the latest release ZIP is retained. All 61 exclusive cases have
+The [current layout audit](facct/paper/qa/2026-10-28/layout_report.json) records
+the rendered content/endmatter boundaries; appendix sections now keep their own
+tables and figures. The previous release is preserved for numerical comparison.
+All 61 exclusive cases have
 an assistant-generated coding draft for author review; the paper reports their
 existing-label profiles, not unverified semantic-coding results.
 
@@ -58,6 +67,7 @@ python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r facct/requirements.txt
 python -m facct.analysis.verify_outputs
+python -m facct.criterion_transfer.verify
 python -m pytest facct -q
 ```
 
@@ -73,4 +83,4 @@ analysis verifier, package manifest and test suite above. See the
 
 ## Status and Access
 
-This is an unpublished internal-review snapshot, not a submitted or accepted FAccT paper. Assessor documentation and publication-overlap decisions remain subject to the recorded author checks. No chair contact or submission is authorized by this archive operation. Keep the repository private; review source rights, participant privacy and venue anonymity before sharing it more broadly. No new blanket data license is granted by this snapshot.
+This is an unpublished internal-review snapshot, not a submitted or accepted FAccT paper. On 27 October the author reported that the earlier related submission had been rejected for a submission mistake and was no longer under review. The active paper now presents the corpus, original annotation, audit and follow-up as stages of this study, without a companion-submission framing. This status update does not change historical data provenance or analysis chronology. Supporting source/recruitment records remain subject to author checks. Keep the repository private; check source rights, privacy and anonymity before wider release. No submission or chair contact was performed during this revision.

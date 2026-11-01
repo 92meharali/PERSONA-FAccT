@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Education: all training-target by assessment-target recall percentages and exploratory pointwise 95\% refitted prompt-bootstrap intervals at the 20\% reference fraction. Feature sets share the same learner and folds. Each column is a different learned queue, not a different assessment of one queue. Sparse target support and finite-replicate counts are described in the appendix.}
+\label{tab:transfereducation}
+\begin{tabular}{llrrr}
+\toprule
+Features & Assess against & Train $D$ & Train $F$ & Train OA \\
+\midrule
+Lexical & $D$ & 58.3 [14.3, 100.0] & 0.0 [0.0, 25.0] & 25.0 [0.0, 66.7] \\
+Lexical & $F$ & 0.0 [0.0, 29.4] & 52.0 [6.7, 73.9] & 52.0 [12.5, 75.0] \\
+Lexical & OA & 11.1 [0.0, 54.5] & 61.1 [0.0, 88.9] & 66.7 [0.0, 91.7] \\
+Lexical+$H$ & $D$ & 66.7 [9.0, 86.7] & 0.0 [0.0, 26.7] & 16.7 [0.0, 75.0] \\
+Lexical+$H$ & $F$ & 12.0 [0.0, 37.5] & 52.0 [7.7, 73.1] & 52.0 [10.0, 75.0] \\
+Lexical+$H$ & OA & 27.8 [0.0, 64.3] & 61.1 [0.0, 87.5] & 66.7 [0.0, 90.9] \\
+\bottomrule
+\end{tabular}
+\end{table}

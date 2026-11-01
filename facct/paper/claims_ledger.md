@@ -1,6 +1,27 @@
 # Claim-to-evidence ledger
 
-## Current pointers: 26 October 2026
+## Current pointers: 28 October 2026
+
+Use the [active source](overleaf/main.tex),
+[integrated package](../releases/PERSONA_FAccT_Overleaf_2026-10-28_integrated.zip),
+and [integration audit](../submission/integration_review_2026-10-28.md).
+
+| Current claim | Evidence | Boundary |
+|---|---|---|
+| Fit and full-profile OA prediction are close in mental health and education | Original incremental_validity.csv; measurement_bridge.tex | Human ratings are predictors; not a cheap text screen, discriminant validation or proof of equivalence |
+| Changing a training target changes review queues at fixed features/learner/capacity | criterion_transfer/outputs/queue_overlap.csv and selections.csv | Realized selection difference within this pipeline, not pure construct or causal stakeholder effect |
+| Fit/OA queues share 107/130 mental-health, 52/80 education and 59/80 health selections | Lexical model at 20%, queue_overlap.csv | Counts, not generalization guarantees or harm outcomes |
+| All ten fit-minus-OA recall intervals include zero for each feature set | criterion_transfer/outputs/contrasts.csv | No optimal target or equivalence claim; exploratory pointwise intervals |
+| Follow-up target never enters fitting/tuning/target selection | criterion_transfer/run.py, tests and independent reconstruction | Already inspected same-corpus evaluation-only judgments, not untouched test data |
+| Two of 30 lexical target-pair intervals exclude zero | contrasts.csv at 20% | Not a new confirmatory family or multiplicity-controlled discovery |
+| 240 operating points and 60 reference paired intervals are retained | performance.csv, contrasts.csv, verification.json | All cells, not favorable-subset selection; sparse/undefined draws visible |
+| Target-choice allocation audits have direct precedent | Obermeyer et al. 2019 Table 2; Passi/Barocas 2019; primary-source memo | New application/evidence, not invention of the matrix or a new algorithm |
+
+The supplied desk-rejection letter identifies substantive validity/rater/incremental
+contribution concerns. It supersedes the earlier explanation of a submission
+mistake. Historical notes below remain dated records, not current assertions.
+
+## Historical pointers: 26 October 2026
 
 Use the [active manuscript](overleaf/main.tex), [latest package](../releases/PERSONA_FAccT_Overleaf_2026-10-26_professor.zip)
 and [professor response](../submission/professor_response_2026-10-26.md).
@@ -27,7 +48,7 @@ from Git history; use the current pointers above rather than old release names.
 | Follow-up assessor qualifications, pay/recruitment and approval details are complete | Supporting particulars remain deferred | Open author reporting gates; prior attestations do not fill documentation gaps |
 | Restored source compiles and the audited PDF meets the main-content/endmatter limits | Successful native and isolated pdfLaTeX compilation; [October 24 layout audit](qa/2026-10-24/layout_report.json): 14 main-content, 1 endmatter, 1 references, 12 appendix pages, 28 total | Verified for the audited source/PDF; no visible clipping or overlap recorded; historical unchecked-layout statements are superseded |
 | The paper is submission-ready | Assessor provenance, accurate ethics/AI-use reporting, source rights, anonymity, package contents, and eligibility require author checks | Not established by compilation or layout verification |
-| CHI overlap/disclosure and concurrent-submission eligibility are resolved | Requires current author review and applicable guidance | Unresolved; no clearance or submission authorization |
+| Earlier related submission is no longer under review | Author update, 27 October 2026: rejected for a submission mistake | Author-reported status, not independently authenticated; active paper presents one study, with historical provenance preserved |
 
 No restored-title or scope decision manufactures novelty, closes reporting gaps,
 or changes the original results. Capability preparation remains available for
@@ -68,7 +89,7 @@ there were no new judgments no longer describe the integrated manuscript.
 | Observed binary agreement is 97.9%, kappa .698, positive agreement 70.8% | agreement.json before C resolution | Not same-instruction reliability, validity or proof of independent conduct |
 | New labels are not a strict subset of broad D | legacy_overlap.csv: 15 shared, 4 follow-up-only | Different criterion, assessor population and instructions; no causal attribution |
 | New assessors were outside original team and had prior consent/coverage | Author confirmation during integration; explicit interpretation in conversation | Author attestation; forms still pending, backgrounds/payments/approval reference deferred |
-| Follow-up improves evidence distinctness from CHI | New reviewworthiness records and unchanged-queue test | Same responses; novelty and eligibility not self-certified |
+| Follow-up adds contextual-reviewworthiness judgments | New assessment records and unchanged-queue test | Same responses, 19 resolved positives; no claim of independent criterion design or new-corpus replication |
 | Main paper values are output-derived | build_annotation_assets.py, generated tables/macros and package manifest | No new rating, pretrained judge, citation or favorable threshold search |
 
 The trained-screen analysis remains limited to original labels. Human ratings and

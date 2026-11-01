@@ -51,7 +51,7 @@ def build(table):
                                 percentage(r["recall"]), percentage(r["precision"]),
                                 count(r["missed"])]) + r" \\")
     table("annotation_coverage", "lrrrr", r"Policy & Caught/$P$ & Recall & Precision & Missed", rows,
-          r"Mental-health assessment follow-up: original frozen policies at 132/660 slots against the resolved target ($P=19$, 13 concern-bearing prompts). Recall and precision are percentages. These are exact corpus counts conditional on mixed-version judgments; random counts are analytical expectations. Paired hypothetical-batch intervals are reported in the text, not inferred from the point ordering.")
+          r"Exploratory mental-health follow-up: original policies at 132/660 slots against contextual reviewworthiness ($P=19$, 13 supporting prompts), using resolved labels. Recall and precision are percentages. Counts condition on mixed-version judgments; random counts are expectations. Paired hypothetical-batch intervals are reported in the text, not inferred from the ordering.")
 
     targets = [("A", "R1 alone"), ("B", "R2 alone"), ("resolved_ABC", "Resolved"),
                ("AB_union", "R1/R2 union"), ("AB_intersection", "R1/R2 intersection"),

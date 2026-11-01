@@ -1,0 +1,13 @@
+{
+  "analysis_manifest_sha256": "5ce4440e3d7d0e5f99b5021c537dca7ce743d0a23cd1d85b782fc4c3e1306a9c",
+  "legacy_incremental_sha256": "412ad7f1ef8f04a507bf75a5480ee8e5246ee45c72b1488f76485ae19016141a",
+  "files": {
+    "tables/criterion_transfer_counts.tex": "944caba72b3d6e590381323e4a7cc320e437cd6a1c82dbca0a473d5a453a8fe5",
+    "tables/criterion_transfer_mental_health.tex": "f51c1516ab06f5efc4f8d19eae4fe62167a7ae7934c1f03975f9cb48e8bff8a1",
+    "tables/criterion_transfer_education.tex": "5688db73b91be132eb0d5488c402671c02c46f2d7bec9ed530ab1e869f310464",
+    "tables/criterion_transfer_health.tex": "db564afafb06f094775663c5ac9bbb53b5065c0bbf522ce102a8125cbdf18e2c",
+    "tables/criterion_transfer_contrasts.tex": "e2eaa9e303555839523c8df59730752a46432dfd63830901b8ede16dc67419ab",
+    "tables/measurement_bridge.tex": "ae0f7d8109d007397b7109e417ad681a06dfffdd44bdfc71959736641adccb7a",
+    "tables/criterion_transfer_baselines.tex": "8ae9355e0ba08035aa978724d7bb7e5e62dc7fa4513f30d8af8eb088b05788b4"
+  }
+}

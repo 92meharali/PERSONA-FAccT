@@ -1,36 +1,61 @@
-# Before Actual Submission
+# Before Submission
 
-The October 24 draft includes the completed audit and supplied assessment follow-up only. New capability experiments are deferred. A provider-neutral semantic-judge runner is prepared, with no external model calls. A separate in-chat, unpinned exploratory scoring pass is documented outside the paper; it is not an independent comparator or headline result. The author confirms that institutional and recruitment records are available; retain the current versions privately. Exact additional background, compensation and approval-reference details have not been transcribed during this revision and must not be guessed.
+Current revision: 28 October 2026. The new criterion-transfer computation uses
+existing data; it is not new annotation, a semantic judge or an unseen test set.
 
-The October 26 professor revision adds the completed 300-character and D > 3
-checks, four-question framing and a self-contained corpus description. Exact
-existing-label profiles cover all 61 exclusive cases; their assistant-generated
-semantic coding draft needs author verification before being treated as a result.
+- **Layout:** verify the exact Overleaf rendering. The local build has 14 content,
+  one endmatter, two reference and 23 appendix pages. The class and margins are
+  unchanged. Appendices are excluded from the content limit, but the main text
+  must remain self-contained.
+- **Score provenance:** recorded imported HumT scores are not authenticated
+  historical invocations. Of 830 transfer-domain pairs, 59 differ in full text
+  and 47 in their recorded scoring prefix. Mental-health scoring-input strings
+  are unavailable. Existing sensitivity checks do not close this gap.
+- **Marker provenance:** the list is recorded in the 2 October specification,
+  after prior data exploration. Exact word-selection chronology is unverified.
+  Do not describe this as an independently sourced or outcome-blind dictionary.
+- **Criterion validity:** broad D includes ordinary sympathy. Author/intern
+  framework familiarity and lexical overlap can influence comparative results.
+  OA comes from a separate group, but is not independent ground truth for harm.
+- **Integrated contribution:** fit/OA queues differ, but all ten paired recall
+  contrasts include zero for each feature set. Do not call target choice resolved,
+  claim construct separation, or turn two exploratory positive contrasts into a
+  multiplicity-controlled discovery. The earlier OA predictor uses human ratings.
+- **Follow-up:** two complete streams cover 660 responses each; the third covers
+  14 disagreements only. There are 19 resolved contextual-reviewworthiness
+  cases in 13 prompts. The HumT-marker paired interval includes zero. Capability
+  instruction versions differ; do not claim same-instruction reliability.
+- **Annotation and ethics:** retain the available institutional, recruitment,
+  consent and payment records privately. Match final methods to those records;
+  do not transfer original-team payment facts to new assessors or invent missing
+  individual qualifications. Intern withdrawal protections are author-confirmed.
+- **Exploration:** the primary family was specified after prior exploration.
+  Later computational and follow-up analyses remain exploratory, not retrospective
+  preregistration. No equivalence or universal HumT redundancy is established.
+- **Comparator scope:** fixed lexical rules and one untuned trained lexical
+  screen are evaluated. No independent semantic/LLM-judge baseline, new externally
+  sourced dictionary or practitioner workflow evaluation has been completed.
+- **Capacity:** full-batch 132/83/83 slots differ from held-out 130/80/80 slots.
+  Do not compare across these families as a matched-capacity policy contrast.
+  Slots do not measure reading time or labor savings.
+- **Reporting card:** an unevaluated proposal, not validated contestation,
+  organizational adoption or safety certification. Non-selection is not clearance.
+- **AI disclosure:** substantial Codex assistance is disclosed. Report actual
+  underlying model/version information from preparation logs if available; none
+  is invented here. Authors must approve claims, references and submitted text.
+- **Anonymity and release:** omit identifying links, consent records, institutional
+  letters and sensitive case text from review materials. This ZIP is a typesetting
+  package, not a complete anonymous data artifact. Check source redistribution
+  rights and the actual submission metadata separately.
+- **References:** 24 references retained and two verified additions on target
+  choice/allocation precedents. Organizational reports remain labeled as such;
+  HealthBench remains a preprint. No first-method or exhaustive-novelty claim.
+- **Registration:** verify the actual abstract registration and author list in
+  the submission portal; this package does not create or amend a submission.
 
-Verified local layout: **14 main + 1 endmatter + 2 references + 14 appendix pages (31 total)**. The source compiles in both pdfLaTeX and the desktop editor. Recheck the exact Overleaf output after upload or edits; the package manifest binds these counts to source hashes.
+Official format and submission instructions:
+https://facctconference.org/2027/authorguide.html
+https://facctconference.org/2027/cfp.html
 
-- **Eligibility and overlap:** the related CHI manuscript remains under review. The author will handle any chair inquiry and required confidential disclosure. Different tables, a new title, or an Overleaf package do not establish eligibility. Responses, original judgments and foundations are reused; the added assessment follow-up supplies new judgments, not new responses.
-- **Layout:** the official guide/FAQ checked October 24 allows 14 main-content pages, one endmatter-only page, and unlimited references/appendices in the same PDF. Check the rendered counts in `package_manifest.json` and inspect Overleaf's output after any edit. Do not confuse total PDF length with counted content or reduce template margins/fonts to force compliance.
-- **Annotation and ethics:** methods follow the final repository documentation, not an independent audit of identities, payment, consent, or approval scope. The author confirmed that the consent/recruitment records explicitly protect interns' role, pay, supervision, and evaluation on declining/withdrawal; retain those private records for any authorized inquiry. No new ethics exemption is asserted.
-- **Text provenance:** 59 exported/rated pairs differ after normalization. The representation and fixed-capacity checks are reported, but the cause and actual historical scorer inputs remain unauthenticated. Do not replace this with a blanket claim of identical scored text.
-- **AI disclosure:** substantial Codex assistance is disclosed. Supply the actual underlying model/version from logs if available; none has been invented. Check whether other tools or assistance must also be disclosed. Authors must personally approve all submitted claims.
-- **Release and anonymity:** use an anonymous artifact mechanism approved by the venue. Do not include public identifying repository links, consent records, institutional approval letters, or sensitive case text in a review supplement. Check PDF metadata and author information in the submission system.
-- **Source history:** analyzed processed files match the repository supplement snapshot. The actual uploaded CHI archive has not been authenticated, so do not claim otherwise.
-- **Scientific scope:** the added assessment is not a practitioner workflow study, LLM-judge validation or observed organizational deployment. Do not promise these results or turn the proposed card into a tested intervention.
-- **Trained comparison:** the post-review model uses historical training labels and common held-out prompt batches. Every conditional-lift interval includes zero; do not claim proven complementarity, equivalence, or universal redundancy. Keep the complete fit/OA cells and split sensitivity, and do not directly compare the new 130/80/80 slots with the original 132/83/83 slots as if they were the same allocation.
-- **Readiness:** assess independent scholarly value and follow current venue policies. Abstract registration is due October 27, 2026 and the paper November 3, both at 23:59 Anywhere on Earth. This package has not been submitted, uploaded to Overleaf, pushed to GitHub, or sent to chairs. Official sources: https://facctconference.org/2027/cfp.html and https://facctconference.org/2027/authorguide.html.
-- **Common-queue evidence:** category coverage is exploratory within the recorded corpus, not demographic fairness or causal discrimination. The apparent natural-prompt fit advantage for HumT has an interval crossing zero; do not describe it as established superiority. All condition cells, including zero-concern groups, remain visible.
-- **Anonymous computational supplement:** this ZIP is for typesetting. Prepare and inspect a separate code/input/results artifact with redistribution and anonymity approval before claiming reviewers can run the complete study. No consent forms, names, identifying logs, or institutional letters should be included in a public review artifact.
-- **Institutional scope and AI version:** obtain institutional clarification if needed about reuse within the parent approval; do not infer a separate exemption. If preparation logs identify an underlying AI model/version, report it accurately; none is guessed here.
-- **Current computational package:** all four stages reproduced in a fresh environment, with 59 numerical CSV/figure files identical. A separate local code/aggregate candidate omits raw source texts and supports only hash/arithmetic inspection without those inputs. It is not a certified anonymous full-data release.
-- **Available truncation evidence:** the exports record first-300-character strings. Twelve of the 59 differing full-text pairs preserve that prefix; 47 do not. This is available preprocessing evidence, not authenticated historical scorer calls or permission to quietly replace scores.
-- **Scope and sources:** four audit questions organize the current manuscript. The trained comparison is not a claim against state-of-the-art semantic judges. Four corpus citations and two operational sources were primary-verified; all original references remain.
-
-## New assessment follow-up: current author checks
-
-- **Current author confirmation (October 24):** institutional and recruitment records are available; earlier pending-form descriptions are superseded by this author report, not by an independent inspection of new private records. Prior consent/coverage and assessor separation are author-confirmed. Verify final methods against those records, and do not transfer original Group B payment/approval facts to the new assessors.
-- **Study distinction:** the paper now reports new human judgments on the same mental-health responses, not a new corpus or practitioner usability study. Earlier references to computational-only scope apply to the previous version.
-- **Independence:** R1/R2 supplied 660 ratings each; R3 supplied 14 disputed-case ratings only. Do not report three complete independent rating streams. Packet blinding is not independent authentication of conduct.
-- **Target/version:** the new target explicitly excludes automatic sympathy/pronoun flags. R1's capability note differs from R2/R3's, so agreement cannot be described as same-instruction reliability or a causal version comparison.
-- **Inference:** all main follow-up contrast intervals cross zero. Report 6 versus 12 of 19 as an exact-corpus point difference, not a proven general marker advantage. The trained analysis still uses original labels only.
-- **Disclosure:** new judgments must be disclosed alongside the unchanged corpus and original CHI evidence. They do not automatically settle concurrent-submission or novelty questions. No raw assessor records or private forms are included in this typesetting ZIP.
+Nothing in this package sends a submission or message, changes participant
+records, or authorizes new API calls or recruitment.

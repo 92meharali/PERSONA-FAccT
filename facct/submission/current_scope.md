@@ -1,4 +1,37 @@
-# Current scope: 26 October 2026
+# Current scope: 28 October 2026
+
+The active paper selectively integrates the PERSONA measurement diagnostic and
+review-allocation study. The new exploratory amendment varies the training target
+under fixed features/learner/folds/capacity and evaluates all criteria, including
+an evaluation-only follow-up. It does not validate PERSONA, change source ratings,
+add a semantic judge, or select a winning target on the follow-up. See the
+[integration audit](integration_review_2026-10-28.md) and
+[new package](../releases/PERSONA_FAccT_Overleaf_2026-10-28_integrated.zip).
+
+The author-supplied desk-rejection letter contains substantive concerns about
+F/OA discriminant validity, author/intern dimension ratings and weak incremental
+effects. This corrects the earlier explanation below that rejection was only a
+submission mistake. The manuscript need not narrate submission history, but these
+methodological constraints remain accurately disclosed. No continuing external
+review or publication is asserted. Portal status has not been independently audited.
+
+## Historical scope: 27 October 2026 (superseded)
+
+The author reports that the earlier related submission was rejected because of
+a submission mistake and is no longer under review. This author-supplied update
+supersedes older concurrent-review assumptions below. The active manuscript
+reports PERSONA as one study comprising original corpus/annotation, screening
+analysis and a later follow-up. It retains the actual data and exploration history.
+No historical records, source scores or annotations are altered by the status update.
+
+The annotated-PDF/checklist response improves provenance reporting, criteria,
+analysis chronology, interpretation and layout. It does not add new HumT runs,
+semantic comparisons, externally sourced dictionaries or participant evidence.
+See [review response](review_response_2026-10-27.md), the
+[current package](../releases/PERSONA_FAccT_Overleaf_2026-10-27_review.zip), and
+[layout report](../paper/qa/2026-10-27/layout_report.json).
+
+## Historical scope: 26 October 2026 (superseded)
 
 The user authorized implementation of the professor's feedback. The active
 paper now has four audit questions, a self-contained corpus description, a

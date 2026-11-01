@@ -1,18 +1,21 @@
 # PERSONA: Tone-Score Review Allocation
 
-## Current paper: 26 October 2026
+## Current paper: 28 October 2026
 
-**When Tone Scores Allocate Attention: Auditing HumT-Based Review Prioritization**
+**When Scores Allocate Attention: Auditing Criteria and Tone in AI Review**
 
 - [Active manuscript](paper/overleaf/main.tex)
-- [Latest Overleaf ZIP](releases/PERSONA_FAccT_Overleaf_2026-10-26_professor.zip)
+- [Latest Overleaf ZIP](releases/PERSONA_FAccT_Overleaf_2026-10-28_integrated.zip)
+- [Integration decisions and evidence](submission/integration_review_2026-10-28.md)
+- [Criterion-transfer results](criterion_transfer/outputs/findings.md)
+- [Review response and remaining evidence gaps](submission/review_response_2026-10-27.md)
 - [Professor response and verified results](submission/professor_response_2026-10-26.md)
 - [Source checks](submission/professor_primary_sources_2026-10-26.md)
 - [Current scope](submission/current_scope.md), [readiness](submission/readiness.md), and [claim ledger](paper/claims_ledger.md)
-- [Layout audit](paper/qa/2026-10-26/layout_report.json): 14 content pages, one endmatter,
-  two references and 14 appendix pages; 31 total, 24 cited references.
+- [Current layout audit](paper/qa/2026-10-28/layout_report.json): content and
+  endmatter boundaries; 26 cited references (two verified additions).
 
-The four questions concern enrichment, comparative allocation, incremental value,
+The four questions concern criterion transfer, comparative allocation, incremental value,
 and distribution of coverage. The paper evaluates a proposed fixed-capacity review
 queue, not demonstrated reviewer effectiveness or harm reduction.
 
@@ -25,6 +28,13 @@ are 13, 26 and 22 of 57; the paired HumT-minus-prefix interval reaches zero.
 The assessment follow-up has 19 resolved concerns: HumT captures six and full
 markers twelve, with wide paired intervals crossing zero. All nine trained
 incremental-recall intervals include zero; this is not evidence of equivalence.
+
+The new amendment crosses three training targets with all three assessment
+criteria, plus evaluation-only mental-health reviewworthiness. It retains both
+lexical and HumT-augmented features, four budgets, 2,000 paired refit resamples and
+ten alternative partitions. Fit/OA-trained queues differ, but all ten paired
+recall differences include zero for each feature set. The earlier OA-prediction
+results motivate this diagnostic rather than validate a framework.
 
 - [Original screening, sensitivity and workload](outputs/reports/results.md)
 - [Original input audit](outputs/reports/input_audit.md)
@@ -60,6 +70,9 @@ python -m facct.conditional.run
 python -m facct.allocation.run
 python -m facct.professor_revision.run
 python -m facct.professor_revision.build_assets
+python -m facct.criterion_transfer.run
+python -m facct.criterion_transfer.verify
+python -m facct.criterion_transfer.build_assets
 ```
 
 The latest sensitivity run takes about 16 seconds locally with 2,000 paired
@@ -75,7 +88,7 @@ Original figures/CSVs and amended outputs remain separate. Do not run a historic
 manuscript generator over the edited active source. To package the current source:
 
 ```bash
-python -m facct.paper.package_text_revision --release-name PERSONA_FAccT_Overleaf_2026-10-26_professor --revision-date 2026-10-26 --revision-scope "Professor feedback: review-setting pitch, self-contained corpus, paired 300-character and strict-cutoff sensitivity; original evidence preserved" --additional-assets-manifest facct/professor_revision/outputs/asset_manifest.json --layout-report facct/paper/qa/2026-10-26/layout_report.json
+python -m facct.paper.package_text_revision --release-name PERSONA_FAccT_Overleaf_2026-10-27_review --revision-date 2026-10-27 --revision-scope "Review response: self-contained study, provenance and criterion clarity, unchanged numerical evidence" --presentation-updates --layout-report facct/paper/qa/2026-10-27/layout_report.json
 ```
 
 The layout report must match the source, bibliography and class. Any later source

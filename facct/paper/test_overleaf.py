@@ -8,13 +8,13 @@ from facct.paper.build_overleaf import DEST, ROOT, DOMAINS, sha, validate
 
 
 def test_sources_assets_and_citations():
-    assert validate()["cited_references"] == 24
+    assert validate()["cited_references"] == 26
 
 
 def test_submission_uses_completed_evidence_not_future_protocol():
     main = (DEST / "main.tex").read_text()
-    assert "When Tone Scores Allocate Attention" in main
-    assert "RQ1: Enrichment." in main
+    assert "When Scores Allocate Attention" in main
+    assert "RQ1: Criterion transfer." in main
     assert "RQ2: Comparative allocation." in main
     assert "RQ3: Incremental value." in main
     assert "RQ4: Distribution of coverage." in main
@@ -150,7 +150,9 @@ def test_annotation_reporting_boundaries_and_package_privacy():
     assert "informed consent and institutional ethics coverage preceded annotation" in main
     assert "pending forms" not in main and "internal-review draft" not in main
     assert "There is no comparison with an LLM judge or semantic screen." in main
-    assert "Relationship to the Companion Study" in main
+    assert "Study Stages and Reproducibility" in main
+    assert "companion manuscript" not in main.lower()
+    assert "Relationship to the Companion Study" not in main
     manifest = json.loads((DEST / "package_manifest.json").read_text())
     with zipfile.ZipFile(ROOT / manifest.get("release_archive", "facct/releases/PERSONA_FAccT_2027_Overleaf.zip")) as archive:
         assert not any("raw_ratings" in n or "rating_sheet" in n or "private_study_id" in n
@@ -165,3 +167,47 @@ def test_annotation_build_rejects_changed_evidence(tmp_path, monkeypatch):
     monkeypatch.setattr(build_annotation_assets, "SOURCE", tmp_path)
     with pytest.raises(AssertionError, match="Annotation output changed"):
         build_annotation_assets.build(lambda *args: None)
+
+
+def test_review_revision_preserves_evidence_boundaries():
+    main = (DEST / "main.tex").read_text()
+    assert "recorded imported HumT" in main
+    assert "46 education and one general-health" in main
+    assert "before label inspection" in main
+    assert "professional therapist" in main
+    assert "reviewer time motivates" in main
+    assert "not all nine domain--criterion cells" in main
+    assert "post-review" not in main
+    assert "not directly comparable" in main
+    assert r"\subsection{Exploratory retrospective workload}" in main
+    assert "fusion minus marker recall" in (DEST / "tables/complementarity.tex").read_text()
+    assert "general-health OA" not in (DEST / "tables/full_education.tex").read_text()
+    endmatter = main.split(r"\section*{Endmatter}")[1].split(r"\bibliographystyle")[0]
+    assert "Data and reproducibility statement" not in endmatter
+
+
+def test_caption_update_guard_rejects_changed_numbers():
+    from facct.paper.package_text_revision import same_table_evidence
+    old = br"\caption{Old}\label{t}\begin{tabular}{r}42/165\end{tabular}"
+    assert same_table_evidence(old, old.replace(b'Old', b'Exploratory'))
+    assert not same_table_evidence(old, old.replace(b'42/165', b'63/165'))
+    assert not same_table_evidence(old, old.replace(br'\label{t}', br'\label{u}'))
+    assert same_table_evidence(b'% old\n\\newcommand{\\X}{42}\n', b'% new\n\\newcommand{\\X}{42}\n')
+
+
+def test_criterion_transfer_keeps_evidence_and_chronology():
+    main = (DEST / "main.tex").read_text()
+    assert "cross-criterion recall" in main
+    assert "not a new screening algorithm" in main
+    assert "those follow-up labels never train, tune or select a model" in main
+    assert "not an untouched test set" in main
+    assert "All ten fit-minus-OA contrasts" in main
+    assert "only two of 30" in main
+    assert "not multiplicity-adjusted findings" in main
+    assert "107 of 130" in main
+    assert "authors and research interns" in main
+    assert "obermeyer2019dissecting" in main and "passi2019formulation" in main
+    assert r"\input{tables/measurement_bridge}" in main
+    assert r"\input{tables/criterion_transfer_counts}" in main.split(r"\section*{Endmatter}")[0]
+    manifest = json.loads((DEST / "package_manifest.json").read_text())
+    assert manifest["criterion_transfer_manifest_sha256"] == sha(ROOT / "facct/criterion_transfer/outputs/manifest.json")

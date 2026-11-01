@@ -1,6 +1,43 @@
 # Readiness and recommendation
 
-## Current update: 26 October 2026
+## Current update: 28 October 2026
+
+The integrated paper and new exploratory criterion-transfer analysis are prepared
+for author review. See [integration audit](integration_review_2026-10-28.md),
+[analysis](../criterion_transfer/outputs/findings.md),
+[package](../releases/PERSONA_FAccT_Overleaf_2026-10-28_integrated.zip), and
+[layout audit](../paper/qa/2026-10-28/layout_report.json).
+
+The new data support different review queues under different training targets,
+not clear fit/OA target superiority: all ten such paired intervals cross or reach
+zero for each feature set. The earlier prediction diagnostic is motivation, not
+independent framework validation. No source annotation or prior result changed.
+
+The supplied rejection letter gives substantive methodological concerns; it
+supersedes the earlier author explanation of a submission mistake. The paper does
+not need a rejection narrative, but must retain correct rater provenance and
+evidence boundaries. Recruitment/ethics records, source rights, exact AI versions,
+anonymous supplemental access and submission registration remain author checks.
+Successful typesetting does not self-certify eligibility or predict acceptance.
+
+## Historical update: 27 October 2026 (superseded)
+
+The author reports that the earlier related submission was rejected for a
+submission mistake and is no longer under review. This supersedes the historical
+concurrent-review assumptions below; no independent submission-portal audit is
+claimed. The current paper reports PERSONA's corpus, original annotation,
+screening evaluation and follow-up as stages of one study.
+
+The [review response](review_response_2026-10-27.md) distinguishes implemented
+reporting changes from unresolved evidence gaps. Historical HumT-input
+authentication, dictionary-selection chronology, an independent semantic
+comparator and practitioner workflow evaluation remain absent. No rewriting
+turns those gaps into completed experiments. The native editor and pdfLaTeX
+compile the source; the [layout report](../paper/qa/2026-10-27/layout_report.json)
+records 14 content pages and one endmatter page. The final artifact requires
+author approval, privacy/anonymity checks and matching supporting records.
+
+## Historical update: 26 October 2026 (status superseded)
 
 The professor-requested revision is ready for Dr. Ibrahim and Dr. Wafa's review.
 The [response record](professor_response_2026-10-26.md) documents completed changes

@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-28",
+  "pdf_sha256": "eb7c1cb962989127f22bef0431ca93c1a0d3b0b176f1a47413be6cb2ee9cf848",
+  "source_sha256": "a578e2175cc39441adc8881171159a04fea7d7be46912a1d994dbba3b0b7a8a2",
+  "bibliography_sha256": "d93c482d55e437338d3fb5afdbf99c7832e6aa8c439dec3252501885c6775df1",
+  "class_sha256": "2f949e6e3f2a79f2cdc218b9dcdbaa7dd451adb4ee0be1af6dc7ebe00b318ea7",
+  "engine": "pdfLaTeX via isolated TinyTeX 2026.10",
+  "total_pages": 40,
+  "main_content_pages": 14,
+  "endmatter_pages": 1,
+  "reference_pages": 2,
+  "appendix_pages": 23,
+  "endmatter_starts": 15,
+  "references_start": 16,
+  "appendix_starts": 18,
+  "main_limit": 14,
+  "endmatter_limit": 1,
+  "within_main_limit": true,
+  "within_endmatter_limit": true,
+  "visual_inspection": "All 40 pages inspected as rendered contact sheets; main transfer table/equation on page 8 and all F-minus-OA contrasts on page 31 inspected enlarged. No clipping, overlap or misplaced-section floats observed.",
+  "guideline": "https://facctconference.org/2027/authorguide.html",
+  "note": "Counts apply to this rendered PDF; author/ethics/overlap eligibility is not certified."
+}

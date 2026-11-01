@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Changing the training target with learner, lexical features and held-out batches fixed. Cells are captured/total assessment cases, not predictive $R^2$. All queues use 130 mental-health or 80 transfer-domain slots at the 20\% reference fraction. Reviewworthiness is an evaluation-only mental-health target. These exploratory counts do not establish an optimal target; paired uncertainty is reported in the text and Appendix~\ref{app:criteriontransfer}.}
+\label{tab:criteriontransfer}
+\begin{tabular}{llrrrr}
+\toprule
+Domain & Train target & $D$ cases & $F$ cases & OA cases & Reviewworthy \\
+\midrule
+Mental health & $D$ & 70/165 & 19/95 & 25/133 & 11/19 \\
+ & $F$ & 53/165 & 32/95 & 34/133 & 9/19 \\
+ & OA & 62/165 & 26/95 & 26/133 & 11/19 \\
+Education & $D$ & 7/12 & 0/25 & 2/18 & -- \\
+ & $F$ & 0/12 & 13/25 & 11/18 & -- \\
+ & OA & 3/12 & 13/25 & 12/18 & -- \\
+General health & $D$ & 21/23 & 31/120 & 9/9 & -- \\
+ & $F$ & 19/23 & 29/120 & 8/9 & -- \\
+ & OA & 19/23 & 30/120 & 8/9 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

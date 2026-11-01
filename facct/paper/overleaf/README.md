@@ -1,100 +1,73 @@
 # PERSONA: FAccT 2027 Overleaf manuscript
 
-## Compile on Overleaf
+## Compile
 
-1. Choose **New Project > Upload Project** and upload this ZIP.
-2. Set **Main document** to `main.tex` and compiler to **pdfLaTeX**.
-3. Use the newest available TeX Live environment and recompile. Overleaf's normal build runs BibTeX automatically. If references show question marks after an interrupted build, use **Recompile from scratch**.
+Upload this ZIP as an Overleaf project, choose `main.tex`, and use pdfLaTeX.
+Recompile from scratch if an interrupted build leaves unresolved citations.
+The package includes 26 cited references, generated result tables, vector figures,
+and the unmodified ACM v2.19 class and bibliography style. No shell escape or
+external data download is needed for typesetting.
 
-The main document, 24 cited references, generated result tables, vector figures, and ACM template files are included. No external image download, shell escape, custom font installation, or separate data download is needed to typeset the paper.
+## Current revision: 28 October 2026
 
-## Format and status
+Title: **When Scores Allocate Attention: Auditing Criteria and Tone in AI Review**.
+The manuscript integrates the PERSONA measurement diagnostic, review-allocation
+audit and contextual-reviewworthiness follow-up. A new exploratory computation
+changes the training target while fixing learner, features and held-out capacity,
+then evaluates each queue against all criteria. Original sources and prior
+numerical results are unchanged. The follow-up is evaluation-only in this new
+analysis and adds judgments on existing responses, not a new response corpus.
 
-This draft reports the **completed audit and supplied mental-health assessment follow-up only**. The capability experiment is deferred. A provider-neutral LLM-judge runner is prepared separately, but no external calls or independent judge results are reported. A full in-chat exploratory pass is documented outside the paper; it is not a version-pinned or isolated comparator and does not change the main claims. The author confirms that institutional and recruitment records are available. The document uses `acmart` options `manuscript,screen,review,anonymous`; single-column output is intentional.
+This revision retains the earlier review corrections and adds:
 
-The official FAccT 2027 author guide and FAQ, checked on **26 October 2026**, allow **14 main-content pages including figures and tables**, **one additional endmatter-only page**, and unlimited reference and appendix pages. Appendices must be at the end of the same PDF; the main paper must stand alone. Ethics and generative-AI-use statements are retained, with identifying acknowledgments omitted. No template margins or fonts were reduced. See `package_manifest.json` for rendered page-count verification rather than judging compliance by the PDF's total length.
+- RQ1 criterion transfer; RQ2 policy comparison; RQ3 incremental HumT value;
+  RQ4 category coverage. The original three primary comparisons remain unchanged.
+- 240 trained operating points, 60 reference-budget target contrasts, 2,000
+  paired refit resamples per domain and ten alternative partitions.
+- A complete main-text cross-criterion count matrix and seven generated tables.
+- A bounded bridge from fit/OA prediction to review queues, not a claim of
+  independently validated PERSONA constructs or an optimal training target.
+- Two verified primary references: Obermeyer et al. (2019) and Passi/Barocas (2019).
+- Clearer separation of human-rating predictors from deployable text features.
 
-Official guide: https://facctconference.org/2027/authorguide.html
+No new scores, annotations, semantic-judge experiment, independently sourced
+marker list or participant study is claimed. Historical scorer calls and
+pre-inspection marker-list selection are not authenticated. The author checklist
+retains these evidence boundaries.
 
-The October 26 pdfLaTeX build has **14 main-content pages + 1 endmatter page + 2 reference pages + 14 appendix pages = 31 total pages**. The saved source also compiles in the desktop editor. All pages were inspected in a contact sheet, with enlarged checks of the new sensitivity tables and the opening. No overfull boxes or unresolved citations/references remain. Overleaf or later edits can change pagination; recheck there before submission.
+## Format and verification
 
-The bundled unmodified ACM class is **v2.19 (27 June 2026)** from the existing project, with its matching repository bibliography style. CTAN now lists v2.20, but this package deliberately retains the available template rather than silently substituting uncompiled class code. The original v2.19 source and license notices are supplied in `template-source/acmart.dtx` from https://github.com/borisveytsman/acmart/tree/v2.19. ACM class copyright and LPPL terms remain intact. No template fonts or margins have been modified.
+The official author guide, checked 28 October 2026, permits 14 single-column
+content pages including figures/tables, one additional endmatter-only page, and
+unlimited references and appendices in the same PDF:
+https://facctconference.org/2027/authorguide.html
 
-## Contents
+The local pdfLaTeX build has **14 content pages, 1 endmatter page, 2 reference
+pages and 23 appendix pages: 40 total**. Appendix sections start on separate
+pages to prevent floats appearing under the wrong heading. Total PDF length is
+not the main-content limit. The saved source also compiles in the desktop editor.
+No fonts or margins were reduced. Check `package_manifest.json` for hashes and
+the layout report, and recheck pagination after any Overleaf edits.
 
-- `main.tex`: full manuscript, endmatter, and appendices.
-- `references.bib`: 24 references. The October 26 revision retains all existing entries and adds four verified corpus-source references plus two primary operational accounts of automated review allocation.
-- `tables/`: generated original and post-review numerical tables and macros. Do not manually change result values.
-- `figures/`: separate mental-health and transfer budget panels, D-mean distributions, and the original nine-panel asset retained for history.
-- `figures/paired_summary.*` and `figures/workload_targets.*`: complete paired baseline/incremental comparisons and all four original workload targets with uncertainty for every policy.
-- `acmart.cls`, `ACM-Reference-Format.bst`: unmodified template files.
-- `AUTHOR_CHECKLIST.md`: decisions and checks before actual submission; not included in the compiled paper.
-- `package_manifest.json`: checksums and validation status; no identifying local paths.
+Existing numerical tables are unchanged. New tables are generated from the
+criterion-transfer outputs and the recorded OA-prediction diagnostic. New
+operating points are independently reconstructed from earlier held-out predictions.
+The two added citations acknowledge direct precedents rather than claim a new
+algorithm. No undefined citations/references or overfull boxes remain in the local
+pdfLaTeX log. Generic class notices and incomplete optional bibliographic metadata
+warnings are not missing citations or compilation failures.
 
-The package does not include raw response text, participant records, institutional letters, a CHI submission PDF, or uncompleted human-study materials. It is a typesetting package, not the full reproducibility supplement.
+## Contents and boundaries
 
-## Revision status
+- `main.tex`: manuscript, ethics/AI-use endmatter and appendices.
+- `references.bib`: 24 retained records plus two verified primary-source additions.
+- `tables/`, `figures/`: generated presentation assets, not source judgments.
+- `acmart.cls`, `ACM-Reference-Format.bst`, `template-source/`: unchanged template.
+- `AUTHOR_CHECKLIST.md`: author checks, not part of the compiled paper.
+- `package_manifest.json`: package checksums and verification status.
 
-### Professor revision, 26 October 2026
-
-The abstract and introduction start with the review setting. Four questions now
-organize the paper: enrichment, comparison with cheap rules, incremental trained
-value, and distribution of coverage. Main findings appear on page 2. Corpus
-sources, endpoint identifiers, rating tasks and rubric attribution are described
-here without requiring the companion manuscript. The exact approval date is
-withheld for anonymity while the ethics statement is retained.
-
-New generated tables report 300-character marker/length sensitivity and D > 3,
-with 2,000 paired prompt resamples per domain. In mental health, H/full/prefix
-markers capture 42/63/68 of 165 broad-D cases and 13/26/22 of 57 D > 3 cases.
-The stricter prefix comparison reaches zero in its interval. The exclusive-case
-table profiles all 20 H-only and 41 marker-only cases using existing ratings.
-Assistant-generated semantic coding drafts are outside the paper pending author
-verification. Original scores, judgments, outputs and primary family are preserved.
-
-### Historical: completed-evidence submission restored on 24 October 2026
-
-Current title: *When Tone Scores Allocate Attention: Auditing HumT-Based Review Prioritization*. RQ1 concerns comparative allocation, RQ2 incremental value, and RQ3 shared-queue coverage. The review revision leads with three findings, clarifies who allocates review and bears its costs, and moves detailed join diagnostics to the appendix. Source reuse is disclosed neutrally, and author-confirmed institutional wording replaces outdated pending-record descriptions. All numerical tables, figures, original scores, judgments and citations are unchanged. The independent semantic comparator remains preparation only; exploratory in-chat outcomes must not be substituted for it.
-
-### Historical capability direction, 23 October (superseded above)
-
-Current title: *From Tone Scores to Capability Evidence: Auditing Review Allocation for Anthropomorphic AI*. New prospective RQs concern capability sensitivity, allocation value and information requirements. Completed results are labeled audit questions A1-A3; none of their numerical tables were changed. The main protocol now specifies fixed-text capability contrasts, independent judgments, the same semantic judge with/without evidence, a simple consistency baseline, invariant controls, unknown information and costs. The previous broad bounded/open-ended proposal remains a separate future question rather than the immediate experiment. New assessments, capability verification and semantic model runs remain pending. The package contains no invented new results and no raw candidate texts.
-
-### Earlier design-assumption revision (superseded in scope above)
-
-The manuscript now distinguishes chatbot design from screening-policy design, explains PERSONA's evaluation role and label-acquisition costs, and connects capability assumptions to reviewworthiness. A discussion subsection and a clearly prospective appendix describe a focused matched bounded/open-ended design comparison, candidate concern types, independent contextual screening, and prevalence-versus-recall reporting. These are proposed experiments, not new findings. The current research questions, numerical results, source annotations, bibliography, and ACM template are unchanged. This revision concerns the review-allocation paper, not the separate joint CSR proposal.
-
-The mental-health follow-up's 6/19 versus 12/19 comparison remains separate from general-health natural-prompt fit coverage of 8/74 versus 4/74. No result was relabeled as a chatbot-design effect.
-
-The manuscript includes agreement estimates, cutoff stability, oracle/lift context, fixed rank fusion, paired workload differences, text-provenance sensitivity, and a later prompt-group-held-out trained comparison. That comparison adds HumT to a logistic screen using markers and log-length, with 2,000 paired refitted bootstrap draws per domain and ten additional split checks. All nine incremental-recall intervals include zero, without establishing equivalence or universal redundancy. Complete D/F/OA tables report every original/fusion and held-out policy cell at the reference fraction. Full-batch and held-out capacities differ and are explicitly separated.
-
-All additions are post-review exploratory analyses; the original primary comparison family is unchanged. The models use historical human training labels, not LLM-judge outputs. No external validation or deployment effectiveness is claimed. The ethics section includes the author's confirmation that consent/recruitment records explicitly protected interns' role, pay, supervision, and evaluation if they declined or withdrew; private documents were not independently inspected during preparation.
-
-The common-queue audit ranks each full domain once before examining existing categories;
-it does not give each category a separate quota. The final computational-only
-consolidation organizes Results into comparative allocation, held-out incremental
-benefit, and common-queue coverage. Detailed criterion/provenance checks are in a
-referenced appendix, with essential limitations remaining in main text. The new
-provenance composition table is generated from verified source-string comparisons.
-No historical scorer-input authentication is claimed. The comparator scope excludes
-state-of-the-art semantic-evaluator claims. No new threshold or annotation was invented.
-
-## Assessment follow-up integrated on 10 October
-
-Two complete assessment streams cover all 660 existing mental-health responses;
-a third assessor covers their 14 binary disagreements. Resolved labels identify
-19 cases in 13 prompt clusters. The original HumT queue captures 6 versus 12 for
-normalized markers at 132 slots. The paired recall difference is -31.6 percentage
-points with a wide exploratory interval [-66.7, +4.3]; HumT versus expected random
-also has an interval crossing zero. This does not establish general superiority.
-
-Four generated tables cover the main comparison, all rater/target sensitivities,
-four budgets and legacy-label intersections. Capability-note version differences,
-selective third assessment, imported queue discrepancies and text encoding are
-reported. Original labels, queues, trained results and references are unchanged.
-No new corpus, independent criterion design or practitioner validation is claimed.
-
-On October 24 the author confirmed that institutional and recruitment records are
-available. Earlier pending-record language is superseded by that confirmation.
-Private records are not bundled here, and unspecified individual backgrounds,
-payment terms or approval identifiers have not been invented.
+The package excludes raw participant records, identifying institutional documents,
+source response datasets and prospective human-study materials. It is a portable
+typesetting package, not a standalone full-data reproducibility release. The
+prepared semantic-judge runner and exploratory in-chat scoring are outside the
+paper; neither is represented as an independent semantic comparator.

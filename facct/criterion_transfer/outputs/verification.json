@@ -1,0 +1,8 @@
+{
+  "operating_points": 240,
+  "reference_paired_intervals": 60,
+  "queue_pairs": 72,
+  "prior_predictions_used": true,
+  "immutable_sources_verified": true,
+  "analysis_manifest_sha256": "5ce4440e3d7d0e5f99b5021c537dca7ce743d0a23cd1d85b782fc4c3e1306a9c"
+}

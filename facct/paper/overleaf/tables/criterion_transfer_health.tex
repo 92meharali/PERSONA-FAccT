@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering\small
+\caption{General health: all training-target by assessment-target recall percentages and exploratory pointwise 95\% refitted prompt-bootstrap intervals at the 20\% reference fraction. Feature sets share the same learner and folds. Each column is a different learned queue, not a different assessment of one queue. Sparse target support and finite-replicate counts are described in the appendix.}
+\label{tab:transferhealth}
+\begin{tabular}{llrrr}
+\toprule
+Features & Assess against & Train $D$ & Train $F$ & Train OA \\
+\midrule
+Lexical & $D$ & 91.3 [57.1, 100.0] & 82.6 [27.6, 95.2] & 82.6 [48.0, 96.2] \\
+Lexical & $F$ & 25.8 [16.7, 32.2] & 24.2 [12.7, 31.8] & 25.0 [15.7, 32.2] \\
+Lexical & OA & 100.0 [50.0, 100.0] & 88.9 [0.0, 100.0] & 88.9 [50.0, 100.0] \\
+Lexical+$H$ & $D$ & 91.3 [54.2, 96.0] & 56.5 [12.5, 88.2] & 82.6 [45.5, 95.2] \\
+Lexical+$H$ & $F$ & 25.0 [16.0, 32.2] & 25.0 [14.4, 31.5] & 25.0 [15.8, 32.4] \\
+Lexical+$H$ & OA & 100.0 [42.9, 100.0] & 88.9 [0.0, 100.0] & 88.9 [50.0, 100.0] \\
+\bottomrule
+\end{tabular}
+\end{table}

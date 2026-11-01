@@ -30,7 +30,7 @@ def interval(row, field, signed=False):
 
 
 def table(name, spec, header, rows, caption):
-    text = [r"\begin{table}[t]", r"\centering\small", r"\caption{" + caption + "}",
+    text = [r"\begin{table}[htbp]", r"\centering\small", r"\caption{" + caption + "}",
             r"\label{tab:" + name + "}", r"\begin{tabular}{" + spec + "}",
             r"\toprule", header + r" \\", r"\midrule", *rows, r"\bottomrule",
             r"\end{tabular}", r"\end{table}", ""]
@@ -106,7 +106,7 @@ def build_revision_tables():
             r=next(r for r in cutoff if r["domain"]==domain and r["criterion"]==criterion)
             rows.append(" & ".join([title if not j else "",LABELS[criterion],r["near_cutoff"],r["exactly_cutoff"],r["split_votes"],r["mean_majority_disagree"]])+r" \\")
     table("cutoffs","llrrrr",r"Domain & Criterion & $\pm0.2$ & At cutoff & Split & Disagree",rows,
-          r"Descriptive cutoff diagnostics. Split means 1--4 of five raters individually meet the criterion; disagree means mean-based and majority-vote membership differ. The neighborhood width was specified before this post-review analysis, not chosen for favorable results.")
+          r"Additional exploratory cutoff diagnostics after internal feedback. Split means 1--4 of five raters individually meet the criterion; disagree means mean-based and majority-vote membership differ. The neighborhood width was specified before this analysis, after earlier data exploration.")
     comp=records("complementarity.csv")
     pairs=records("paired_comparisons.csv")
     rows=[]
@@ -117,7 +117,7 @@ def build_revision_tables():
             ci=f"{percentage(p['estimate'],True)} [{percentage(p['lo'],True)}, {percentage(p['hi'],True)}]"
             rows.append(" & ".join([title if not j else "",LABELS[criterion],r["caught_h_only"],r["caught_markers_only"],r["caught_both"],r["caught_fusion"]+"/"+r["concerns"],ci])+r" \\")
     table("complementarity","llrrrrr",r"Domain & Criterion & H only & M only & Both & Fusion/$P$ & $\Delta R$ [95\%]",rows,
-          r"Post-review exploratory complementarity at the original 20\% budget. H-only/marker-only/both are concern counts in the two selected sets; their union exceeds the budget and is not a policy. Fusion is an exact-budget equal-weight midrank policy. Differences are recall percentage points with exploratory pointwise 95\% intervals; education $D$ and general-health OA remain sparse.")
+          r"Additional exploratory complementarity at the original 20\% budget. H-only/marker-only/both are concern counts; their union exceeds capacity. Fusion uses equal-weight midranks at exact capacity. $\Delta R$ is fusion minus marker recall in percentage points, with pointwise 95\% intervals. Education $D$ and general-health OA have seven supporting prompts each.")
     rows=[]
     for domain,title,_ in DOMAINS:
         for j,criterion in enumerate(LABELS):
@@ -132,7 +132,7 @@ def build_revision_tables():
             value=f"{percentage(r['estimate'],True)} [{percentage(r['lo'],True)}, {percentage(r['hi'],True)}]"
             macros.append("\\newcommand{\\"+prefix+suffix+"}{"+value+"}")
     with (DEST/"tables/numbers.tex").open("a") as stream:
-        stream.write("\n% Post-review exploratory paired estimates, percentage points.\n"+"\n".join(macros)+"\n")
+        stream.write("\n% Additional exploratory paired estimates, percentage points.\n"+"\n".join(macros)+"\n")
 
 
 def build_conditional_tables():
@@ -200,8 +200,10 @@ def build_conditional_tables():
                     f"{float(r['missed']):.2f}" if policy == "uniform_random" else str(int(float(r["missed"])))]) + r" \\")
         slots = 132 if domain == "mental_health" else 83
         held_slots = 130 if domain == "mental_health" else 80
+        sparse_note = {"mental_health": "", "education": r" Education $D$ has seven supporting prompts.",
+                       "health": r" General-health OA has seven supporting prompts."}[domain]
         caption = (title + r": all full-batch policies and criteria at 20\% (" + str(slots) +
-                   r" slots). Precision and recall are percentages; $P$ denotes cases. Intervals are exploratory pointwise 95\%; random counts are analytical expectations. Fusion is the first post-review addition. Education $D$ and general-health OA are sparse.")
+                   r" slots). Precision and recall are percentages; $P$ denotes cases. Intervals are exploratory pointwise 95\%; random counts are expectations. Fusion is an additional exploratory analysis." + sparse_note)
         header = r"Criterion & Policy & Caught/$P$ & Prec. & Recall [95\% CI] & Missed"
         table("full_" + domain, "llrrrr", header, full_rows, caption)
         table("held_" + domain, "llrrrr", header, held_rows,

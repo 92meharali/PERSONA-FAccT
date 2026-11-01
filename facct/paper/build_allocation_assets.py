@@ -42,9 +42,9 @@ def figures():
         ax.grid(axis="x",alpha=.18)
         for y in (2.5,5.5): ax.axhline(y,color="#cccccc",lw=.5)
         ax.set_xlabel("Paired recall difference (percentage points)",fontsize=9)
-    axes[0].set_title("HumT minus markers\nFull-domain queues: 132 / 83 / 83 slots",fontsize=10)
-    axes[1].set_title("Adding HumT to markers + log-length LR\nHeld-out batches: 130 / 80 / 80 total slots",fontsize=10)
-    fig.suptitle("Reference 20% fraction: complete paired comparisons\nPointwise exploratory 95% intervals; * fewer than 10 positive or negative supporting prompts",fontsize=10)
+    axes[0].set_title("A. HumT minus markers\nFull-domain queues: 132 / 83 / 83 slots",fontsize=10,color="#0072B2")
+    axes[1].set_title("B. Adding HumT to lexical LR\nHeld-out batches: 130 / 80 / 80 total slots",fontsize=10,color="#B35400")
+    fig.suptitle("Different procedures, capacities and axis scales: do not compare panels directly\nExploratory 95% intervals; * fewer than 10 positive or negative supporting prompts",fontsize=10)
     save(fig,"paired_summary")
 
     fig,axes=plt.subplots(1,3,figsize=(11,3.9),sharey=True,layout="constrained")
