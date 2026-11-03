@@ -1,0 +1,4 @@
+domain,criterion,P,slots,lex,lex+H,lex+emb,lex+emb+H,emb,lex+emb16,lex+emb16+H
+health,D>=3,23,80,21,21,11,11,11,18,18
+health,F<4,120,80,29,30,21,23,23,30,31
+health,OA<4,9,80,8,8,8,8,8,7,7

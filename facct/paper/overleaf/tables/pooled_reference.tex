@@ -1,0 +1,26 @@
+\begin{table}[p]
+\centering\footnotesize
+\caption{Secondary pooled analysis at 20\% (298/1,490 slots). Random counts are expectations; domain-stratified random allocates slots in proportion to domain sizes using largest remainders. Pointwise 95\% intervals use domain-stratified prompt resampling. The observed domain mixture is not a deployment prevalence estimate.}
+\label{tab:pooled}
+\begin{tabular}{llrrrrl}
+\toprule
+Criterion & Policy & Cases & Slots & Caught & Recall (\%) & Interval \\
+\midrule
+$\overline D\geq3$ & HumT & 200 & 298 & 85.0 & 42.5 & $[36.2, 49.0]$ \\
+$\overline D\geq3$ & Length & 200 & 298 & 83.0 & 41.5 & $[35.7, 48.1]$ \\
+$\overline D\geq3$ & Markers & 200 & 298 & 96.0 & 48.0 & $[40.7, 55.7]$ \\
+$\overline D\geq3$ & Uniform random & 200 & 298 & 40.0 & 20.0 & $[19.9, 20.0]$ \\
+$\overline D\geq3$ & Stratified random & 200 & 298 & 40.0 & 20.0 & $[20.0, 20.0]$ \\
+$\overline F<4$ & HumT & 240 & 298 & 55.0 & 22.9 & $[17.8, 28.2]$ \\
+$\overline F<4$ & Length & 240 & 298 & 51.0 & 21.2 & $[16.4, 25.7]$ \\
+$\overline F<4$ & Markers & 240 & 298 & 50.0 & 20.8 & $[15.3, 26.0]$ \\
+$\overline F<4$ & Uniform random & 240 & 298 & 48.0 & 20.0 & $[19.9, 20.0]$ \\
+$\overline F<4$ & Stratified random & 240 & 298 & 48.0 & 20.0 & $[19.9, 20.0]$ \\
+$\overline{\mathrm{OA}}<4$ & HumT & 160 & 298 & 62.0 & 38.8 & $[31.3, 45.5]$ \\
+$\overline{\mathrm{OA}}<4$ & Length & 160 & 298 & 45.0 & 28.1 & $[22.0, 35.4]$ \\
+$\overline{\mathrm{OA}}<4$ & Markers & 160 & 298 & 47.0 & 29.4 & $[22.3, 35.9]$ \\
+$\overline{\mathrm{OA}}<4$ & Uniform random & 160 & 298 & 32.0 & 20.0 & $[19.9, 20.0]$ \\
+$\overline{\mathrm{OA}}<4$ & Stratified random & 160 & 298 & 32.0 & 20.0 & $[20.0, 20.0]$ \\
+\bottomrule
+\end{tabular}
+\end{table}

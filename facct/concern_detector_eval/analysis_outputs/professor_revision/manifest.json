@@ -1,0 +1,30 @@
+{
+  "input_hashes": {
+    "repository/analysis/processed/persona_all.csv": "c43378005199560c9b3d2c5ee03f8cec8f94b0bbe60176381ce6290c8d6ed992",
+    "private-input/immutable_frame.csv": "89406c00b077e9cddd36319009f9818e3bba7fc405cd434d0d355d54905ad7ca",
+    "repository/facct/independent_annotation/outputs/resolved_labels.csv": "6fbf5baf8e78fe4c90cd2689bbbba00ce6a87d4cfecc631550f712ad7f0d5e2a",
+    "analysis_outputs/cache/embed_scores.npy": "4106b75183a898ff032e989d6f09d9434715ce2e6349f6768c80d72fd9647ff9",
+    "analysis_outputs/cache/nli_scores.npy": "5a33f41dd1bbfd7b342e1080a058fe6d11bfd8039b03deafcbad83b3ee992cb0"
+  },
+  "source_unchanged": true,
+  "joined_rows": 660,
+  "concerns": 19,
+  "concern_clusters": 13,
+  "old_queue_identity_checks": 12,
+  "cached_scores_only": true,
+  "new_model_calls": 0,
+  "bootstrap_seed": 20261010,
+  "policy_seed": 20261002,
+  "replicates": 2000,
+  "status": "final",
+  "seconds": 8.06,
+  "packages": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.8"
+  },
+  "code_sha256": "f116931964eb1060c6adb54f9df0d24d10dea30b9fc49fe0e7830d3cf573d04e",
+  "publication_note": "Local input paths replaced by logical names; source hashes and results unchanged. Private frame is not distributed."
+}

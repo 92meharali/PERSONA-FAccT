@@ -1,0 +1,66 @@
+\documentclass[manuscript,screen,review,anonymous]{acmart}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,calc}
+\setcopyright{none}
+\settopmatter{printacmref=false}
+\acmConference{}{}{}
+\acmBooktitle{}
+\acmDOI{}
+\acmISBN{}
+\renewcommand{\shortauthors}{Anonymous authors}
+\newcommand{\HumT}{\textsc{HumT}}
+\newcommand{\Dcrit}{\ensuremath{\overline{D}\geq 3}}
+\newcommand{\Fcrit}{\ensuremath{\overline{F}<4}}
+\newcommand{\OAcrit}{\ensuremath{\overline{\mathrm{OA}}<4}}
+\input{tables/numbers}
+\input{tables/annotation_numbers}
+\title[Auditing Tone Scores for Budgeted Review]{When Tone Scores Allocate Attention: Auditing Human-Like Tone for Budgeted Review of Chatbot Responses}
+\author{Anonymous Author(s)}
+\begin{document}
+\begin{abstract}
+Before releasing a chatbot, a team may need people to check responses that imply feelings, relationships or a professional identity the system does not possess. When reviewers can read only a fraction of the outputs, a screening rule determines which concerns receive attention. Can a score of human-like tone help allocate those review slots?
+
+We operationalize an audit of this proposed use and apply it to HumT, a published tone measure. PERSONA contains 1,490 responses across mental health, education and general health, with human judgments defining several review criteria. We compare exact-budget queues with random, lexical, trained and fixed semantic alternatives. At 20\% capacity in mental health, HumT captures 42 of 165 cases meeting the broad anthropomorphic-implication criterion, versus 63 for a 23-word marker rule and 45 for a natural-language-inference screen. On 19 independently assessed contextual concern cases, the counts are six, twelve and two; the HumT--marker interval includes zero. Lexical advantages attenuate under some cue removals and alternative criteria. HumT exceeds markers on education fit, but not every comparator clearly. Adding HumT to the tested trained screens shows no clear incremental gain, and aggregate coverage can conceal category-specific omissions. These results concern selection against recorded judgments, not reviewer effectiveness. The audit makes explicit the criterion, capacity, alternatives and missed cases needed to assess a score's proposed use.
+\end{abstract}
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010147.10010178</concept_id>
+  <concept_desc>Computing methodologies~Artificial intelligence</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10003120.10003121.10003124</concept_id>
+  <concept_desc>Human-centered computing~Interaction paradigms</concept_desc>
+  <concept_significance>300</concept_significance>
+ </concept>
+</ccs2012>
+\end{CCSXML}
+\ccsdesc[500]{Computing methodologies~Artificial intelligence}
+\ccsdesc[300]{Human-centered computing~Interaction paradigms}
+\keywords{AI evaluation, anthropomorphism, measurement validity, human review, algorithmic auditing}
+\maketitle
+\input{manuscript_body}
+
+\clearpage
+\section*{Endmatter}
+\subsection*{Ethical Considerations Statement}
+The original annotation study was a sub-study of an institutionally approved parent project. Participants gave informed consent and participated voluntarily, with withdrawal rights and compensation through existing grant-supported research roles rather than per-response payment. Consent and recruitment provisions explicitly protected interns' roles, pay, supervision and evaluation if they declined or withdrew. Supervisory relationships can nevertheless affect perceived freedom to decline. Identifying approval and institutional details are withheld for anonymous review; supporting records are retained privately.
+
+For the mental-health follow-up, we confirm that assessors were outside the original author/rater team and that consent and institutional ethics coverage preceded annotation. Instructions permitted breaks or skipping distressing items and prohibited consulting other assessors or using AI-generated judgments. Assessors were compensated through existing paid research roles.
+
+We report aggregates without participant identities or sensitive response excerpts. Potential adverse impacts include treating a lexical rule as a validated safety screen, treating non-selection as clearance, and discouraging appropriate sympathy. Explicit criteria, missed-case counts and uncertainty help communicate these risks, but their practical effectiveness was not tested. No patient intervention or deployment outcome is inferred from these judgments.
+
+\subsection*{Generative AI Usage Statement}
+OpenAI ChatGPT (GPT-6.1-sol, as reported by the authors) and Codex supported study planning and preparation of assessor instructions and capability notes. They also supported analysis code and tests, literature searches and source checks, manuscript drafting, editing, paraphrasing and language improvement, and the tables, figures and LaTeX package. Historical Codex model snapshot identifiers were not available in the preparation records used for this revision; the model label above does not establish those identifiers. No generative system supplied the human assessment ratings or rationales. Computational majority resolution is separate from the third assessor's judgments.
+
+Verification included comparison with source tables, independent metric calculations, tests of identifier joins and unchanged policy selections, source-hash checks, reference checks against primary records, and compilation and inspection of the manuscript. The authors remain responsible for the final claims, references, code and submitted text. BART-MNLI and MiniLM are evaluated computational screens, not human assessors; their exact revisions and scoring inputs are reported in Appendix~\ref{app:extension}.
+
+\clearpage
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+\clearpage
+\appendix
+\input{supplement}
+\end{document}

@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering\small
+\caption{Fixed semantic screens at 20\% capacity (132/83/83 slots). Captured cases out of $P$; the last columns give policy-minus-HumT and policy-minus-marker broad-D recall differences in percentage points. Paired 95\% intervals use 2,000 prompt draws with seed 20261102, so repeated contrasts differ slightly from original-seed tables. Fit/OA contrasts are in Table~\ref{tab:semantic_fixed}. $\dagger$: fewer than ten supporting prompts.}
+\label{tab:semantic_compact}
+\begin{tabular}{llrrrll}
+\toprule
+Domain & Policy & $\overline D\geq3$ & $\overline F<4$ & $\overline{\mathrm{OA}}<4$ & $\Delta\overline D$ vs HumT & $\Delta\overline D$ vs markers \\
+\midrule
+Mental health & HumT & 42/165 & 18/95 & 31/133 & -- & \ensuremath{-}12.7 [\ensuremath{-}21.8, \ensuremath{-}3.8] \\
+ & Markers & 63/165 & 22/95 & 33/133 & +12.7 [+3.8, +21.8] & -- \\
+ & Similarity & 30/165 & 26/95 & 30/133 & \ensuremath{-}7.3 [\ensuremath{-}16.2, +0.6] & \ensuremath{-}20.0 [\ensuremath{-}29.7, \ensuremath{-}11.5] \\
+ & NLI judge & 45/165 & 29/95 & 31/133 & +1.8 [\ensuremath{-}6.4, +10.0] & \ensuremath{-}10.9 [\ensuremath{-}19.4, \ensuremath{-}2.6] \\
+\addlinespace
+Education & HumT & 7/12$^{\dagger}$ & 10/25 & 9/18 & -- & \ensuremath{-}16.7 [\ensuremath{-}50.0, +16.7] \\
+ & Markers & 9/12 & 1/25 & 3/18 & +16.7 [\ensuremath{-}16.7, +50.0] & -- \\
+ & Similarity & 6/12 & 2/25 & 3/18 & \ensuremath{-}8.3 [\ensuremath{-}55.6, +50.0] & \ensuremath{-}25.0 [\ensuremath{-}60.0, +8.3] \\
+ & NLI judge & 6/12 & 7/25 & 3/18 & \ensuremath{-}8.3 [\ensuremath{-}77.0, +52.5] & \ensuremath{-}25.0 [\ensuremath{-}87.5, +38.5] \\
+\addlinespace
+General health & HumT & 10/23 & 25/120 & 3/9$^{\dagger}$ & -- & \ensuremath{-}47.8 [\ensuremath{-}62.5, \ensuremath{-}25.9] \\
+ & Markers & 21/23 & 32/120 & 9/9 & +47.8 [+25.9, +62.5] & -- \\
+ & Similarity & 14/23 & 29/120 & 8/9 & +17.4 [\ensuremath{-}15.8, +43.5] & \ensuremath{-}30.4 [\ensuremath{-}53.8, \ensuremath{-}11.1] \\
+ & NLI judge & 13/23 & 30/120 & 8/9 & +13.0 [\ensuremath{-}13.6, +38.7] & \ensuremath{-}34.8 [\ensuremath{-}52.2, \ensuremath{-}12.5] \\
+\bottomrule
+\end{tabular}
+\end{table}

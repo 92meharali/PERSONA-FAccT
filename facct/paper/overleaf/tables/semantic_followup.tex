@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering\small
+\caption{Existing independent mental-health assessments: 19 concern cases in 13 prompt groups, 132 of 660 responses selected. All policies use the same fixed capacity. Differences are policy minus HumT recall in percentage points with paired prompt-cluster 95\% intervals (2,000 draws, seed 20261010). Random counts are expectations. These exploratory comparisons use previously inspected labels.}
+\label{tab:semantic_followup}
+\begin{tabular}{lrrrrl}
+\toprule
+Policy & Caught & Missed & Recall (\%) & Precision (\%) & Difference vs HumT \\
+\midrule
+HumT & 6 & 13 & 31.6 & 4.5 & -- \\
+Markers & 12 & 7 & 63.2 & 9.1 & $+31.6 [-4.3, +66.7]$ \\
+Length & 4 & 15 & 21.1 & 3.0 & $-10.5 [-35.3, +11.1]$ \\
+Similarity & 4 & 15 & 21.1 & 3.0 & $-10.5 [-36.9, +16.7]$ \\
+NLI & 2 & 17 & 10.5 & 1.5 & $-21.1 [-42.3, +5.6]$ \\
+Random & 3.8 & 15.2 & 20.0 & 2.9 & $-11.6 [-30.0, +6.7]$ \\
+\bottomrule
+\end{tabular}
+\end{table}

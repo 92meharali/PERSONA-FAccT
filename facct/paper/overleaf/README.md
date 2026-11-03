@@ -1,73 +1,36 @@
-# PERSONA: FAccT 2027 Overleaf manuscript
+# Budgeted review manuscript
 
-## Compile
+This is the revised anonymous ACM FAccT typesetting project. Upload the entire
+archive to Overleaf, select `main.tex`, and compile with pdfLaTeX and a recent
+TeX Live version. The ACM class, bibliography style, sources, vector figures
+and tables are included. Do not upload only `main.tex`: it includes
+`manuscript_body.tex`, `supplement.tex`, the tables and the editable TikZ
+workflow.
 
-Upload this ZIP as an Overleaf project, choose `main.tex`, and use pdfLaTeX.
-Recompile from scratch if an interrupted build leaves unresolved citations.
-The package includes 26 cited references, generated result tables, vector figures,
-and the unmodified ACM v2.19 class and bibliography style. No shell escape or
-external data download is needed for typesetting.
+The manuscript uses the unchanged single-column ACM review layout. The main
+text, endmatter, bibliography and appendix have explicit boundaries. Final
+locally measured page counts and file hashes are in `package_manifest.json`;
+confirm the exact Overleaf pagination before submission.
 
-## Current revision: 28 October 2026
+The revision focuses on review allocation rather than legacy OA prediction.
+It adds the existing semantic screens to the independent follow-up using
+cached scores, without new model calls or annotation. All comparison outcomes
+are retained. The main text contains a workflow, results plot, construct table,
+policy comparison and follow-up table. The appendix retains every original
+comparison and adds complete ranking, tie, pooled and incremental summaries.
 
-Title: **When Scores Allocate Attention: Auditing Criteria and Tone in AI Review**.
-The manuscript integrates the PERSONA measurement diagnostic, review-allocation
-audit and contextual-reviewworthiness follow-up. A new exploratory computation
-changes the training target while fixing learner, features and held-out capacity,
-then evaluates each queue against all criteria. Original sources and prior
-numerical results are unchanged. The follow-up is evaluation-only in this new
-analysis and adds judgments on existing responses, not a new response corpus.
+## Author confirmation still required
 
-This revision retains the earlier review corrections and adds:
+The author confirmed follow-up compensation through existing paid research
+roles on 3 November 2026; the ethics placeholder is resolved. The AI
+statement uses the author-confirmed ChatGPT model label and identifies the
+absence of historical Codex snapshot information. Check whether additional
+tool/version details are available. The package is not a certification that
+all submission requirements have been met.
 
-- RQ1 criterion transfer; RQ2 policy comparison; RQ3 incremental HumT value;
-  RQ4 category coverage. The original three primary comparisons remain unchanged.
-- 240 trained operating points, 60 reference-budget target contrasts, 2,000
-  paired refit resamples per domain and ten alternative partitions.
-- A complete main-text cross-criterion count matrix and seven generated tables.
-- A bounded bridge from fit/OA prediction to review queues, not a claim of
-  independently validated PERSONA constructs or an optimal training target.
-- Two verified primary references: Obermeyer et al. (2019) and Passi/Barocas (2019).
-- Clearer separation of human-rating predictors from deployable text features.
+Official instructions:
+- https://facctconference.org/2027/authorguide.html
+- https://facctconference.org/2027/cfp.html
 
-No new scores, annotations, semantic-judge experiment, independently sourced
-marker list or participant study is claimed. Historical scorer calls and
-pre-inspection marker-list selection are not authenticated. The author checklist
-retains these evidence boundaries.
-
-## Format and verification
-
-The official author guide, checked 28 October 2026, permits 14 single-column
-content pages including figures/tables, one additional endmatter-only page, and
-unlimited references and appendices in the same PDF:
-https://facctconference.org/2027/authorguide.html
-
-The local pdfLaTeX build has **14 content pages, 1 endmatter page, 2 reference
-pages and 23 appendix pages: 40 total**. Appendix sections start on separate
-pages to prevent floats appearing under the wrong heading. Total PDF length is
-not the main-content limit. The saved source also compiles in the desktop editor.
-No fonts or margins were reduced. Check `package_manifest.json` for hashes and
-the layout report, and recheck pagination after any Overleaf edits.
-
-Existing numerical tables are unchanged. New tables are generated from the
-criterion-transfer outputs and the recorded OA-prediction diagnostic. New
-operating points are independently reconstructed from earlier held-out predictions.
-The two added citations acknowledge direct precedents rather than claim a new
-algorithm. No undefined citations/references or overfull boxes remain in the local
-pdfLaTeX log. Generic class notices and incomplete optional bibliographic metadata
-warnings are not missing citations or compilation failures.
-
-## Contents and boundaries
-
-- `main.tex`: manuscript, ethics/AI-use endmatter and appendices.
-- `references.bib`: 24 retained records plus two verified primary-source additions.
-- `tables/`, `figures/`: generated presentation assets, not source judgments.
-- `acmart.cls`, `ACM-Reference-Format.bst`, `template-source/`: unchanged template.
-- `AUTHOR_CHECKLIST.md`: author checks, not part of the compiled paper.
-- `package_manifest.json`: package checksums and verification status.
-
-The package excludes raw participant records, identifying institutional documents,
-source response datasets and prospective human-study materials. It is a portable
-typesetting package, not a standalone full-data reproducibility release. The
-prepared semantic-judge runner and exploratory in-chat scoring are outside the
-paper; neither is represented as an independent semantic comparator.
+This package contains no raw assessments, identifying approval documents,
+private mapping, credentials or submission actions.

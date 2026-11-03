@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering\scriptsize\setlength{\tabcolsep}{3.5pt}
+\caption{Held-out lexical and semantic-feature screens (five prompt-group folds, per-fold 20\% slots; 130/80/80 total). Counts are captured cases out of $P$. Lex uses marker fraction and log length; H adds HumT; Emb adds the 384-dimensional MiniLM vector; Emb16 uses 16 training-fitted components, added after inspecting full-dimensional performance. Differences have 1,000-draw refitted prompt-cluster 95\% intervals. Table~\ref{tab:semantic_increments} supplies every HumT increment for both embedding variants.}
+\label{tab:semantic_heldout}
+\begin{tabular}{llrrrrrrrrlll}
+\toprule
+Domain & Crit. & $P$ & Lex & +H & +Emb & +Emb+H & Emb & +Emb16 & +Emb16+H & Emb16$-$Lex & (Emb16+H)$-$Emb16 & H$-$Lex \\
+\midrule
+Mental health & $\overline D\geq3$ & 165 & 70 & 66 & 69 & 69 & 69 & 74 & 79 & +2.4 [\ensuremath{-}4.8, +11.4] & +3.0 [\ensuremath{-}3.0, +4.7] & \ensuremath{-}2.4 [\ensuremath{-}5.6, +2.7] \\
+ & $\overline F<4$ & 95 & 32 & 33 & 16 & 16 & 14 & 30 & 30 & \ensuremath{-}2.1 [\ensuremath{-}17.9, +11.1] & +0.0 [\ensuremath{-}4.9, +5.9] & +1.1 [\ensuremath{-}7.6, +3.9] \\
+ & $\overline{\mathrm{OA}}<4$ & 133 & 26 & 30 & 39 & 37 & 39 & 35 & 34 & +6.8 [\ensuremath{-}6.0, +17.1] & \ensuremath{-}0.8 [\ensuremath{-}4.3, +4.7] & +3.0 [\ensuremath{-}3.7, +8.5] \\
+\addlinespace
+Education & $\overline D\geq3$ & 12 & 7 & 8 & 6 & 6 & 6 & 6 & 9 & \ensuremath{-}8.3 [\ensuremath{-}57.1, +37.5] & +25.0 [\ensuremath{-}25.0, +25.0] & +8.3 [\ensuremath{-}40.0, +30.0] \\
+ & $\overline F<4$ & 25 & 13 & 13 & 13 & 13 & 11 & 14 & 14 & +4.0 [\ensuremath{-}24.3, +22.2] & +0.0 [\ensuremath{-}14.3, +8.0] & +0.0 [\ensuremath{-}14.8, +8.7] \\
+ & $\overline{\mathrm{OA}}<4$ & 18 & 12 & 12 & 11 & 10 & 11 & 12 & 12 & +0.0 [\ensuremath{-}30.0, +21.4] & +0.0 [\ensuremath{-}16.7, +9.1] & +0.0 [\ensuremath{-}13.6, +12.5] \\
+\addlinespace
+General health & $\overline D\geq3$ & 23 & 21 & 21 & 11 & 11 & 11 & 18 & 18 & \ensuremath{-}13.0 [\ensuremath{-}35.7, +16.7] & +0.0 [\ensuremath{-}14.3, +14.3] & +0.0 [\ensuremath{-}15.4, +12.8] \\
+ & $\overline F<4$ & 120 & 29 & 30 & 21 & 23 & 23 & 30 & 31 & +0.8 [\ensuremath{-}13.6, +9.2] & +0.8 [\ensuremath{-}4.0, +7.4] & +0.8 [\ensuremath{-}6.3, +8.7] \\
+ & $\overline{\mathrm{OA}}<4$ & 9 & 8 & 8 & 8 & 8 & 8 & 7 & 7 & \ensuremath{-}11.1 [\ensuremath{-}33.3, +20.0] & +0.0 [\ensuremath{-}9.1, +10.0] & +0.0 [\ensuremath{-}7.2, +10.0] \\
+\bottomrule
+\end{tabular}
+\end{table*}

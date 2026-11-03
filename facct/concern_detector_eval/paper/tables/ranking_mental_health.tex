@@ -1,0 +1,29 @@
+\begin{table}[p]
+\centering\footnotesize
+\caption{Mental health: full-ranking average precision (AP) and ROC-AUC with class prevalence. Scores and labels are unchanged; tie-aware metrics were independently checked against scikit-learn. These point estimates are descriptive and do not replace matched-budget comparisons.}
+\label{tab:ranking_mental_health}
+\begin{tabular}{llrrrr}
+\toprule
+Criterion & Policy & Cases & Prevalence & AP & ROC-AUC \\
+\midrule
+$\overline D\geq3$ & HumT & 165 & 0.250 & 0.318 & 0.605 \\
+$\overline D\geq3$ & Markers & 165 & 0.250 & 0.465 & 0.708 \\
+$\overline D\geq3$ & Length & 165 & 0.250 & 0.352 & 0.640 \\
+$\overline D\geq3$ & Similarity & 165 & 0.250 & 0.253 & 0.539 \\
+$\overline D\geq3$ & NLI & 165 & 0.250 & 0.334 & 0.620 \\
+\addlinespace
+$\overline F<4$ & HumT & 95 & 0.144 & 0.156 & 0.532 \\
+$\overline F<4$ & Markers & 95 & 0.144 & 0.186 & 0.636 \\
+$\overline F<4$ & Length & 95 & 0.144 & 0.142 & 0.460 \\
+$\overline F<4$ & Similarity & 95 & 0.144 & 0.174 & 0.495 \\
+$\overline F<4$ & NLI & 95 & 0.144 & 0.209 & 0.616 \\
+\addlinespace
+$\overline{\mathrm{OA}}<4$ & HumT & 133 & 0.202 & 0.242 & 0.558 \\
+$\overline{\mathrm{OA}}<4$ & Markers & 133 & 0.202 & 0.245 & 0.610 \\
+$\overline{\mathrm{OA}}<4$ & Length & 133 & 0.202 & 0.209 & 0.510 \\
+$\overline{\mathrm{OA}}<4$ & Similarity & 133 & 0.202 & 0.220 & 0.515 \\
+$\overline{\mathrm{OA}}<4$ & NLI & 133 & 0.202 & 0.221 & 0.552 \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table}

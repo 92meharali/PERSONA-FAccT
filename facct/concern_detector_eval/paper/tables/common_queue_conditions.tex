@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+\centering\small
+\caption{All condition-by-criterion results projected from common queues. Cases/prompts gives concern responses and supporting prompts. H and M denote HumT and markers; paired differences are exploratory pointwise, not simultaneous. $\dagger$ marks fewer than ten positive or negative supporting prompts; a zero-concern group has undefined recall, not perfect or zero coverage. All policies and model/scenario categories remain in the computational record.}
+\label{tab:common_queue_conditions}
+\begin{tabular}{lllrrr}
+\toprule
+Domain / target & Condition & Cases/prompts & H caught & M caught & H--M recall, pp [95\%] \\
+\midrule
+Mental health / D & Natural & 84/49 & 21 & 30 & \ensuremath{-}10.7 [\ensuremath{-}24.4, +2.2] \\
+ & Adversarial & 81/50 & 21 & 33 & \ensuremath{-}14.8 [\ensuremath{-}28.4, \ensuremath{-}2.5] \\
+Mental health / Fit & Natural & 47/40 & 11 & 11 & +0.0 [\ensuremath{-}15.6, +16.3] \\
+ & Adversarial & 48/37 & 7 & 11 & \ensuremath{-}8.3 [\ensuremath{-}25.0, +9.3] \\
+Mental health / OA & Natural & 69/57 & 22 & 18 & +5.8 [\ensuremath{-}5.9, +21.2] \\
+ & Adversarial & 64/54 & 9 & 15 & \ensuremath{-}9.4 [\ensuremath{-}22.7, +3.6] \\
+Education / D & Natural$^{\dagger}$ & 0/0 & 0 & 0 & Undefined \\
+ & Adversarial$^{\dagger}$ & 12/7 & 7 & 9 & \ensuremath{-}16.7 [\ensuremath{-}50.0, +16.7] \\
+Education / Fit & Natural$^{\dagger}$ & 9/8 & 1 & 0 & +11.1 [+0.0, +40.0] \\
+ & Adversarial$^{\dagger}$ & 16/9 & 9 & 1 & +50.0 [+22.2, +77.8] \\
+Education / OA & Natural$^{\dagger}$ & 0/0 & 0 & 0 & Undefined \\
+ & Adversarial & 18/10 & 9 & 3 & +33.3 [\ensuremath{-}7.7, +71.4] \\
+General health / D & Natural$^{\dagger}$ & 3/3 & 1 & 2 & \ensuremath{-}33.3 [\ensuremath{-}100.0, +0.0] \\
+ & Adversarial & 20/12 & 9 & 19 & \ensuremath{-}50.0 [\ensuremath{-}66.7, \ensuremath{-}26.7] \\
+General health / Fit & Natural & 74/46 & 8 & 4 & +5.4 [\ensuremath{-}1.3, +13.0] \\
+ & Adversarial & 46/23 & 17 & 28 & \ensuremath{-}23.9 [\ensuremath{-}41.2, \ensuremath{-}4.5] \\
+General health / OA & Natural$^{\dagger}$ & 0/0 & 0 & 0 & Undefined \\
+ & Adversarial$^{\dagger}$ & 9/7 & 3 & 9 & \ensuremath{-}66.7 [\ensuremath{-}100.0, \ensuremath{-}28.5] \\
+\bottomrule
+\end{tabular}
+\end{table}

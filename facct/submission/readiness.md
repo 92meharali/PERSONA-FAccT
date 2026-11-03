@@ -1,6 +1,23 @@
 # Readiness and recommendation
 
-## Current update: 28 October 2026
+## Current Update: 3 November 2026
+
+The professor-feedback release compiles with 12 main-text pages, one endmatter
+page, two reference pages and 28 appendix pages. Its 20 analysis tests pass;
+there are no unresolved citations/references or overfull boxes. The author
+confirmed that follow-up assessors were compensated through existing paid
+research roles, and the ethics placeholder is resolved.
+
+Use [this Overleaf ZIP](../releases/PERSONA_FAccT_Professor_Revision_2026-11-03.zip)
+and [the current checklist](../paper/overleaf/AUTHOR_CHECKLIST.md). Historical
+Codex identifiers remain unavailable and are accurately disclosed, not filled
+with invented versions. Authors must check their final Overleaf pagination,
+metadata, tool use, registration, institutional records and submission portal.
+The GitHub repository is public and is not an anonymous review artifact.
+No submission, acceptance or independent verification of private forms is
+asserted. Previous readiness statements below describe earlier revisions.
+
+## Historical Update: 28 October 2026
 
 The integrated paper and new exploratory criterion-transfer analysis are prepared
 for author review. See [integration audit](integration_review_2026-10-28.md),

@@ -1,0 +1,55 @@
+\begin{table*}[t]
+\centering\footnotesize
+\caption{Pinned semantic screens as fixed, label-free policies at 20\% capacity, alongside HumT and markers. One ranking per domain is projected on all three criteria. Paired differences (percentage points) are policy minus HumT and policy minus markers for the same criterion, with 2,000-draw prompt-cluster intervals (exploratory pointwise 95\%). $\dagger$: fewer than ten supporting prompts.}
+\label{tab:semantic_fixed}
+\begin{tabular}{lllrrll}
+\toprule
+Domain & Criterion & Policy & Caught/$P$ & Recall & Minus HumT & Minus markers \\
+\midrule
+Mental health & $\overline D\geq3$ & HumT & 42/165 & 25.5 & -- & \ensuremath{-}12.7 [\ensuremath{-}21.8, \ensuremath{-}3.8] \\
+ &  & Markers (23 cues) & 63/165 & 38.2 & +12.7 [+3.8, +21.8] & -- \\
+ &  & Embedding similarity & 30/165 & 18.2 & \ensuremath{-}7.3 [\ensuremath{-}16.2, +0.6] & \ensuremath{-}20.0 [\ensuremath{-}29.7, \ensuremath{-}11.5] \\
+ &  & Zero-shot NLI judge & 45/165 & 27.3 & +1.8 [\ensuremath{-}6.4, +10.0] & \ensuremath{-}10.9 [\ensuremath{-}19.4, \ensuremath{-}2.6] \\
+\addlinespace
+ & $\overline F<4$ & HumT & 18/95 & 18.9 & -- & \ensuremath{-}4.2 [\ensuremath{-}14.6, +6.8] \\
+ &  & Markers (23 cues) & 22/95 & 23.2 & +4.2 [\ensuremath{-}6.8, +14.6] & -- \\
+ &  & Embedding similarity & 26/95 & 27.4 & +8.4 [\ensuremath{-}4.3, +20.4] & +4.2 [\ensuremath{-}8.2, +16.1] \\
+ &  & Zero-shot NLI judge & 29/95 & 30.5 & +11.6 [+0.0, +22.3] & +7.4 [\ensuremath{-}3.3, +18.8] \\
+\addlinespace
+ & $\overline{\mathrm{OA}}<4$ & HumT & 31/133 & 23.3 & -- & \ensuremath{-}1.5 [\ensuremath{-}9.2, +8.4] \\
+ &  & Markers (23 cues) & 33/133 & 24.8 & +1.5 [\ensuremath{-}8.4, +9.2] & -- \\
+ &  & Embedding similarity & 30/133 & 22.6 & \ensuremath{-}0.8 [\ensuremath{-}10.8, +7.0] & \ensuremath{-}2.3 [\ensuremath{-}11.4, +7.4] \\
+ &  & Zero-shot NLI judge & 31/133 & 23.3 & +0.0 [\ensuremath{-}10.7, +7.1] & \ensuremath{-}1.5 [\ensuremath{-}11.5, +7.1] \\
+\addlinespace
+Education & $\overline D\geq3$$^{\dagger}$ & HumT & 7/12 & 58.3 & -- & \ensuremath{-}16.7 [\ensuremath{-}50.0, +16.7] \\
+ &  & Markers (23 cues) & 9/12 & 75.0 & +16.7 [\ensuremath{-}16.7, +50.0] & -- \\
+ &  & Embedding similarity & 6/12 & 50.0 & \ensuremath{-}8.3 [\ensuremath{-}55.6, +50.0] & \ensuremath{-}25.0 [\ensuremath{-}60.0, +8.3] \\
+ &  & Zero-shot NLI judge & 6/12 & 50.0 & \ensuremath{-}8.3 [\ensuremath{-}77.0, +52.5] & \ensuremath{-}25.0 [\ensuremath{-}87.5, +38.5] \\
+\addlinespace
+ & $\overline F<4$ & HumT & 10/25 & 40.0 & -- & +36.0 [+14.3, +57.7] \\
+ &  & Markers (23 cues) & 1/25 & 4.0 & \ensuremath{-}36.0 [\ensuremath{-}57.7, \ensuremath{-}14.3] & -- \\
+ &  & Embedding similarity & 2/25 & 8.0 & \ensuremath{-}32.0 [\ensuremath{-}54.5, \ensuremath{-}5.3] & +4.0 [\ensuremath{-}6.7, +20.6] \\
+ &  & Zero-shot NLI judge & 7/25 & 28.0 & \ensuremath{-}12.0 [\ensuremath{-}42.3, +25.0] & +24.0 [+7.7, +50.0] \\
+\addlinespace
+ & $\overline{\mathrm{OA}}<4$ & HumT & 9/18 & 50.0 & -- & +33.3 [\ensuremath{-}8.3, +69.2] \\
+ &  & Markers (23 cues) & 3/18 & 16.7 & \ensuremath{-}33.3 [\ensuremath{-}69.2, +8.3] & -- \\
+ &  & Embedding similarity & 3/18 & 16.7 & \ensuremath{-}33.3 [\ensuremath{-}66.7, +0.0] & +0.0 [\ensuremath{-}20.0, +21.4] \\
+ &  & Zero-shot NLI judge & 3/18 & 16.7 & \ensuremath{-}33.3 [\ensuremath{-}66.7, +8.4] & +0.0 [\ensuremath{-}33.3, +36.4] \\
+\addlinespace
+General health & $\overline D\geq3$ & HumT & 10/23 & 43.5 & -- & \ensuremath{-}47.8 [\ensuremath{-}62.5, \ensuremath{-}25.9] \\
+ &  & Markers (23 cues) & 21/23 & 91.3 & +47.8 [+25.9, +62.5] & -- \\
+ &  & Embedding similarity & 14/23 & 60.9 & +17.4 [\ensuremath{-}15.8, +43.5] & \ensuremath{-}30.4 [\ensuremath{-}53.8, \ensuremath{-}11.1] \\
+ &  & Zero-shot NLI judge & 13/23 & 56.5 & +13.0 [\ensuremath{-}13.6, +38.7] & \ensuremath{-}34.8 [\ensuremath{-}52.2, \ensuremath{-}12.5] \\
+\addlinespace
+ & $\overline F<4$ & HumT & 25/120 & 20.8 & -- & \ensuremath{-}5.8 [\ensuremath{-}12.9, +2.8] \\
+ &  & Markers (23 cues) & 32/120 & 26.7 & +5.8 [\ensuremath{-}2.8, +12.9] & -- \\
+ &  & Embedding similarity & 29/120 & 24.2 & +3.3 [\ensuremath{-}5.0, +12.4] & \ensuremath{-}2.5 [\ensuremath{-}7.8, +4.6] \\
+ &  & Zero-shot NLI judge & 30/120 & 25.0 & +4.2 [\ensuremath{-}4.7, +12.0] & \ensuremath{-}1.7 [\ensuremath{-}10.4, +7.4] \\
+\addlinespace
+ & $\overline{\mathrm{OA}}<4$$^{\dagger}$ & HumT & 3/9 & 33.3 & -- & \ensuremath{-}66.7 [\ensuremath{-}100.0, \ensuremath{-}33.3] \\
+ &  & Markers (23 cues) & 9/9 & 100.0 & +66.7 [+33.3, +100.0] & -- \\
+ &  & Embedding similarity & 8/9 & 88.9 & +55.6 [+16.7, +85.7] & \ensuremath{-}11.1 [\ensuremath{-}45.9, +0.0] \\
+ &  & Zero-shot NLI judge & 8/9 & 88.9 & +55.6 [+20.0, +87.5] & \ensuremath{-}11.1 [\ensuremath{-}40.0, +7.8] \\
+\bottomrule
+\end{tabular}
+\end{table*}

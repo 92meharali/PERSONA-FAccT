@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering\small
+\caption{Input-window and threshold sensitivity at 20\% capacity. Counts are selected concerns; $P/G$ are concerns/supporting prompts. Full and 300-character markers use the same dictionary and token normalization. Last column: HumT minus 300-character-marker recall in percentage points with paired exploratory 95\% intervals. Sparse cells and zero-positive draws are retained in the computational record.}
+\label{tab:prefix_threshold}
+\begin{tabular}{llrrrrl}
+\toprule
+Domain & Target & $P/G$ & HumT & Full M & 300 M & $\Delta R$ [95\%] \\
+\midrule
+Mental health & $\overline D\geq3$ & 165/99 & 42 & 63 & 68 & \ensuremath{-}15.8 [\ensuremath{-}23.4, \ensuremath{-}7.7] \\
+Mental health & $\overline D>3$ & 57/42 & 13 & 26 & 22 & \ensuremath{-}15.8 [\ensuremath{-}31.4, +0.0] \\
+Mental health & $\overline D\geq4$ & 5/4 & 0 & 3 & 2 & \ensuremath{-}40.0 [\ensuremath{-}100.0, +0.0] \\
+Mental health & $\overline F<4$ & 95/77 & 18 & 22 & 19 & \ensuremath{-}1.1 [\ensuremath{-}11.0, +10.4] \\
+Mental health & $\overline{\mathrm{OA}}<4$ & 133/111 & 31 & 33 & 31 & +0.0 [\ensuremath{-}9.0, +8.1] \\
+Mental health & Follow-up & 19/13 & 6 & 12 & 10 & \ensuremath{-}21.1 [\ensuremath{-}55.6, +3.6] \\
+Education & $\overline D\geq3$ & 12/7 & 7 & 9 & 10 & \ensuremath{-}25.0 [\ensuremath{-}75.0, +20.0] \\
+Education & $\overline D>3$ & 8/5 & 3 & 5 & 6 & \ensuremath{-}37.5 [\ensuremath{-}100.0, +36.1] \\
+Education & $\overline D\geq4$ & 8/5 & 3 & 5 & 6 & \ensuremath{-}37.5 [\ensuremath{-}100.0, +36.1] \\
+Education & $\overline F<4$ & 25/17 & 10 & 1 & 2 & +32.0 [+4.0, +54.8] \\
+Education & $\overline{\mathrm{OA}}<4$ & 18/10 & 9 & 3 & 4 & +27.8 [\ensuremath{-}23.1, +66.7] \\
+General health & $\overline D\geq3$ & 23/15 & 10 & 21 & 19 & \ensuremath{-}39.1 [\ensuremath{-}62.5, \ensuremath{-}10.7] \\
+General health & $\overline D>3$ & 20/13 & 8 & 18 & 17 & \ensuremath{-}45.0 [\ensuremath{-}66.7, \ensuremath{-}13.6] \\
+General health & $\overline D\geq4$ & 8/6 & 2 & 7 & 7 & \ensuremath{-}62.5 [\ensuremath{-}100.0, \ensuremath{-}27.3] \\
+General health & $\overline F<4$ & 120/69 & 25 & 32 & 36 & \ensuremath{-}9.2 [\ensuremath{-}17.4, +0.0] \\
+General health & $\overline{\mathrm{OA}}<4$ & 9/7 & 3 & 9 & 9 & \ensuremath{-}66.7 [\ensuremath{-}100.0, \ensuremath{-}25.0] \\
+\bottomrule
+\end{tabular}
+\end{table}

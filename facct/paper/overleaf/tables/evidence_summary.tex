@@ -1,0 +1,47 @@
+\begin{table}[t]
+\centering\footnotesize
+\caption{Evidence map at the 20\% reference capacity. Differences are recall in percentage points; positive values favor HumT (or its addition). The primary family uses Bonferroni-adjusted 98.33\% intervals; all other intervals are exploratory pointwise 95\%. ``Excl.'' means the interval excludes zero. $G$ is the number of concern-bearing prompts; cells with $G<10$ are sparse. Rows reproduce values from Tables~\ref{tab:coverage}, \ref{tab:baselines}, \ref{tab:cue_ablation}, \ref{tab:semantic_compact}, \ref{tab:conditional}, \ref{tab:annotation_coverage} and Appendices~\ref{app:complete} and~\ref{app:extension}; none is new evidence. Amendment rows use bootstrap seed 20261102.}
+\label{tab:evidence_summary}
+\begin{tabular}{llrlll}
+\toprule
+Comparison & Domain / criterion & $G$ & Difference & Interval & Reading \\
+\midrule
+\multicolumn{6}{l}{\emph{Primary family: HumT minus random, broad $D$ (adjusted)}} \\
+ & Mental health & 99 & $+5.5$ & $[-2.0, +13.8]$ & includes 0 \\
+ & Education & 7 & $+38.3$ & $[-19.8, +80.1]$ & includes 0; sparse \\
+ & General health & 15 & $+23.5$ & $[+0.1, +50.5]$ & excl.\ (narrowly) \\
+\midrule
+\multicolumn{6}{l}{\emph{HumT minus markers, dimension-rater criteria}} \\
+ & MH broad $D$ & 99 & $-12.7$ & $[-21.9, -4.3]$ & excl.; favors markers \\
+ & MH fit & 77 & $-4.2$ & $[-14.6, +6.8]$ & includes 0 (later seed) \\
+ & ED broad $D$ & 7 & $-16.7$ & $[-50.0, +16.7]$ & includes 0; sparse \\
+ & ED fit & 17 & $+36.0$ & $[+15.4, +58.6]$ & excl.; favors HumT \\
+ & GH broad $D$ & 15 & $-47.8$ & $[-63.2, -25.9]$ & excl.; favors markers \\
+ & GH fit & 69 & $-5.8$ & $[-13.6, +2.9]$ & includes 0 \\
+\midrule
+\multicolumn{6}{l}{\emph{HumT minus markers, separate rubric-blind OA raters}} \\
+ & MH OA & 111 & $-1.5$ & $[-9.2, +8.4]$ & includes 0 (later seed) \\
+ & ED OA & 10 & $+33.3$ & $[-7.7, +71.4]$ & includes 0; sign as ED fit \\
+ & GH OA & 7 & $-66.7$ & $[-100.0, -28.5]$ & excl.; sparse \\
+\midrule
+\multicolumn{6}{l}{\emph{HumT minus markers, external contextual target (follow-up)}} \\
+ & MH reviewworthy & 13 & $-31.6$ & $[-66.7, +4.3]$ & includes 0; Sec.~\ref{sec:assessmentresults} \\
+\midrule
+\multicolumn{6}{l}{\emph{HumT minus ablated lexicon, broad $D$ (exploratory, Table~\ref{tab:cue_ablation})}} \\
+ & MH, no first person (13 cues) & 99 & $-7.3$ & $[-16.4, +1.4]$ & includes 0; margin shrinks \\
+ & MH, no pronouns (8 cues) & 99 & $-18.2$ & $[-27.0, -8.9]$ & excl.; favors lexicon \\
+ & GH, no pronouns (8 cues) & 15 & $-30.4$ & $[-50.0, +0.0]$ & touches 0; favors lexicon \\
+\midrule
+\multicolumn{6}{l}{\emph{HumT minus fixed NLI screen (exploratory, Table~\ref{tab:semantic_compact})}} \\
+ & MH broad $D$ & 99 & $-1.8$ & $[-10.0, +6.4]$ & no clear difference \\
+ & GH broad $D$ & 15 & $-13.0$ & $[-38.7, +13.6]$ & includes 0 \\
+ & MH fit & 77 & $-11.6$ & $[-22.3, +0.0]$ & touches 0; favors judge \\
+ & ED fit & 17 & $+12.0$ & $[-25.0, +42.3]$ & includes 0; sign as ED fit above \\
+ & GH OA & 7 & $-55.6$ & $[-87.5, -20.0]$ & excl.; sparse \\
+\midrule
+\multicolumn{6}{l}{\emph{Adding HumT to trained lexical screen (held-out)}} \\
+ & 9 domain--criterion cells & -- & $-2.4$ to $+8.3$ & all include 0 & no incremental gain shown \\
+ & 18 embedding-augmented cells & -- & $-5.6$ to $+25.0$ & all include 0 & largest cell sparse (ED, $G=7$) \\
+\bottomrule
+\end{tabular}
+\end{table}

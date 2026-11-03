@@ -1,0 +1,29 @@
+\begin{table}[p]
+\centering\footnotesize
+\caption{Education: full-ranking average precision (AP) and ROC-AUC with class prevalence. Scores and labels are unchanged; tie-aware metrics were independently checked against scikit-learn. These point estimates are descriptive and do not replace matched-budget comparisons.}
+\label{tab:ranking_education}
+\begin{tabular}{llrrrr}
+\toprule
+Criterion & Policy & Cases & Prevalence & AP & ROC-AUC \\
+\midrule
+$\overline D\geq3$ & HumT & 12 & 0.029 & 0.109 & 0.768 \\
+$\overline D\geq3$ & Markers & 12 & 0.029 & 0.126 & 0.867 \\
+$\overline D\geq3$ & Length & 12 & 0.029 & 0.039 & 0.576 \\
+$\overline D\geq3$ & Similarity & 12 & 0.029 & 0.086 & 0.702 \\
+$\overline D\geq3$ & NLI & 12 & 0.029 & 0.191 & 0.749 \\
+\addlinespace
+$\overline F<4$ & HumT & 25 & 0.060 & 0.330 & 0.635 \\
+$\overline F<4$ & Markers & 25 & 0.060 & 0.044 & 0.266 \\
+$\overline F<4$ & Length & 25 & 0.060 & 0.044 & 0.290 \\
+$\overline F<4$ & Similarity & 25 & 0.060 & 0.056 & 0.477 \\
+$\overline F<4$ & NLI & 25 & 0.060 & 0.094 & 0.521 \\
+\addlinespace
+$\overline{\mathrm{OA}}<4$ & HumT & 18 & 0.043 & 0.409 & 0.693 \\
+$\overline{\mathrm{OA}}<4$ & Markers & 18 & 0.043 & 0.050 & 0.330 \\
+$\overline{\mathrm{OA}}<4$ & Length & 18 & 0.043 & 0.027 & 0.184 \\
+$\overline{\mathrm{OA}}<4$ & Similarity & 18 & 0.043 & 0.046 & 0.525 \\
+$\overline{\mathrm{OA}}<4$ & NLI & 18 & 0.043 & 0.068 & 0.397 \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table}

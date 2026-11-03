@@ -1,0 +1,179 @@
+\section{Corpus Details}\label{app:corpus}
+The mental-health pack contains 100 natural questions from CounselBench-Eval and 120 adversarial prompts from CounselBench-Adv~\cite{CounselBench2025}. Education adapts Bridge and MathDial~\cite{bridge2024,mathdial2023}, and general health adapts HealthBench~\cite{healthbench2025}; both add study-authored adversarial scenarios. The packs are not complete benchmark replications. Mental health includes topics such as general distress, psychoeducation, crisis risk and professional boundaries. Education includes concept help, worked examples, answer seeking, academic integrity, motivation and relationship boundaries. General-health assessment distinguishes informational needs, risk and professional boundaries. Natural/adversarial sets are not paired variants of the same prompts.
+
+Source records name \texttt{gpt-5.6-sol}, \texttt{anthropic/claude-opus-4.8} and \texttt{z-ai/glm-5.2}. These strings are recorded endpoint labels, not authenticated provider snapshots; we preserve the first label rather than add an unverified provider prefix. Exact generation dates are not established by the records used here. Mental-health generation used a ``professional therapist'' system role and a single response without further interaction. That instruction is not evidence of a licensed credential or a neutral chatbot design. Mental health has 220 response triples; education has 138 triples and one singleton; general health has 136 triples, three pairs and one singleton. Complete-set model comparisons retain 220, 138 and 136 groups, respectively. We do not infer model-family rankings from three endpoints.
+
+\section{Label Agreement and Cutoff Diagnostics}\label{app:labels}
+Table~\ref{tab:reliability} includes E for source completeness, although E is not a screening endpoint. Table~\ref{tab:cutoffs} distinguishes closeness of a mean to the cutoff from agreement on individual-rater trigger membership. The source ICC/alpha intervals use response-level rather than prompt-cluster resampling. Figure~\ref{fig:distributions} shows the concentration of mental-health means at D=3; high agreement does not establish criterion validity.
+\input{tables/reliability}
+\input{tables/cutoffs}
+\begin{figure}[htbp]
+\centering\includegraphics[width=\linewidth]{figures/d_mean_distributions.pdf}
+\caption{Recorded five-rater D means by domain. Dashed lines mark $\overline D\geq3$. Panels use separate count scales; the concentration at the cutoff matters for threshold sensitivity.}
+\Description{Count plots of mean D scores, with a cutoff at three. Mental health has many observations exactly at the cutoff; education and general health are concentrated below it.}
+\label{fig:distributions}
+\end{figure}
+
+\clearpage
+\section{Budget, Workload and Complementarity}\label{app:transfer}
+Tables~\ref{tab:oracle_context} and~\ref{tab:complementarity} contextualize exact-budget coverage and policy overlap. Oracle recall is $R^*=\min(1,k/P)$; prevalence-relative lift is $(T/k)/(P/n)$. The achieved fraction of oracle recall is $(T/P)/R^*$, equal to precision when $0<k\leq P$. These are algebraically related descriptions, not independent evidence, and the oracle has access to unavailable labels.
+\input{tables/oracle_context}
+\input{tables/complementarity}
+For target recall $r$, retrospective workload is the smallest prefix containing $\lceil rP\rceil$ positives divided by $n$. Under random ordering its expected prefix length is $\lceil rP\rceil(n+1)/(P+1)$. Tables~\ref{tab:workload} and~\ref{tab:workload_transfer}, and Figure~\ref{fig:workloadtargets}, retain all targets. At 80\% mental-health D recall, workload is 70.8\% for HumT, 79.6\% for random, 66.1\% for length and 63.3\% for markers. Paired differences are \MHWorkRandom{}, \MHWorkLength{} and \MHWorkMarkers{} percentage points, respectively. The intervals support improvement over random, not over the two lexical alternatives. These fractions assume labels are known retrospectively, not a deployable stopping rule or measured time saving.
+\input{tables/workload}
+\input{tables/workload_transfer}
+\begin{figure}[htbp]
+\centering\includegraphics[width=\linewidth]{figures/workload_targets.pdf}
+\caption{Retrospective workload at four broad-D recall targets. Intervals are exploratory pointwise 95\%; random values are expected order statistics. Lines connect evaluated targets.}
+\Description{Three domain panels compare workload for HumT, length, markers and random ordering at 50, 80, 90 and 100 percent recall.}
+\label{fig:workloadtargets}
+\end{figure}
+Figures~\ref{fig:budgets} and~\ref{fig:transferbudgets} retain the original three-criterion capacity curves, distinct from the added semantic comparison in Figure~\ref{fig:budgetcomparison}. Table~\ref{tab:broad_budget_all} gives every broad-D point and interval from that added comparison.
+\input{tables/broad_budget_all}
+\begin{figure}[htbp]
+\centering\includegraphics[width=\linewidth]{figures/mental_health_budgets.pdf}
+\caption{Original mental-health budget curves for D, fit and OA. Shading shows HumT's pointwise 95\% intervals only; it does not imply uncertainty-free baselines. Paired reference-budget contrasts are retained below.}
+\Description{Three panels show HumT, length, markers and random expected recall across four capacities in mental health.}
+\label{fig:budgets}
+\end{figure}
+\begin{figure}[htbp]
+\centering\includegraphics[width=\linewidth]{figures/transfer_budgets.pdf}
+\caption{Original education and general-health capacity curves. Shading shows HumT's pointwise 95\% intervals. Sparse cells limit interpretation even when recall point estimates are high.}
+\Description{Six panels show three criteria in education and general health at four capacities.}
+\label{fig:transferbudgets}
+\end{figure}
+
+\clearpage
+\section{Complete Policy Comparisons}\label{app:complete}
+Table~\ref{tab:evidence_summary} maps the headline intervals. Tables~\ref{tab:coverage}, \ref{tab:baselines} and~\ref{tab:conditional} report original coverage, baselines and the trained increment. Figures~\ref{fig:paired} and~\ref{fig:alignment} visualize paired contrasts without treating them as independent replications.
+\input{tables/evidence_summary}
+\begin{figure}[htbp]
+\centering\includegraphics[width=\linewidth]{figures/paired_summary.pdf}
+\caption{Exploratory paired recall contrasts. Left: HumT minus markers in full-domain queues. Right: adding HumT to trained lexical features in held-out batches. Capacities, procedures and axis scales differ; the panels are not a matched-budget comparison. Hollow points mark sparse support.}
+\Description{Two forest plots show criterion-dependent HumT--marker differences and nine uncertain trained incremental differences.}
+\label{fig:paired}
+\end{figure}
+\begin{figure}[htbp]
+\centering\includegraphics[width=\linewidth]{figures/alignment_diagnostic.pdf}
+\caption{Sensitivity to target and rating population. Recall differences are HumT minus markers with pointwise 95\% intervals. The stricter-D rows use 300-character markers; the other rows use full text. Targets and populations change together: the vertical arrangement is not a causal scale of independence from rubric alignment. Sparse rows have hollow points.}
+\Description{A forest plot shows attenuation and changes in ordering across broad and strict D, OA, contextual follow-up, and fit criteria.}
+\label{fig:alignment}
+\end{figure}
+\input{tables/coverage}
+\input{tables/baselines}
+\input{tables/conditional}
+Tables~\ref{tab:full_mental_health}, \ref{tab:full_education} and~\ref{tab:full_health} retain every original full-domain D, fit and OA cell, including fusion. Tables~\ref{tab:held_mental_health}, \ref{tab:held_education} and~\ref{tab:held_health} compare all seven original policies in identical held-out batches. Their capacities differ from the full-domain procedure. Table~\ref{tab:split_sensitivity} reports alternative folds, not new independently sampled data.
+\input{tables/full_mental_health}
+\input{tables/full_education}
+\input{tables/full_health}
+\input{tables/held_mental_health}
+\input{tables/held_education}
+\input{tables/held_health}
+\input{tables/split_sensitivity}
+Each mental-health model trains on 528 responses (2,640 criterion ratings); education uses 331--334 and general health 331--333. Training sets overlap, so these are not additive acquisition costs. No point-estimate fit needed the single-class fallback. In the original 2,000-draw refitted comparison, it occurred in 68 education and 50 general-health draws (154 and 116 fits), and no mental-health draw. Education D and general-health OA retain 1,998 finite paired draws; other original conditional-lift cells retain 2,000. These counts do not describe the later semantic-feature bootstrap.
+
+\clearpage
+\section{Common-Queue Coverage Details}\label{app:queue}
+Tables~\ref{tab:common_queue_slots} and~\ref{tab:common_queue_conditions} project a single domain-level ranking onto conditions. They do not rerank or reserve 20\% within each subgroup. The computational record retains 525 cells across condition, model and scenario partitions, including zero-positive groups. Each partition reconstructs full-domain selected/caught totals. Undefined group-versus-complement contrasts retain explicit finite-draw counts. Random category precision is a ratio of expected caught cases to expected slots, not the expectation of a random ratio. No demographic attributes were inferred.
+\input{tables/common_queue_slots}
+\input{tables/common_queue_conditions}
+
+\clearpage
+\section{Criterion and Text-Provenance Sensitivity}\label{app:sensitivity}
+Education/general-health prompt IDs are reconstructed from text and model attribution from HumT exports. Replaying the join reproduces all recorded scores and join tiers. Among 830 pairs, 771 are byte-identical; the 59 nonidentical pairs comprise 52 prefix and seven fuzzy joins. These are not solely cosmetic differences. Original scores and observations remain unchanged.
+
+The published HumT definition uses a 300-character window~\cite{cheng2025humt}. The available code takes the first 300 characters of each response. It contrasts GPT-2 mean token losses under He/She and It frames over 100 dropout-active passes per prefix set, including prefix tokens in the loss. This inspection does not authenticate historical calls or turn the contrast into a calibrated probability. Table~\ref{tab:prefix_threshold} recomputes markers on the same annotated-text window, including partially cut tokens. Prefix length captures 58/165 mental-health D cases versus 54 for full length. The window analysis retains all criteria, budgets and stricter D cutoffs; mean D above 3 includes 3.2--3.8 and is not D at least 4.
+\input{tables/prefix_threshold}
+
+Window intervals use 2,000 paired prompt resamples, bootstrap seed 20261026 and policy seed 20261002. Finite counts are 1,967 for mental-health $D\geq4$; 1,995/1,979/1,979 for education $D\geq3$, $D>3$, $D\geq4$; and 1,995/1,999 for general-health $D\geq4$/OA. Other cells retain 2,000. Prefix markers capture 10/19 follow-up cases versus HumT's six, with a HumT-minus-marker interval $[-55.6,+3.6]$; full-text markers capture twelve. These variants are not interchangeable.
+
+Table~\ref{tab:exclusive_profiles} describes all cases selected only by one original queue. Marker-only broad-D cases include 19 above D=3, three at least 4 and seven follow-up positives; HumT-only cases include six above 3, none at least 4 and one follow-up positive. The profile is descriptive, not a mechanism test. At mean D at least 4, HumT captures zero/five mental-health, three/eight education and two/eight general-health cases, supported by four/five/six prompts. Majority-rater D membership yields captures 48/200, 12/22 and 11/24; unanimous membership gives 39/150, 7/12 and 6/17. None establishes normative validity.
+\input{tables/exclusive_profiles}
+
+Only six mental-health, four education and six general-health responses meet all three original criteria. The record retains all eight intersections and continuous relationships; prevalence and cutoffs can produce low overlap without normative disagreement. No trained policy was refitted for these threshold variants.
+
+Table~\ref{tab:provenance_composition} and the prefix audit below report text discrepancies and subset composition. Computing lexical features from export strings on unchanged full batches leaves every 20\% criterion capture count unchanged in both additional domains, including fusion. This does not establish identical selected IDs or authenticate scoring. The 56 differing education pairs contain two fit cases and no D/OA cases; the three health pairs contain none. Nevertheless, such rows can affect competition for slots. At fixed 83-slot capacity, byte-identical subsets capture seven/twelve education D and ten/23 health D cases. At 20\% of the reduced subsets, 71 and 82 slots capture six and ten. These are descriptive sensitivity checks, not causal estimates of join error.
+\input{tables/provenance_composition}
+\input{tables/provenance_truncation}
+
+\clearpage
+\section{Assessment Follow-up}\label{app:assessment}
+The two full assessment streams and the selectively assessed disagreements are kept distinct. Tables~\ref{tab:annotation_coverage}, \ref{tab:annotation_sensitivity}, \ref{tab:annotation_budgets} and~\ref{tab:annotation_overlap} retain original-policy coverage, alternate label definitions, capacities and intersections with original criteria. Instruction version changes are confounded with assessor identity; selective third assessment does not establish reliability on undisputed items. Missing tool logs do not establish absent capabilities.
+\input{tables/annotation_coverage}
+\input{tables/annotation_sensitivity}
+\input{tables/annotation_budgets}
+\input{tables/annotation_overlap}
+\input{tables/annotation_paired_exact}
+
+Table~\ref{tab:annotation_paired_exact} gives the paired counts: both queues capture four, markers alone eight, HumT alone two and neither five. The two-sided exact binomial version of McNemar's paired test~\cite{mcnemar1947} gives $p=0.109$. Under an independent-discordant-case model and Beta(1,1) prior, the probability that the marker capture probability exceeds HumT's is 0.967. These assumptions do not account for prompt clustering; the figures are secondary case-level descriptions, not stronger replacements for the cluster interval. A normal-approximation paired planning calculation~\cite{connor1987paired}, plugging in the observed sensitivities and discordance, gives 39 positive cases at 80\% power and two-sided 5\%, with 23--73 over feasible discordance. This is an illustrative independence-based calculation, not a cluster-adjusted sample-size recommendation or a guarantee of resolution. The observed prevalence, effect and clustering are themselves uncertain.
+
+The imported follow-up HumT queue matches all 132 original selected IDs, but imported marker/length queues match only 41/51. They use different lexical definitions. Headline results reconstruct the original normalized-marker and token-length policies; imported queues remain a separate sensitivity, not replications. The follow-up frame differs from source text in 601 encoding-only response cases and 129 prompt cases. IDs, groups and HumT scores agree; original text determines original-policy features.
+
+For the semantic extension, all 660 frame IDs were matched uniquely to the source corpus, each text difference was verified as the documented encoding transformation, and the corpus hash matched the score-cache manifest. Reconstructed HumT/marker/length selected IDs matched the stored queues at all four budgets. Frozen MiniLM and NLI scores were evaluated without new model calls or label-informed changes. The response-only screens do not receive the follow-up instructions as scoring inputs. Table~\ref{tab:followup_budgets_all} gives all plotted follow-up capacities and intervals; Table~\ref{tab:semantic_followup_all} retains reference comparisons against HumT, markers and random. All six policies share 2,000 prompt draws with seed 20261010, occurrence-specific tie keys and re-ranking at the exact quota. Labels are never scoring inputs.
+\input{tables/followup_budgets_all}
+\input{tables/semantic_followup_all}
+
+\clearpage
+\section{Cue Ablation and Semantic Screens}\label{app:extension}
+The exploratory cue and semantic analyses were specified after prior results had been inspected. Variants, anchors and the NLI hypothesis were fixed before their first scoring run; they are not preregistered unseen tests. Corpus hashes, seeds and exact model revisions are recorded. Every original fixed-policy point count reproduces. Fixed-policy intervals here use bootstrap seed 20261102 rather than the original seed, so small interval differences across tables reflect different resamples. This statement does not apply to the trained uncertainty procedures, which also differ as described below.
+
+\paragraph{Cue removals.}
+The variants are the 22-word list without \emph{sorry}, the 13-word list without \texttt{i, me, my, mine, myself, we, us, our, ours, ourselves}, and the eight-word list \texttt{hello, hi, hey, thanks, thank, welcome, sorry, please}. Table~\ref{tab:cue_ablation} retains all domains. Removing these categories does not remove every possible association between the remaining words and the rubric.
+\input{tables/cue_ablation}
+
+\paragraph{Fixed semantic models.}
+Similarity encodes responses with a fixed MiniLM model. Its identifier and revision are:
+\begin{quote}\footnotesize\ttfamily
+sentence-transformers/all-MiniLM-L6-v2\\
+1110a243fdf4706b3f48f1d95db1a4f5529b4d41
+\end{quote}
+The input limit is 256 wordpieces, with unit-normalized embeddings. The score is maximum cosine similarity to four fixed anchors: ``I feel sad hearing this and I truly care about you.''; ``I remember what you told me before and I will always be here for you.''; ``As your therapist, I understand exactly what you are going through.''; and ``You can rely on me; I will never leave you and you can depend on me.''
+
+NLI uses \path{facebook/bart-large-mnli}, revision \texttt{d7645e127eaf1aefc786\allowbreak 2fd59a17a5aa8558b8ce}, with hypothesis ``The writer claims to have personal feelings, memories of the reader, an ongoing relationship with the reader, or a human professional identity.'' The runner imposes a 512-token combined-input limit and truncates the premise only; this is a chosen setting, not the model's 1,024-position architectural limit. It ranks the entailment probability from contradiction/entailment logits, excluding neutral. Both models run locally without stochastic generation. The anchors/hypothesis emphasize stronger D cues and do not implement the entire broad or contextual rubric. Table~\ref{tab:semantic_fixed} retains all original criteria and paired contrasts.
+\input{tables/semantic_fixed}
+
+\paragraph{Semantic features in trained screens.}
+Table~\ref{tab:semantic_heldout} gives every feature-set count; Table~\ref{tab:semantic_increments} gives all 18 HumT increments. The 384-dimensional embedding and a training-fitted 16-component PCA version augment the lexical features. The PCA choice followed inspection of the full-dimensional results. All other settings remain $C=1$, training-only scaling, original prompt folds and the single-class fallback. Each paired semantic-feature bootstrap draw resamples prompts across the domain while retaining their original fold membership, then refits each model. The original lexical bootstrap instead resamples within each fixed fold. The 1,000-draw semantic procedure can vary fold sizes, whereas the original 2,000-draw procedure conditions on them; intervals therefore differ in more than random seed. No prompt copy crosses its original training/test boundary.
+\input{tables/semantic_heldout}
+\input{tables/semantic_increments}
+
+The semantic-scoring run manifest records NumPy 2.5.4, scikit-learn 1.9.1, PyTorch 2.15.0, Transformers 5.22.1 and Sentence-Transformers 6.2.0. These describe the score-generation environment, not the separate original-analysis or current cached-score evaluation environment. The latter is recorded in its own manifest. Source annotations and cached scores are unchanged.
+
+\clearpage
+\section{Ranking, Tie and Pooled Results}\label{app:rankings}
+Tables~\ref{tab:ranking_mental_health}, \ref{tab:ranking_education} and~\ref{tab:ranking_health} report all original-criterion AP/ROC-AUC point estimates for the five fixed score policies, with class prevalence. The tie-aware implementation was checked independently against scikit-learn. Table~\ref{tab:ties} reports all 100-seed capture ranges: HumT and markers' 20\% captures are unchanged across every original domain/criterion cell; some length captures vary. Table~\ref{tab:pooled} reports the secondary pooled results rather than leaving them only in code. Domain mixture changes the meaning of pooled coverage and cannot estimate deployment prevalence.
+\input{tables/ranking_mental_health}
+\input{tables/ranking_education}
+\input{tables/ranking_health}
+\input{tables/tie_summary}
+\input{tables/pooled_reference}
+
+\clearpage
+\section{Implementation and Analysis Status}\label{app:implementation}
+Tokenization uses \verb|\b\w+\b| after lowercasing. The marker dictionary is \texttt{i, me, my, mine, myself, we, us, our, ours, ourselves, you, your, yours, yourself, yourselves, hello, hi, hey, thanks, thank, welcome, sorry, please}. Matching tokens are divided by token count; empty responses score zero. Length uses the same tokens. Larger recorded HumT values rank first. Nonfinite scores are rejected.
+
+Tie keys use the first eight bytes of a SHA256 digest of seed 20261002 and stable ID. Sorting is by descending score, then ascending key. The integer-floor quota avoids excess selections under ties. Pooled proportional random allocation uses Hamilton largest remainders with alphabetical domain tie resolution. Undefined no-positive recall/AP or one-class AUC is not replaced by zero. In the original fixed-policy reference cells, education D retains 1,999 draws and general-health OA 1,998; the remaining cells retain 2,000. Adjusted primary intervals cover only the three designated HumT--random D comparisons.
+
+Original analysis dependencies are NumPy 2.4.4, pandas 3.0.2, SciPy 1.17.1, Matplotlib 3.10.8 and scikit-learn 1.8.0. Logistic models use tolerance $10^{-8}$ and at most 2,000 iterations; convergence warnings are errors. Sorted unique prompt IDs are permuted with seed 20261002 into five nearly equal prompt-count folds. Alternative seeds are 20261003--20261012; none is selected by performance. Tests cover quotas, tied-score metrics, undefined outcomes, prompt integrity, training-only transforms, paired inference and label exclusion from screening inputs. The semantic follow-up additionally tests unique-ID joins, coverage, score/text mismatch detection, and input immutability.
+
+\subsection{Analysis status}\label{app:stages}
+Table~\ref{tab:analysis_status} distinguishes prior specification from later exploration without treating a specification on inspected data as preregistration.
+\begin{table}[htbp]
+\centering\small
+\caption{Analysis status. All stages reuse the same responses; the follow-up adds human judgments, not new sampled chatbot outputs.}
+\label{tab:analysis_status}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Stage & Status and relationship to inspected evidence \\
+\midrule
+Primary HumT--random D family & Three domain contrasts and four capacities specified after earlier threshold/ranking exploration. \\
+Fusion, trained screens, coverage & Exploratory additions after original results; original primary comparisons retained. \\
+Follow-up policy evaluation & Computational specification followed inspection of judgments and point counts; labels not used to fit policies. \\
+Cue ablation and semantic screens & Exploratory; lexical results already known; anchors/hypothesis fixed before scoring. \\
+Reduced embedding features & Added after observing full-dimensional performance; train-only PCA, no unseen-confirmatory claim. \\
+Semantic follow-up comparison & Existing score cache joined to previously inspected labels, with no model calls or retuning. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The wider project also examined OA prediction and cross-target training. Those analyses are outside this paper's claims; their code and results remain in the project record. Original annotations and historical numerical outputs were not changed or deleted. The record retains input hashes, software versions, seeds, criteria, commands and every reported table. An original-pipeline rerun reproduced 29 CSV tables and three figures byte-for-byte. Follow-up records reconstruct resolution and policy selections. Private consent records, institutional letters, identifying links and raw follow-up materials are excluded from the anonymous typesetting package, which is not a complete public data release.

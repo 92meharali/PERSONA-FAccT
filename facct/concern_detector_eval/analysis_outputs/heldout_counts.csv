@@ -1,0 +1,10 @@
+domain,criterion,P,slots,lex,lex+H,lex+emb,lex+emb+H,emb,lex+emb16,lex+emb16+H
+mental_health,D>=3,165,130,70,66,69,69,69,74,79
+mental_health,F<4,95,130,32,33,16,16,14,30,30
+mental_health,OA<4,133,130,26,30,39,37,39,35,34
+education,D>=3,12,80,7,8,6,6,6,6,9
+education,F<4,25,80,13,13,13,13,11,14,14
+education,OA<4,18,80,12,12,11,10,11,12,12
+health,D>=3,23,80,21,21,11,11,11,18,18
+health,F<4,120,80,29,30,21,23,23,30,31
+health,OA<4,9,80,8,8,8,8,8,7,7

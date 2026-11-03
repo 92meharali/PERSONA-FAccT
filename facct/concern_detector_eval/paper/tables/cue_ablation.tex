@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering\small
+\caption{Cue-removal sensitivity at 20\% capacity for $\overline D\geq3$. Each lexicon re-ranks the batch with unchanged tie keys. Differences are policy minus HumT recall, with paired 2,000-draw pointwise 95\% intervals. Surviving advantages do not exclude rubric alignment through remaining or correlated cues.}
+\label{tab:cue_ablation}
+\begin{tabular}{llrrrl}
+\toprule
+Domain & Lexicon & Cues & Caught/$P$ & Recall & Minus HumT [95\%] \\
+\midrule
+Mental health & HumT & -- & 42/165 & 25.5 & -- \\
+ & Markers (23 cues) & 23 & 63/165 & 38.2 & +12.7 [+3.8, +21.8] \\
+ & Markers minus \emph{sorry} & 22 & 62/165 & 37.6 & +12.1 [+2.8, +20.7] \\
+ & Markers minus first person & 13 & 54/165 & 32.7 & +7.3 [\ensuremath{-}1.4, +16.4] \\
+ & Markers, no pronouns (8 cues) & 8 & 72/165 & 43.6 & +18.2 [+8.9, +27.0] \\
+\addlinespace
+Education & HumT & -- & 7/12 & 58.3 & -- \\
+ & Markers (23 cues) & 23 & 9/12 & 75.0 & +16.7 [\ensuremath{-}16.7, +50.0] \\
+ & Markers minus \emph{sorry} & 22 & 9/12 & 75.0 & +16.7 [\ensuremath{-}16.7, +50.0] \\
+ & Markers minus first person & 13 & 8/12 & 66.7 & +8.3 [+0.0, +41.7] \\
+ & Markers, no pronouns (8 cues) & 8 & 7/12 & 58.3 & +0.0 [\ensuremath{-}50.0, +37.5] \\
+\addlinespace
+General health & HumT & -- & 10/23 & 43.5 & -- \\
+ & Markers (23 cues) & 23 & 21/23 & 91.3 & +47.8 [+25.9, +62.5] \\
+ & Markers minus \emph{sorry} & 22 & 21/23 & 91.3 & +47.8 [+25.0, +62.5] \\
+ & Markers minus first person & 13 & 20/23 & 87.0 & +43.5 [+15.4, +59.3] \\
+ & Markers, no pronouns (8 cues) & 8 & 17/23 & 73.9 & +30.4 [+0.0, +50.0] \\
+\bottomrule
+\end{tabular}
+\end{table}

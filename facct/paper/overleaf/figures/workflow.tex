@@ -1,0 +1,43 @@
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  font=\sffamily\footnotesize,
+  box/.style={draw=black!80, line width=.5pt, rounded corners=1pt,
+    align=center, text width=3.8cm, minimum height=1.08cm, inner sep=5pt},
+  flow/.style={-{Stealth[length=2mm]}, line width=.6pt},
+  evidence/.style={flow, dashed},
+  node distance=5mm and 8mm]
+\node[box, fill=black!5, text width=12.9cm] (data)
+  {\textbf{1. Fix the review setting}\\
+   1,490 single-turn responses; three domain batches\\
+   Set review criterion and capacity before comparing queues};
+\node[box, below=6mm of data.south west, anchor=north west] (scores)
+  {\textbf{2. Score without evaluation labels}\\
+   HumT; markers; length;\\fixed NLI and similarity};
+\node[box, right=of scores] (quota)
+  {\textbf{3. Fill exactly $k$ slots}\\
+   Rank responses; resolve ties\\
+   $k=\lfloor b n\rfloor$; random comparator};
+\node[box, right=of quota] (out)
+  {\textbf{4. Evaluate selected and missed cases}\\
+   Recall, precision, omissions;\\paired prompt-cluster intervals};
+\draw[flow] (data.south -| scores.north) -- (scores.north);
+\draw[flow] (scores) -- (quota);
+\draw[flow] (quota) -- (out);
+\node[box, below=7mm of scores, text width=8.05cm, anchor=north west] (trained)
+  at ([yshift=-7mm]scores.south west)
+  {\textbf{Separate trained comparison}\\
+   Learn from four prompt folds; select in the held-out fold\\
+   Compare lexical / embedding features with and without HumT};
+\node[box, below=7mm of out, fill=black!5] (labels)
+  {\textbf{Evaluation-only judgments}\\
+   Original D, F and OA;\\independent mental-health follow-up};
+\draw[evidence] (labels.north) -- node[right,font=\scriptsize]{no scoring access} (out.south);
+\draw[flow] (trained.east) -- ++(3mm,0) |- ([yshift=-2mm]out.south west);
+\node[align=center, font=\sffamily\scriptsize, below=3mm of trained.south west, anchor=north west]
+  {5. Check thresholds, cue removals and category coverage. Report all comparisons.};
+\end{tikzpicture}
+\caption{The audit separates ranking from evaluation. Original ratings train only the explicitly supervised screens, using training prompt groups; held-out and follow-up labels never enter their own selection rule. The procedure measures which concern cases enter a queue, not what a reviewer subsequently decides.}
+\Description{A monochrome workflow starts with fixed review batches, criteria and capacity, then scores responses, fills an exact quota and evaluates captured and missed cases. A dashed arrow supplies evaluation labels only to the evaluation stage. A separate branch trains on other prompt groups to test the incremental value of HumT.}
+\label{fig:workflow}
+\end{figure}

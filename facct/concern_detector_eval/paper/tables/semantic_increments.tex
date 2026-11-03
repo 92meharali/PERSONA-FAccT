@@ -1,0 +1,20 @@
+\begin{table}[p]
+\centering\footnotesize
+\caption{All 18 HumT additions to embedding-augmented screens. Recall differences in percentage points are (Lex+Emb+H) minus (Lex+Emb), and the corresponding Emb16 contrast. Intervals use 1,000 paired refitted domain-level prompt resamples retaining fold membership; all include zero. The Emb16 representation was selected after inspecting the full-dimensional results.}
+\label{tab:semantic_increments}
+\begin{tabular}{llll}
+\toprule
+Domain & Criterion & Full embedding & 16-component embedding \\
+\midrule
+Mental health & $\overline D\geq3$ & $+0.0 [-2.6, +3.2]$ & $+3.0 [-3.0, +4.7]$ \\
+Mental health & $\overline F<4$ & $+0.0 [-3.1, +3.3]$ & $+0.0 [-4.9, +5.9]$ \\
+Mental health & $\overline{\mathrm{OA}}<4$ & $-1.5 [-2.9, +2.4]$ & $-0.8 [-4.3, +4.7]$ \\
+Education & $\overline D\geq3$ & $+0.0 [-9.1, +11.1]$ & $+25.0 [-25.0, +25.0]$ \\
+Education & $\overline F<4$ & $+0.0 [-7.1, +8.4]$ & $+0.0 [-14.3, +8.0]$ \\
+Education & $\overline{\mathrm{OA}}<4$ & $-5.6 [-12.5, +6.2]$ & $+0.0 [-16.7, +9.1]$ \\
+General health & $\overline D\geq3$ & $+0.0 [-8.0, +11.8]$ & $+0.0 [-14.3, +14.3]$ \\
+General health & $\overline F<4$ & $+1.7 [-2.6, +2.6]$ & $+0.8 [-4.0, +7.4]$ \\
+General health & $\overline{\mathrm{OA}}<4$ & $+0.0 [+0.0, +0.0]$ & $+0.0 [-9.1, +10.0]$ \\
+\bottomrule
+\end{tabular}
+\end{table}

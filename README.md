@@ -1,5 +1,50 @@
 # PERSONA FAccT: Review Allocation Study
 
+## Current Release: 3 November 2026
+
+**When Tone Scores Allocate Attention: Auditing Human-Like Tone for Budgeted
+Review of Chatbot Responses**
+
+The current paper incorporates the professor's revision, including a
+self-contained corpus/rubric account, editable workflow, fixed semantic and
+trained comparisons, complete sensitivity results and verified references.
+It evaluates review allocation, not downstream reviewer effectiveness or
+the validity of a general appropriateness-prediction framework.
+
+- [Active Overleaf source](facct/paper/overleaf/main.tex)
+- [Compiled paper](facct/paper/overleaf/main.pdf)
+- [Complete Overleaf ZIP](facct/releases/PERSONA_FAccT_Professor_Revision_2026-11-03.zip)
+- [Changes and author checks](facct/concern_detector_eval/notes/professor_revision_response.md)
+- [Analysis, tests and reproduction](facct/concern_detector_eval/README.md)
+- [Release manifest](facct/paper/overleaf/package_manifest.json)
+
+The compiled PDF contains **12 main-text pages, one endmatter page, two
+reference pages and 28 appendix pages**. All 20 extension tests pass. No
+unresolved citations, references or overfull boxes were found in the release.
+On 3 November the author confirmed follow-up assessor compensation through
+existing paid research roles; the manuscript placeholder is resolved. Authors
+still need to check actual tool-use details, the Overleaf build and submission
+portal requirements. Uploading to GitHub is not conference submission.
+
+At 132 mental-health review slots, the independent follow-up captures are
+HumT 6/19, markers 12/19, length 4/19, similarity 4/19 and NLI 2/19, versus a
+random expectation of 3.8/19. The HumT-marker interval includes zero. Semantic
+scores were cached; no new model calls or participant judgments were made.
+Source data are unchanged. Private study inputs are required to reproduce
+the follow-up join and are not included in the release.
+
+GitHub reported this repository as **public** on 3 November 2026. The
+anonymous Overleaf ZIP contains no private participant records; the repository
+itself is not anonymous. Check venue anonymity and source-sharing requirements
+before sharing the repository with reviewers.
+
+## Historical Overview (Superseded)
+
+The remainder records the earlier October 28 state, not the current release.
+Its older package links, page counts and absence of semantic comparisons do
+not describe the November 3 manuscript. Historical analyses remain available
+without altering their original results.
+
 Private research repository, originally snapshotted on **16 October 2026**.
 The capability-grounded direction adopted on **23 October 2026** was superseded
 on **24 October 2026**: the author chose no new experiments for this deadline and

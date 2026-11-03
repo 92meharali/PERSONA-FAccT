@@ -1,0 +1,29 @@
+\begin{table}[p]
+\centering\footnotesize
+\caption{General health: full-ranking average precision (AP) and ROC-AUC with class prevalence. Scores and labels are unchanged; tie-aware metrics were independently checked against scikit-learn. These point estimates are descriptive and do not replace matched-budget comparisons.}
+\label{tab:ranking_health}
+\begin{tabular}{llrrrr}
+\toprule
+Criterion & Policy & Cases & Prevalence & AP & ROC-AUC \\
+\midrule
+$\overline D\geq3$ & HumT & 23 & 0.055 & 0.225 & 0.760 \\
+$\overline D\geq3$ & Markers & 23 & 0.055 & 0.395 & 0.917 \\
+$\overline D\geq3$ & Length & 23 & 0.055 & 0.064 & 0.467 \\
+$\overline D\geq3$ & Similarity & 23 & 0.055 & 0.154 & 0.814 \\
+$\overline D\geq3$ & NLI & 23 & 0.055 & 0.334 & 0.828 \\
+\addlinespace
+$\overline F<4$ & HumT & 120 & 0.289 & 0.285 & 0.489 \\
+$\overline F<4$ & Markers & 120 & 0.289 & 0.358 & 0.586 \\
+$\overline F<4$ & Length & 120 & 0.289 & 0.324 & 0.536 \\
+$\overline F<4$ & Similarity & 120 & 0.289 & 0.376 & 0.499 \\
+$\overline F<4$ & NLI & 120 & 0.289 & 0.347 & 0.548 \\
+\addlinespace
+$\overline{\mathrm{OA}}<4$ & HumT & 9 & 0.022 & 0.040 & 0.688 \\
+$\overline{\mathrm{OA}}<4$ & Markers & 9 & 0.022 & 0.340 & 0.947 \\
+$\overline{\mathrm{OA}}<4$ & Length & 9 & 0.022 & 0.016 & 0.292 \\
+$\overline{\mathrm{OA}}<4$ & Similarity & 9 & 0.022 & 0.140 & 0.899 \\
+$\overline{\mathrm{OA}}<4$ & NLI & 9 & 0.022 & 0.462 & 0.921 \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,4 +1,19 @@
-# Current scope: 28 October 2026
+# Current Scope: 3 November 2026
+
+The active manuscript is the professor-feedback revision at
+`facct/paper/overleaf/main.tex`. It uses PERSONA as the empirical resource for
+review allocation; legacy OA prediction is not the headline contribution.
+Fixed semantic and trained comparisons and the cached-score independent
+follow-up extension are included. All relevant negative and inconclusive
+comparisons remain. No new generative judge, participants or deployment study
+was added. See [revision details](../concern_detector_eval/notes/professor_revision_response.md).
+
+The author confirmed follow-up compensation through existing paid research
+roles on 3 November; the visible ethics placeholder has been resolved. The
+compiled release has 12 main-text pages. No conference submission is performed
+by this repository update. Earlier records below are historical.
+
+## Historical Scope: 28 October 2026
 
 The active paper selectively integrates the PERSONA measurement diagnostic and
 review-allocation study. The new exploratory amendment varies the training target

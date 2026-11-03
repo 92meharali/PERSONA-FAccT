@@ -1,0 +1,32 @@
+\begin{table}[htbp]
+\centering\small
+\caption{General health: every policy in the same five held-out batches, with 80 total slots at the 20\% reference fraction. LR models use training labels; other rules are label-free. Precision and recall are percentages. Intervals are exploratory pointwise 95\% from paired refits, conditional on the fixed partition; sparse cells remain descriptive. Random counts are expectations. Do not compare these directly with the different full-batch capacities.}
+\label{tab:held_health}
+\begin{tabular}{llrrrr}
+\toprule
+Criterion & Policy & Caught/$P$ & Prec. & Recall [95\% CI] & Missed \\
+\midrule
+$\overline D\geq3$ & HumT & 10/23 & 12.5 & 43.5 [26.7, 66.7] & 13 \\
+ & Length & 5/23 & 6.2 & 21.7 [6.2, 40.0] & 18 \\
+ & Markers & 21/23 & 26.2 & 91.3 [60.9, 100.0] & 2 \\
+ & Rank fusion & 18/23 & 22.5 & 78.3 [52.0, 92.3] & 5 \\
+ & LR: markers + length & 21/23 & 26.2 & 91.3 [57.1, 100.0] & 2 \\
+ & LR: + HumT & 21/23 & 26.2 & 91.3 [54.2, 96.0] & 2 \\
+ & Random (expected) & 4.44/23 & 5.6 & 19.3 [19.0, 19.6] & 18.56 \\
+$\overline F<4$ & HumT & 23/120 & 28.7 & 19.2 [12.7, 26.3] & 97 \\
+ & Length & 27/120 & 33.8 & 22.5 [16.8, 29.2] & 93 \\
+ & Markers & 32/120 & 40.0 & 26.7 [16.4, 32.3] & 88 \\
+ & Rank fusion & 28/120 & 35.0 & 23.3 [15.8, 30.8] & 92 \\
+ & LR: markers + length & 29/120 & 36.2 & 24.2 [12.7, 31.8] & 91 \\
+ & LR: + HumT & 30/120 & 37.5 & 25.0 [14.4, 31.5] & 90 \\
+ & Random (expected) & 23.14/120 & 28.9 & 19.3 [19.1, 19.5] & 96.86 \\
+$\overline{\mathrm{OA}}<4$ & HumT & 3/9 & 3.8 & 33.3 [0.0, 72.7] & 6 \\
+ & Length & 0/9 & 0.0 & 0.0 [0.0, 20.1] & 9 \\
+ & Markers & 9/9 & 11.2 & 100.0 [60.0, 100.0] & 0 \\
+ & Rank fusion & 7/9 & 8.8 & 77.8 [33.3, 100.0] & 2 \\
+ & LR: markers + length & 8/9 & 10.0 & 88.9 [50.0, 100.0] & 1 \\
+ & LR: + HumT & 8/9 & 10.0 & 88.9 [50.0, 100.0] & 1 \\
+ & Random (expected) & 1.73/9 & 2.2 & 19.3 [19.0, 19.6] & 7.27 \\
+\bottomrule
+\end{tabular}
+\end{table}
